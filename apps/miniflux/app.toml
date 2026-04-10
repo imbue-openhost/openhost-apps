@@ -1,0 +1,18 @@
+[app]
+name = "Miniflux"
+description = "Minimalist and opinionated RSS feed reader. Fast, lightweight, and focused on readability."
+repo_url = "https://github.com/imbue-ai/openhost-apps-miniflux"
+version = "2.1.3"
+author = "miniflux"
+license = "Apache-2.0"
+homepage = "https://miniflux.app"
+
+[resources]
+memory_mb = 128
+cpu_millicores = 100
+
+[store]
+categories = ["productivity", "news"]
+featured = false
+icon_url = ""
+min_openhost_version = ""

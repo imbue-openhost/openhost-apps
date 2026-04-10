@@ -1,0 +1,18 @@
+[app]
+name = "Planka"
+description = "Kanban board for workgroups. Real-time, beautiful interface inspired by Trello. Track projects and tasks visually."
+repo_url = "https://github.com/imbue-ai/openhost-apps-planka"
+version = "1.18.0"
+author = "plankanban"
+license = "AGPL-3.0"
+homepage = "https://planka.app"
+
+[resources]
+memory_mb = 256
+cpu_millicores = 200
+
+[store]
+categories = ["productivity", "project-management"]
+featured = false
+icon_url = ""
+min_openhost_version = ""

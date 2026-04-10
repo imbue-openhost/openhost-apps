@@ -1,0 +1,18 @@
+[app]
+name = "IT Tools"
+description = "Collection of handy developer tools: hash generators, encoders/decoders, converters, network tools, and more."
+repo_url = "https://github.com/imbue-ai/openhost-apps-it-tools"
+version = "2024.5.13"
+author = "CorentinTh"
+license = "MIT"
+homepage = "https://it-tools.tech"
+
+[resources]
+memory_mb = 128
+cpu_millicores = 100
+
+[store]
+categories = ["development", "utilities"]
+featured = true
+icon_url = ""
+min_openhost_version = ""

@@ -1,0 +1,18 @@
+[app]
+name = "Memos"
+description = "Lightweight, self-hosted memo hub. Open source and free. Capture quick notes, ideas, and thoughts with markdown support."
+repo_url = "https://github.com/imbue-ai/openhost-apps-memos"
+version = "0.22.0"
+author = "usememos"
+license = "MIT"
+homepage = "https://usememos.com"
+
+[resources]
+memory_mb = 256
+cpu_millicores = 200
+
+[store]
+categories = ["productivity", "notes"]
+featured = true
+icon_url = ""
+min_openhost_version = ""

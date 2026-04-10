@@ -1,0 +1,18 @@
+[app]
+name = "Ghostfolio"
+description = "Open source wealth management software. Track stocks, ETFs, and crypto with portfolio analytics and performance charts."
+repo_url = "https://github.com/imbue-ai/openhost-apps-ghostfolio"
+version = "2.98.0"
+author = "ghostfolio"
+license = "AGPL-3.0"
+homepage = "https://ghostfol.io"
+
+[resources]
+memory_mb = 512
+cpu_millicores = 500
+
+[store]
+categories = ["finance", "analytics"]
+featured = false
+icon_url = ""
+min_openhost_version = ""

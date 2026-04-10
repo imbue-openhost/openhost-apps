@@ -1,0 +1,18 @@
+[app]
+name = "Gitea"
+description = "Lightweight self-hosted Git service. Fork of Gogs with active development. Git hosting, issues, pull requests, and CI/CD."
+repo_url = "https://github.com/imbue-ai/openhost-apps-gitea"
+version = "1.22.0"
+author = "Gitea"
+license = "MIT"
+homepage = "https://gitea.io"
+
+[resources]
+memory_mb = 512
+cpu_millicores = 500
+
+[store]
+categories = ["development", "git"]
+featured = true
+icon_url = ""
+min_openhost_version = ""

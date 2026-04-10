@@ -1,0 +1,18 @@
+[app]
+name = "Vikunja"
+description = "Open-source to-do app for organizing your life. Lists, kanban boards, gantt charts, calendars, and more."
+repo_url = "https://github.com/imbue-ai/openhost-apps-vikunja"
+version = "0.24.0"
+author = "vikunja"
+license = "AGPL-3.0"
+homepage = "https://vikunja.io"
+
+[resources]
+memory_mb = 256
+cpu_millicores = 200
+
+[store]
+categories = ["productivity", "task-management"]
+featured = false
+icon_url = ""
+min_openhost_version = ""
