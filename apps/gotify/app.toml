@@ -1,0 +1,11 @@
+[app]
+id = "gotify"
+title = "Gotify"
+description = "Simple server for sending and receiving push notifications via REST API and WebSocket."
+repo_url = "https://github.com/imbue-ai/openhost-gotify"
+default_app_name = "gotify"
+website_url = "https://gotify.net"
+docs_url = "https://github.com/imbue-ai/openhost-gotify#readme"
+tags = ["notifications", "push", "alerts"]
+categories = ["tools", "notifications"]
+verified = true

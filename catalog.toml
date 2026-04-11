@@ -1,5 +1,6 @@
 [catalog]
-name = "openhost-apps"
+source_id = "official"
+name = "OpenHost Official"
 description = "Official OpenHost App Store — curated self-hosted applications"
 maintainer = "OpenHost Team"
 url = "https://github.com/andrewlaack/openhost-apps"

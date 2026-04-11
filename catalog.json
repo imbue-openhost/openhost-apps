@@ -1,0 +1,321 @@
+{
+  "schema": "openhost.catalog.v1",
+  "source_id": "official",
+  "source_name": "OpenHost Official",
+  "generated_at": "2026-04-11T15:09:31Z",
+  "apps": [
+    {
+      "id": "backup",
+      "title": "OpenHost Backup",
+      "description": "Backup your OpenHost instance data to cloud storage. Supports S3-compatible providers.",
+      "repo_url": "https://github.com/imbue-ai/openhost-backup",
+      "repo_ref": "",
+      "default_app_name": "backup",
+      "icon_url": "",
+      "tags": [
+        "backup",
+        "storage",
+        "disaster-recovery"
+      ],
+      "categories": [
+        "tools",
+        "infrastructure"
+      ],
+      "website_url": "https://github.com/imbue-ai/openhost-backup",
+      "docs_url": "https://github.com/imbue-ai/openhost-backup#readme",
+      "minimum_openhost_version": "",
+      "verified": true
+    },
+    {
+      "id": "forgejo",
+      "title": "Forgejo",
+      "description": "Self-hosted Git forge with issues, pull requests, CI/CD, and package registry.",
+      "repo_url": "https://github.com/imbue-ai/openhost-forgejo",
+      "repo_ref": "",
+      "default_app_name": "forgejo",
+      "icon_url": "",
+      "tags": [
+        "git",
+        "code",
+        "ci-cd",
+        "forge"
+      ],
+      "categories": [
+        "development",
+        "git"
+      ],
+      "website_url": "https://forgejo.org",
+      "docs_url": "https://github.com/imbue-ai/openhost-forgejo#readme",
+      "minimum_openhost_version": "",
+      "verified": true
+    },
+    {
+      "id": "gotify",
+      "title": "Gotify",
+      "description": "Simple server for sending and receiving push notifications via REST API and WebSocket.",
+      "repo_url": "https://github.com/imbue-ai/openhost-gotify",
+      "repo_ref": "",
+      "default_app_name": "gotify",
+      "icon_url": "",
+      "tags": [
+        "notifications",
+        "push",
+        "alerts"
+      ],
+      "categories": [
+        "tools",
+        "notifications"
+      ],
+      "website_url": "https://gotify.net",
+      "docs_url": "https://github.com/imbue-ai/openhost-gotify#readme",
+      "minimum_openhost_version": "",
+      "verified": true
+    },
+    {
+      "id": "miniflux",
+      "title": "Miniflux",
+      "description": "Minimalist and opinionated RSS/Atom feed reader. Fast, lightweight, and efficient.",
+      "repo_url": "https://github.com/imbue-ai/openhost-miniflux",
+      "repo_ref": "",
+      "default_app_name": "miniflux",
+      "icon_url": "",
+      "tags": [
+        "rss",
+        "news",
+        "reader"
+      ],
+      "categories": [
+        "productivity",
+        "news"
+      ],
+      "website_url": "https://miniflux.app",
+      "docs_url": "https://github.com/imbue-ai/openhost-miniflux#readme",
+      "minimum_openhost_version": "",
+      "verified": true
+    },
+    {
+      "id": "navidrome",
+      "title": "Navidrome",
+      "description": "Modern music server and streamer compatible with Subsonic/Airsonic clients.",
+      "repo_url": "https://github.com/imbue-ai/openhost-navidrome",
+      "repo_ref": "",
+      "default_app_name": "navidrome",
+      "icon_url": "",
+      "tags": [
+        "music",
+        "streaming",
+        "media"
+      ],
+      "categories": [
+        "media",
+        "music"
+      ],
+      "website_url": "https://www.navidrome.org",
+      "docs_url": "https://github.com/imbue-ai/openhost-navidrome#readme",
+      "minimum_openhost_version": "",
+      "verified": true
+    },
+    {
+      "id": "nextcloud",
+      "title": "Nextcloud",
+      "description": "Self-hosted productivity platform with file sync, calendar, contacts, and office suite.",
+      "repo_url": "https://github.com/imbue-ai/openhost-nextcloud",
+      "repo_ref": "",
+      "default_app_name": "nextcloud",
+      "icon_url": "",
+      "tags": [
+        "files",
+        "office",
+        "calendar",
+        "collaboration"
+      ],
+      "categories": [
+        "productivity",
+        "collaboration"
+      ],
+      "website_url": "https://nextcloud.com",
+      "docs_url": "https://github.com/imbue-ai/openhost-nextcloud#readme",
+      "minimum_openhost_version": "",
+      "verified": true
+    },
+    {
+      "id": "obsidian-sync",
+      "title": "Obsidian Sync",
+      "description": "Self-hosted sync server for Obsidian notes. Replaces the paid Obsidian Sync service.",
+      "repo_url": "https://github.com/imbue-ai/openhost-obsidian-sync",
+      "repo_ref": "",
+      "default_app_name": "obsidian-sync",
+      "icon_url": "",
+      "tags": [
+        "notes",
+        "sync",
+        "obsidian",
+        "knowledge"
+      ],
+      "categories": [
+        "productivity",
+        "notes"
+      ],
+      "website_url": "https://obsidian.md",
+      "docs_url": "https://github.com/imbue-ai/openhost-obsidian-sync#readme",
+      "minimum_openhost_version": "",
+      "verified": true
+    },
+    {
+      "id": "openweb-ui",
+      "title": "Open WebUI",
+      "description": "Feature-rich web interface for LLMs. Supports Ollama and OpenAI-compatible APIs.",
+      "repo_url": "https://github.com/imbue-ai/openhost-openweb-ui",
+      "repo_ref": "",
+      "default_app_name": "openweb-ui",
+      "icon_url": "",
+      "tags": [
+        "ai",
+        "llm",
+        "chat",
+        "ollama"
+      ],
+      "categories": [
+        "ai",
+        "tools"
+      ],
+      "website_url": "https://openwebui.com",
+      "docs_url": "https://github.com/imbue-ai/openhost-openweb-ui#readme",
+      "minimum_openhost_version": "",
+      "verified": true
+    },
+    {
+      "id": "perplexica",
+      "title": "Perplexica",
+      "description": "AI-powered search engine that understands your questions and provides cited answers.",
+      "repo_url": "https://github.com/imbue-ai/openhost-perplexica",
+      "repo_ref": "",
+      "default_app_name": "perplexica",
+      "icon_url": "",
+      "tags": [
+        "ai",
+        "search",
+        "llm"
+      ],
+      "categories": [
+        "search",
+        "ai"
+      ],
+      "website_url": "https://github.com/ItzCrazyKns/Perplexica",
+      "docs_url": "https://github.com/imbue-ai/openhost-perplexica#readme",
+      "minimum_openhost_version": "",
+      "verified": true
+    },
+    {
+      "id": "plane",
+      "title": "Plane",
+      "description": "Open-source project management tool. Track issues, manage sprints, and plan roadmaps.",
+      "repo_url": "https://github.com/imbue-ai/openhost-plane.so",
+      "repo_ref": "",
+      "default_app_name": "plane",
+      "icon_url": "",
+      "tags": [
+        "project-management",
+        "issues",
+        "agile"
+      ],
+      "categories": [
+        "productivity",
+        "project-management"
+      ],
+      "website_url": "https://plane.so",
+      "docs_url": "https://github.com/imbue-ai/openhost-plane.so#readme",
+      "minimum_openhost_version": "",
+      "verified": true
+    },
+    {
+      "id": "privatebin",
+      "title": "PrivateBin",
+      "description": "Zero-knowledge encrypted pastebin. Data is encrypted in the browser before being sent to the server.",
+      "repo_url": "https://github.com/imbue-ai/openhost-privatebin",
+      "repo_ref": "",
+      "default_app_name": "privatebin",
+      "icon_url": "",
+      "tags": [
+        "pastebin",
+        "privacy",
+        "encryption"
+      ],
+      "categories": [
+        "tools",
+        "privacy"
+      ],
+      "website_url": "https://privatebin.info",
+      "docs_url": "https://github.com/imbue-ai/openhost-privatebin#readme",
+      "minimum_openhost_version": "",
+      "verified": true
+    },
+    {
+      "id": "searxng",
+      "title": "SearXNG",
+      "description": "Privacy-respecting metasearch engine that aggregates results from 70+ search services.",
+      "repo_url": "https://github.com/imbue-ai/openhost-searxng",
+      "repo_ref": "",
+      "default_app_name": "searxng",
+      "icon_url": "",
+      "tags": [
+        "search",
+        "privacy",
+        "metasearch"
+      ],
+      "categories": [
+        "search",
+        "privacy"
+      ],
+      "website_url": "https://docs.searxng.org",
+      "docs_url": "https://github.com/imbue-ai/openhost-searxng#readme",
+      "minimum_openhost_version": "",
+      "verified": true
+    },
+    {
+      "id": "synapse",
+      "title": "Matrix Synapse",
+      "description": "Reference homeserver for the Matrix decentralized communication protocol. End-to-end encrypted messaging.",
+      "repo_url": "https://github.com/imbue-ai/openhost-synapse",
+      "repo_ref": "",
+      "default_app_name": "synapse",
+      "icon_url": "",
+      "tags": [
+        "messaging",
+        "matrix",
+        "encryption",
+        "federation"
+      ],
+      "categories": [
+        "communication",
+        "privacy"
+      ],
+      "website_url": "https://matrix.org",
+      "docs_url": "https://github.com/imbue-ai/openhost-synapse#readme",
+      "minimum_openhost_version": "",
+      "verified": true
+    },
+    {
+      "id": "uptime-kuma",
+      "title": "Uptime Kuma",
+      "description": "Self-hosted monitoring tool with a clean UI. Monitor HTTP(s), TCP, DNS, and more.",
+      "repo_url": "https://github.com/imbue-ai/openhost-uptime-kuma",
+      "repo_ref": "",
+      "default_app_name": "uptime-kuma",
+      "icon_url": "",
+      "tags": [
+        "monitoring",
+        "uptime",
+        "alerts"
+      ],
+      "categories": [
+        "monitoring",
+        "devops"
+      ],
+      "website_url": "https://github.com/louislam/uptime-kuma",
+      "docs_url": "https://github.com/imbue-ai/openhost-uptime-kuma#readme",
+      "minimum_openhost_version": "",
+      "verified": true
+    }
+  ]
+}

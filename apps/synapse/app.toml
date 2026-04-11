@@ -1,0 +1,11 @@
+[app]
+id = "synapse"
+title = "Matrix Synapse"
+description = "Reference homeserver for the Matrix decentralized communication protocol. End-to-end encrypted messaging."
+repo_url = "https://github.com/imbue-ai/openhost-synapse"
+default_app_name = "synapse"
+website_url = "https://matrix.org"
+docs_url = "https://github.com/imbue-ai/openhost-synapse#readme"
+tags = ["messaging", "matrix", "encryption", "federation"]
+categories = ["communication", "privacy"]
+verified = true

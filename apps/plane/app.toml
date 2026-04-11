@@ -1,0 +1,11 @@
+[app]
+id = "plane"
+title = "Plane"
+description = "Open-source project management tool. Track issues, manage sprints, and plan roadmaps."
+repo_url = "https://github.com/imbue-ai/openhost-plane.so"
+default_app_name = "plane"
+website_url = "https://plane.so"
+docs_url = "https://github.com/imbue-ai/openhost-plane.so#readme"
+tags = ["project-management", "issues", "agile"]
+categories = ["productivity", "project-management"]
+verified = true
