@@ -1,0 +1,10 @@
+repos:
+  - repo: local
+    hooks:
+      - id: catalog-json-fresh
+        name: catalog.json is up to date with app TOML files
+        description: Fail if catalog.json is stale. Run `python3 generate.py` to regenerate.
+        entry: python3 generate.py --check
+        language: system
+        pass_filenames: false
+        files: ^(apps/.*\.toml|catalog\.toml|generate\.py|catalog\.json)$

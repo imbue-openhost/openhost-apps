@@ -2,7 +2,6 @@
 title = "Open WebUI"
 description = "Feature-rich web interface for LLMs. Supports Ollama and OpenAI-compatible APIs."
 repo_url = "https://github.com/imbue-openhost/openhost-openweb-ui"
-default_app_name = "openweb-ui"
 website_url = "https://openwebui.com"
 docs_url = "https://github.com/imbue-openhost/openhost-openweb-ui#readme"
 tags = ["ai", "llm", "chat", "ollama"]

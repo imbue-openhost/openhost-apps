@@ -2,14 +2,12 @@
   "schema": "openhost.catalog.v1",
   "source_id": "official",
   "source_name": "OpenHost Official",
-  "generated_at": "2026-04-16T21:32:19Z",
   "apps": [
     {
       "title": "Tor Hidden Service",
       "description": "Tor hidden service with a simple page editor CMS.",
       "repo_url": "https://github.com/imbue-openhost/openhost-hidden-service",
       "repo_ref": "",
-      "default_app_name": "hidden-service",
       "icon_url": "",
       "tags": [
         "tor",
@@ -22,15 +20,13 @@
         "tools"
       ],
       "website_url": "https://github.com/imbue-openhost/openhost-hidden-service",
-      "docs_url": "https://github.com/imbue-openhost/openhost-hidden-service#readme",
-      "minimum_openhost_version": ""
+      "docs_url": "https://github.com/imbue-openhost/openhost-hidden-service#readme"
     },
     {
       "title": "Navidrome",
       "description": "Modern music server and streamer compatible with Subsonic/Airsonic clients.",
       "repo_url": "https://github.com/imbue-openhost/openhost-navidrome",
       "repo_ref": "",
-      "default_app_name": "navidrome",
       "icon_url": "",
       "tags": [
         "music",
@@ -42,15 +38,13 @@
         "music"
       ],
       "website_url": "https://www.navidrome.org",
-      "docs_url": "https://github.com/imbue-openhost/openhost-navidrome#readme",
-      "minimum_openhost_version": ""
+      "docs_url": "https://github.com/imbue-openhost/openhost-navidrome#readme"
     },
     {
       "title": "Open WebUI",
       "description": "Feature-rich web interface for LLMs. Supports Ollama and OpenAI-compatible APIs.",
       "repo_url": "https://github.com/imbue-openhost/openhost-openweb-ui",
       "repo_ref": "",
-      "default_app_name": "openweb-ui",
       "icon_url": "",
       "tags": [
         "ai",
@@ -63,15 +57,13 @@
         "tools"
       ],
       "website_url": "https://openwebui.com",
-      "docs_url": "https://github.com/imbue-openhost/openhost-openweb-ui#readme",
-      "minimum_openhost_version": ""
+      "docs_url": "https://github.com/imbue-openhost/openhost-openweb-ui#readme"
     },
     {
       "title": "SearXNG",
       "description": "Privacy-respecting metasearch engine that aggregates results from 70+ search services.",
       "repo_url": "https://github.com/imbue-openhost/openhost-searxng",
       "repo_ref": "",
-      "default_app_name": "searxng",
       "icon_url": "",
       "tags": [
         "search",
@@ -83,15 +75,13 @@
         "privacy"
       ],
       "website_url": "https://docs.searxng.org",
-      "docs_url": "https://github.com/imbue-openhost/openhost-searxng#readme",
-      "minimum_openhost_version": ""
+      "docs_url": "https://github.com/imbue-openhost/openhost-searxng#readme"
     },
     {
       "title": "Matrix Synapse",
       "description": "Reference homeserver for the Matrix decentralized communication protocol. End-to-end encrypted messaging.",
       "repo_url": "https://github.com/imbue-openhost/openhost-synapse",
       "repo_ref": "",
-      "default_app_name": "synapse",
       "icon_url": "",
       "tags": [
         "messaging",
@@ -104,15 +94,13 @@
         "privacy"
       ],
       "website_url": "https://matrix.org",
-      "docs_url": "https://github.com/imbue-openhost/openhost-synapse#readme",
-      "minimum_openhost_version": ""
+      "docs_url": "https://github.com/imbue-openhost/openhost-synapse#readme"
     },
     {
       "title": "Uptime Kuma",
       "description": "Self-hosted monitoring tool with a clean UI. Monitor HTTP(s), TCP, DNS, and more.",
       "repo_url": "https://github.com/imbue-openhost/openhost-uptime-kuma",
       "repo_ref": "",
-      "default_app_name": "uptime-kuma",
       "icon_url": "",
       "tags": [
         "monitoring",
@@ -124,8 +112,8 @@
         "devops"
       ],
       "website_url": "https://github.com/louislam/uptime-kuma",
-      "docs_url": "https://github.com/imbue-openhost/openhost-uptime-kuma#readme",
-      "minimum_openhost_version": ""
+      "docs_url": "https://github.com/imbue-openhost/openhost-uptime-kuma#readme"
     }
-  ]
+  ],
+  "generated_at": "2026-04-16T21:43:08Z"
 }

@@ -2,7 +2,6 @@
 title = "Tor Hidden Service"
 description = "Tor hidden service with a simple page editor CMS."
 repo_url = "https://github.com/imbue-openhost/openhost-hidden-service"
-default_app_name = "hidden-service"
 website_url = "https://github.com/imbue-openhost/openhost-hidden-service"
 docs_url = "https://github.com/imbue-openhost/openhost-hidden-service#readme"
 tags = ["tor", "privacy", "onion", "cms"]
