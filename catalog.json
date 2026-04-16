@@ -4,7 +4,7 @@
   "source_name": "OpenHost Official",
   "apps": [
     {
-      "title": "Tor Hidden Service",
+      "title": "STALE_CI_TEST",
       "description": "Tor hidden service with a simple page editor CMS.",
       "repo_url": "https://github.com/imbue-openhost/openhost-hidden-service",
       "repo_ref": "",
