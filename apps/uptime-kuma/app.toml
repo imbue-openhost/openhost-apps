@@ -1,0 +1,11 @@
+[app]
+id = "uptime-kuma"
+title = "Uptime Kuma"
+description = "Self-hosted monitoring tool with a clean UI. Monitor HTTP(s), TCP, DNS, and more."
+repo_url = "https://github.com/imbue-openhost/openhost-uptime-kuma"
+default_app_name = "uptime-kuma"
+website_url = "https://github.com/louislam/uptime-kuma"
+docs_url = "https://github.com/imbue-openhost/openhost-uptime-kuma#readme"
+tags = ["monitoring", "uptime", "alerts"]
+categories = ["monitoring", "devops"]
+verified = true
