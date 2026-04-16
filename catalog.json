@@ -2,7 +2,7 @@
   "schema": "openhost.catalog.v1",
   "source_id": "official",
   "source_name": "OpenHost Official",
-  "generated_at": "2026-04-16T21:29:24Z",
+  "generated_at": "2026-04-16T21:32:19Z",
   "apps": [
     {
       "title": "Tor Hidden Service",

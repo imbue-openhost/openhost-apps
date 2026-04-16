@@ -75,6 +75,21 @@ def main():
 
         apps.append(feed_app)
 
+    # Within a single source, the catalog derives app IDs from the repo URL,
+    # so duplicate repo URLs would collide. Fail the build so the feed
+    # publisher has to fix it before the feed goes live.
+    seen_repos: dict[str, str] = {}
+    for app in apps:
+        repo = app["repo_url"]
+        if repo in seen_repos:
+            print(
+                f"error: duplicate repo_url {repo!r} (first seen in {seen_repos[repo]!r}); "
+                "each app in a source must have a unique repo_url",
+                file=sys.stderr,
+            )
+            sys.exit(1)
+        seen_repos[repo] = app["default_app_name"]
+
     feed = {
         "schema": "openhost.catalog.v1",
         "source_id": source_id,
