@@ -2,7 +2,7 @@
   "schema": "openhost.catalog.v1",
   "source_id": "official",
   "source_name": "OpenHost Official",
-  "generated_at": "2026-04-16T07:27:00Z",
+  "generated_at": "2026-04-16T20:53:56Z",
   "apps": [
     {
       "id": "hidden-service",
@@ -24,8 +24,7 @@
       ],
       "website_url": "https://github.com/imbue-openhost/openhost-hidden-service",
       "docs_url": "https://github.com/imbue-openhost/openhost-hidden-service#readme",
-      "minimum_openhost_version": "",
-      "verified": true
+      "minimum_openhost_version": ""
     },
     {
       "id": "navidrome",
@@ -46,8 +45,7 @@
       ],
       "website_url": "https://www.navidrome.org",
       "docs_url": "https://github.com/imbue-openhost/openhost-navidrome#readme",
-      "minimum_openhost_version": "",
-      "verified": true
+      "minimum_openhost_version": ""
     },
     {
       "id": "openweb-ui",
@@ -69,8 +67,7 @@
       ],
       "website_url": "https://openwebui.com",
       "docs_url": "https://github.com/imbue-openhost/openhost-openweb-ui#readme",
-      "minimum_openhost_version": "",
-      "verified": true
+      "minimum_openhost_version": ""
     },
     {
       "id": "searxng",
@@ -91,8 +88,7 @@
       ],
       "website_url": "https://docs.searxng.org",
       "docs_url": "https://github.com/imbue-openhost/openhost-searxng#readme",
-      "minimum_openhost_version": "",
-      "verified": true
+      "minimum_openhost_version": ""
     },
     {
       "id": "synapse",
@@ -114,8 +110,7 @@
       ],
       "website_url": "https://matrix.org",
       "docs_url": "https://github.com/imbue-openhost/openhost-synapse#readme",
-      "minimum_openhost_version": "",
-      "verified": true
+      "minimum_openhost_version": ""
     },
     {
       "id": "uptime-kuma",
@@ -136,8 +131,7 @@
       ],
       "website_url": "https://github.com/louislam/uptime-kuma",
       "docs_url": "https://github.com/imbue-openhost/openhost-uptime-kuma#readme",
-      "minimum_openhost_version": "",
-      "verified": true
+      "minimum_openhost_version": ""
     }
   ]
 }

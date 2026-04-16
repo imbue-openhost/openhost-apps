@@ -8,4 +8,3 @@ website_url = "https://openwebui.com"
 docs_url = "https://github.com/imbue-openhost/openhost-openweb-ui#readme"
 tags = ["ai", "llm", "chat", "ollama"]
 categories = ["ai", "tools"]
-verified = true

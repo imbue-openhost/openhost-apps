@@ -67,7 +67,6 @@ def main():
             "minimum_openhost_version": app.get(
                 "minimum_openhost_version", store.get("min_openhost_version", "")
             ),
-            "verified": app.get("verified", store.get("verified", False)),
         }
 
         # Skip entries without a repo URL
