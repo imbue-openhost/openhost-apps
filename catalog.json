@@ -2,10 +2,9 @@
   "schema": "openhost.catalog.v1",
   "source_id": "official",
   "source_name": "OpenHost Official",
-  "generated_at": "2026-04-16T20:53:56Z",
+  "generated_at": "2026-04-16T21:29:24Z",
   "apps": [
     {
-      "id": "hidden-service",
       "title": "Tor Hidden Service",
       "description": "Tor hidden service with a simple page editor CMS.",
       "repo_url": "https://github.com/imbue-openhost/openhost-hidden-service",
@@ -27,7 +26,6 @@
       "minimum_openhost_version": ""
     },
     {
-      "id": "navidrome",
       "title": "Navidrome",
       "description": "Modern music server and streamer compatible with Subsonic/Airsonic clients.",
       "repo_url": "https://github.com/imbue-openhost/openhost-navidrome",
@@ -48,7 +46,6 @@
       "minimum_openhost_version": ""
     },
     {
-      "id": "openweb-ui",
       "title": "Open WebUI",
       "description": "Feature-rich web interface for LLMs. Supports Ollama and OpenAI-compatible APIs.",
       "repo_url": "https://github.com/imbue-openhost/openhost-openweb-ui",
@@ -70,7 +67,6 @@
       "minimum_openhost_version": ""
     },
     {
-      "id": "searxng",
       "title": "SearXNG",
       "description": "Privacy-respecting metasearch engine that aggregates results from 70+ search services.",
       "repo_url": "https://github.com/imbue-openhost/openhost-searxng",
@@ -91,7 +87,6 @@
       "minimum_openhost_version": ""
     },
     {
-      "id": "synapse",
       "title": "Matrix Synapse",
       "description": "Reference homeserver for the Matrix decentralized communication protocol. End-to-end encrypted messaging.",
       "repo_url": "https://github.com/imbue-openhost/openhost-synapse",
@@ -113,7 +108,6 @@
       "minimum_openhost_version": ""
     },
     {
-      "id": "uptime-kuma",
       "title": "Uptime Kuma",
       "description": "Self-hosted monitoring tool with a clean UI. Monitor HTTP(s), TCP, DNS, and more.",
       "repo_url": "https://github.com/imbue-openhost/openhost-uptime-kuma",

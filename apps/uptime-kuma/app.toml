@@ -1,5 +1,4 @@
 [app]
-id = "uptime-kuma"
 title = "Uptime Kuma"
 description = "Self-hosted monitoring tool with a clean UI. Monitor HTTP(s), TCP, DNS, and more."
 repo_url = "https://github.com/imbue-openhost/openhost-uptime-kuma"

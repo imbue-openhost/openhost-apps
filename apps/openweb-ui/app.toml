@@ -1,5 +1,4 @@
 [app]
-id = "openweb-ui"
 title = "Open WebUI"
 description = "Feature-rich web interface for LLMs. Supports Ollama and OpenAI-compatible APIs."
 repo_url = "https://github.com/imbue-openhost/openhost-openweb-ui"

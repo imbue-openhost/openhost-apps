@@ -1,5 +1,4 @@
 [app]
-id = "navidrome"
 title = "Navidrome"
 description = "Modern music server and streamer compatible with Subsonic/Airsonic clients."
 repo_url = "https://github.com/imbue-openhost/openhost-navidrome"

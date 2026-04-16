@@ -53,12 +53,11 @@ def main():
 
         # Merge store fields into app-level fields
         feed_app = {
-            "id": app.get("id", entry),
             "title": app.get("title", app.get("name", entry)),
             "description": app.get("description", ""),
             "repo_url": app.get("repo_url", ""),
             "repo_ref": app.get("repo_ref", ""),
-            "default_app_name": app.get("default_app_name", app.get("id", entry)),
+            "default_app_name": app.get("default_app_name", entry),
             "icon_url": app.get("icon_url", store.get("icon_url", "")),
             "tags": app.get("tags", store.get("tags", [])),
             "categories": app.get("categories", store.get("categories", [])),
