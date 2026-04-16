@@ -2,7 +2,7 @@
   "schema": "openhost.catalog.v1",
   "source_id": "official",
   "source_name": "OpenHost Official",
-  "generated_at": "2026-04-16T07:25:01Z",
+  "generated_at": "2026-04-16T07:27:00Z",
   "apps": [
     {
       "id": "hidden-service",
