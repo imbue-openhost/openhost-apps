@@ -12,8 +12,13 @@ Usage:
 import argparse
 import json
 import os
+import re
 import sys
 from datetime import datetime, timezone
+
+# App names must be lowercase alphanumeric with optional interior hyphens.
+# This matches OpenHost's app_name validation.
+_NAME_PATTERN = re.compile(r"^[a-z0-9]([a-z0-9-]*[a-z0-9])?$")
 
 # Python 3.11+ has tomllib; fall back to tomli for older versions
 try:
@@ -52,10 +57,32 @@ def build_feed(root: str) -> dict:
         data = load_toml(app_toml)
         app = data.get("app", {})
 
+        name = app.get("name", "")
+        if not name:
+            print(
+                f"error: {app_toml}: missing required [app].name field",
+                file=sys.stderr,
+            )
+            sys.exit(1)
+        if not _NAME_PATTERN.match(name):
+            print(
+                f"error: {app_toml}: invalid [app].name {name!r}; "
+                "must be lowercase alphanumeric with optional interior hyphens",
+                file=sys.stderr,
+            )
+            sys.exit(1)
+        if not app.get("repo_url"):
+            print(
+                f"error: {app_toml}: missing required [app].repo_url field",
+                file=sys.stderr,
+            )
+            sys.exit(1)
+
         feed_app = {
-            "title": app.get("title", entry),
+            "name": name,
+            "title": app.get("title", name),
             "description": app.get("description", ""),
-            "repo_url": app.get("repo_url", ""),
+            "repo_url": app["repo_url"],
             "repo_ref": app.get("repo_ref", ""),
             "icon_url": app.get("icon_url", ""),
             "tags": app.get("tags", []),
@@ -64,28 +91,23 @@ def build_feed(root: str) -> dict:
             "docs_url": app.get("docs_url", ""),
         }
 
-        # Skip entries without a repo URL
-        if not feed_app["repo_url"]:
-            print(f"  skip {entry}: no repo_url", file=sys.stderr)
-            continue
-
         apps.append(feed_app)
 
-    # Within a single source, the catalog derives app IDs from the repo URL,
-    # so duplicate repo URLs would collide. Fail the build so the feed
-    # publisher has to fix it before the feed goes live.
-    seen_repos: dict[str, int] = {}
+    # Each app's `name` is the identifier the catalog uses for URLs, DB keys,
+    # and the default deployed app name. Within a single source, names must be
+    # unique; otherwise the catalog sync rejects the feed entirely.
+    seen_names: dict[str, int] = {}
     for i, app in enumerate(apps):
-        repo = app["repo_url"]
-        if repo in seen_repos:
-            first = apps[seen_repos[repo]]["title"]
+        name = app["name"]
+        if name in seen_names:
+            first = apps[seen_names[name]]["title"]
             print(
-                f"error: duplicate repo_url {repo!r} (first seen in {first!r}); "
-                "each app in a source must have a unique repo_url",
+                f"error: duplicate name {name!r} (first seen in {first!r}); "
+                "each app in a source must have a unique name",
                 file=sys.stderr,
             )
             sys.exit(1)
-        seen_repos[repo] = i
+        seen_names[name] = i
 
     return {
         "schema": "openhost.catalog.v1",

@@ -19,6 +19,7 @@ The feed follows the `openhost.catalog.v1` schema. Each app entry has:
 
 | Field          | Required | Description |
 |----------------|----------|-------------|
+| `name`         | yes      | The name the app deploys as. Must be lowercase alphanumeric with optional interior hyphens. Drop any `openhost-` prefix. |
 | `title`        | yes      | Display name |
 | `description`  | yes      | One-line summary |
 | `repo_url`     | yes      | GitHub repo containing the app's `openhost.toml` manifest |
@@ -29,12 +30,12 @@ The feed follows the `openhost.catalog.v1` schema. Each app entry has:
 | `website_url`  | no       | Upstream project homepage |
 | `docs_url`     | no       | Documentation link |
 
-App IDs are derived from `repo_url` (the last path segment, with `.git` stripped) by the catalog consumer. The `id` field is not part of the schema.
+The `name` field is the app's identifier in the catalog: it is used in catalog URLs, pre-filled as the default deployed app name when installing, and must be unique within a source.
 
 ## Uniqueness
 
-- **Within a source**: every app must have a unique `repo_url`. Duplicates cause `generate.py` to fail.
-- **Across sources**: the same app can appear in multiple source feeds without conflict. They show as separate entries in the catalog.
+- **Within a source**: every app must have a unique `name` and a unique `repo_url`. Duplicates cause `generate.py` to fail.
+- **Across sources**: the same name can appear in multiple source feeds without conflict. They show as separate entries in the catalog.
 
 ## Adding an app
 

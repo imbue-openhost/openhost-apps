@@ -4,6 +4,7 @@
   "source_name": "OpenHost Official",
   "apps": [
     {
+      "name": "forgejo",
       "title": "Forgejo",
       "description": "Self-hosted Git forge with issues, pull requests, CI/CD, and package registry.",
       "repo_url": "https://github.com/imbue-openhost/openhost-forgejo",
@@ -23,6 +24,7 @@
       "docs_url": "https://github.com/imbue-openhost/openhost-forgejo#readme"
     },
     {
+      "name": "hidden-service",
       "title": "Tor Hidden Service",
       "description": "Tor hidden service with a simple page editor CMS.",
       "repo_url": "https://github.com/imbue-openhost/openhost-hidden-service",
@@ -42,6 +44,7 @@
       "docs_url": "https://github.com/imbue-openhost/openhost-hidden-service#readme"
     },
     {
+      "name": "navidrome",
       "title": "Navidrome",
       "description": "Modern music server and streamer compatible with Subsonic/Airsonic clients.",
       "repo_url": "https://github.com/imbue-openhost/openhost-navidrome",
@@ -60,6 +63,7 @@
       "docs_url": "https://github.com/imbue-openhost/openhost-navidrome#readme"
     },
     {
+      "name": "openweb-ui",
       "title": "Open WebUI",
       "description": "Feature-rich web interface for LLMs. Supports Ollama and OpenAI-compatible APIs.",
       "repo_url": "https://github.com/imbue-openhost/openhost-openweb-ui",
@@ -79,6 +83,7 @@
       "docs_url": "https://github.com/imbue-openhost/openhost-openweb-ui#readme"
     },
     {
+      "name": "searxng",
       "title": "SearXNG",
       "description": "Privacy-respecting metasearch engine that aggregates results from 70+ search services.",
       "repo_url": "https://github.com/imbue-openhost/openhost-searxng",
@@ -97,6 +102,7 @@
       "docs_url": "https://github.com/imbue-openhost/openhost-searxng#readme"
     },
     {
+      "name": "synapse",
       "title": "Matrix Synapse",
       "description": "Reference homeserver for the Matrix decentralized communication protocol. End-to-end encrypted messaging.",
       "repo_url": "https://github.com/imbue-openhost/openhost-synapse",
@@ -116,6 +122,7 @@
       "docs_url": "https://github.com/imbue-openhost/openhost-synapse#readme"
     },
     {
+      "name": "uptime-kuma",
       "title": "Uptime Kuma",
       "description": "Self-hosted monitoring tool with a clean UI. Monitor HTTP(s), TCP, DNS, and more.",
       "repo_url": "https://github.com/imbue-openhost/openhost-uptime-kuma",
@@ -134,5 +141,5 @@
       "docs_url": "https://github.com/imbue-openhost/openhost-uptime-kuma#readme"
     }
   ],
-  "generated_at": "2026-04-17T16:29:14Z"
+  "generated_at": "2026-04-17T17:13:43Z"
 }
