@@ -4,25 +4,6 @@
   "source_name": "OpenHost Official",
   "apps": [
     {
-      "title": "Forgejo",
-      "description": "Self-hosted Git forge with issues, pull requests, CI/CD, and package registry.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-forgejo",
-      "repo_ref": "",
-      "icon_url": "",
-      "tags": [
-        "git",
-        "code",
-        "ci-cd",
-        "forge"
-      ],
-      "categories": [
-        "development",
-        "git"
-      ],
-      "website_url": "https://forgejo.org",
-      "docs_url": "https://github.com/imbue-openhost/openhost-forgejo#readme"
-    },
-    {
       "title": "Tor Hidden Service",
       "description": "Tor hidden service with a simple page editor CMS.",
       "repo_url": "https://github.com/imbue-openhost/openhost-hidden-service",
