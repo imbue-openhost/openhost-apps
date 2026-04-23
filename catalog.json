@@ -22,27 +22,7 @@
       ],
       "website_url": "https://forgejo.org",
       "docs_url": "https://github.com/imbue-openhost/openhost-forgejo#readme",
-      "integration": {
-        "level": 2,
-        "summary": "Owner has to create a local Forgejo account on first use; no zone-auth auto-login yet.",
-        "has": [
-          "respects_data_dirs",
-          "no_internal_tls",
-          "persists_secrets"
-        ],
-        "missing": [
-          "zone_owner_auto_login",
-          "non_owner_redirect_to_zone",
-          "oauth_broker"
-        ],
-        "not_applicable": [
-          "media_ports_in_range",
-          "cross_app_secrets",
-          "sqlite_provisioned",
-          "federated_guest_identity",
-          "exposes_cross_app_service"
-        ]
-      }
+      "openhost_integration_score": 2
     },
     {
       "name": "hidden-service",
@@ -63,26 +43,7 @@
       ],
       "website_url": "https://github.com/imbue-openhost/openhost-hidden-service",
       "docs_url": "https://github.com/imbue-openhost/openhost-hidden-service#readme",
-      "integration": {
-        "level": 5,
-        "summary": "Owner-only admin (gated at router); no native login, nothing to shim.",
-        "has": [
-          "respects_data_dirs",
-          "no_internal_tls",
-          "persists_secrets"
-        ],
-        "missing": [],
-        "not_applicable": [
-          "zone_owner_auto_login",
-          "non_owner_redirect_to_zone",
-          "media_ports_in_range",
-          "oauth_broker",
-          "cross_app_secrets",
-          "sqlite_provisioned",
-          "federated_guest_identity",
-          "exposes_cross_app_service"
-        ]
-      }
+      "openhost_integration_score": 5
     },
     {
       "name": "mirotalk-p2p",
@@ -103,26 +64,7 @@
       ],
       "website_url": "https://github.com/miroslavpejic85/mirotalk",
       "docs_url": "https://github.com/imbue-openhost/openhost-mirotalk-p2p#readme",
-      "integration": {
-        "level": 5,
-        "summary": "Zone-owner auto-login via signed zone_auth cookie; guests reach the zone login when they hit a gated page.",
-        "has": [
-          "respects_data_dirs",
-          "no_internal_tls",
-          "persists_secrets",
-          "zone_owner_auto_login",
-          "non_owner_redirect_to_zone"
-        ],
-        "missing": [],
-        "not_applicable": [
-          "media_ports_in_range",
-          "oauth_broker",
-          "cross_app_secrets",
-          "sqlite_provisioned",
-          "federated_guest_identity",
-          "exposes_cross_app_service"
-        ]
-      }
+      "openhost_integration_score": 5
     },
     {
       "name": "navidrome",
@@ -142,27 +84,7 @@
       ],
       "website_url": "https://www.navidrome.org",
       "docs_url": "https://github.com/imbue-openhost/openhost-navidrome#readme",
-      "integration": {
-        "level": 2,
-        "summary": "Owner creates a local Navidrome account on first use; no zone-auth auto-login yet.",
-        "has": [
-          "respects_data_dirs",
-          "no_internal_tls",
-          "persists_secrets"
-        ],
-        "missing": [
-          "zone_owner_auto_login",
-          "non_owner_redirect_to_zone"
-        ],
-        "not_applicable": [
-          "media_ports_in_range",
-          "oauth_broker",
-          "cross_app_secrets",
-          "sqlite_provisioned",
-          "federated_guest_identity",
-          "exposes_cross_app_service"
-        ]
-      }
+      "openhost_integration_score": 2
     },
     {
       "name": "openweb-ui",
@@ -183,27 +105,7 @@
       ],
       "website_url": "https://openwebui.com",
       "docs_url": "https://github.com/imbue-openhost/openhost-openweb-ui#readme",
-      "integration": {
-        "level": 2,
-        "summary": "Owner creates a local Open WebUI account on first use; no zone-auth auto-login yet.",
-        "has": [
-          "respects_data_dirs",
-          "no_internal_tls",
-          "persists_secrets"
-        ],
-        "missing": [
-          "zone_owner_auto_login",
-          "non_owner_redirect_to_zone",
-          "oauth_broker"
-        ],
-        "not_applicable": [
-          "media_ports_in_range",
-          "cross_app_secrets",
-          "sqlite_provisioned",
-          "federated_guest_identity",
-          "exposes_cross_app_service"
-        ]
-      }
+      "openhost_integration_score": 2
     },
     {
       "name": "searxng",
@@ -223,26 +125,7 @@
       ],
       "website_url": "https://docs.searxng.org",
       "docs_url": "https://github.com/imbue-openhost/openhost-searxng#readme",
-      "integration": {
-        "level": 5,
-        "summary": "Stateless public search; no native auth to shim.",
-        "has": [
-          "respects_data_dirs",
-          "no_internal_tls",
-          "persists_secrets"
-        ],
-        "missing": [],
-        "not_applicable": [
-          "zone_owner_auto_login",
-          "non_owner_redirect_to_zone",
-          "media_ports_in_range",
-          "oauth_broker",
-          "cross_app_secrets",
-          "sqlite_provisioned",
-          "federated_guest_identity",
-          "exposes_cross_app_service"
-        ]
-      }
+      "openhost_integration_score": 5
     },
     {
       "name": "synapse",
@@ -263,27 +146,7 @@
       ],
       "website_url": "https://matrix.org",
       "docs_url": "https://github.com/imbue-openhost/openhost-synapse#readme",
-      "integration": {
-        "level": 2,
-        "summary": "Owner registers a local Matrix account on first use; federated identity is Matrix-native rather than OpenHost-native.",
-        "has": [
-          "respects_data_dirs",
-          "no_internal_tls",
-          "persists_secrets"
-        ],
-        "missing": [
-          "zone_owner_auto_login",
-          "non_owner_redirect_to_zone"
-        ],
-        "not_applicable": [
-          "media_ports_in_range",
-          "oauth_broker",
-          "cross_app_secrets",
-          "sqlite_provisioned",
-          "federated_guest_identity",
-          "exposes_cross_app_service"
-        ]
-      }
+      "openhost_integration_score": 2
     },
     {
       "name": "uptime-kuma",
@@ -303,74 +166,8 @@
       ],
       "website_url": "https://uptime.kuma.pet",
       "docs_url": "https://github.com/imbue-openhost/openhost-uptime-kuma#readme",
-      "integration": {
-        "level": 2,
-        "summary": "Owner steps through Uptime Kuma's first-run setup wizard to create a local account; no zone-auth auto-login yet.",
-        "has": [
-          "respects_data_dirs",
-          "no_internal_tls",
-          "persists_secrets"
-        ],
-        "missing": [
-          "zone_owner_auto_login",
-          "non_owner_redirect_to_zone"
-        ],
-        "not_applicable": [
-          "media_ports_in_range",
-          "oauth_broker",
-          "cross_app_secrets",
-          "sqlite_provisioned",
-          "federated_guest_identity",
-          "exposes_cross_app_service"
-        ]
-      }
+      "openhost_integration_score": 2
     }
   ],
-  "integrations": {
-    "respects_data_dirs": {
-      "title": "Data directories",
-      "description": "App writes all state to OPENHOST_APP_DATA_DIR and OPENHOST_APP_TEMP_DIR, not arbitrary container paths."
-    },
-    "no_internal_tls": {
-      "title": "No internal TLS",
-      "description": "App serves plain HTTP inside the container and lets OpenHost handle TLS."
-    },
-    "persists_secrets": {
-      "title": "Secrets persist across restarts",
-      "description": "Auto-generated secrets are stored in app data and re-used on restart, not regenerated each boot."
-    },
-    "zone_owner_auto_login": {
-      "title": "Zone-owner auto-login",
-      "description": "Owner's zone_auth cookie is verified at the app layer; they are not asked for a separate app-level password."
-    },
-    "non_owner_redirect_to_zone": {
-      "title": "Non-owner redirect to zone login",
-      "description": "Browsers without a valid zone_auth cookie are sent to the zone login page instead of the app's native login UI."
-    },
-    "media_ports_in_range": {
-      "title": "Media ports in OpenHost range",
-      "description": "Any media or peer ports the app needs are bound to the 9000-9999 range OpenHost publishes."
-    },
-    "oauth_broker": {
-      "title": "OAuth broker",
-      "description": "App fetches third-party OAuth tokens from /_services/secrets/oauth/token rather than asking the user to paste an API key."
-    },
-    "cross_app_secrets": {
-      "title": "Cross-app secrets",
-      "description": "Secrets shared with other apps on the zone are stored in and retrieved from the secrets service."
-    },
-    "sqlite_provisioned": {
-      "title": "SQLite provisioned by OpenHost",
-      "description": "App reads its database path from OPENHOST_SQLITE_* rather than managing its own sqlite file."
-    },
-    "federated_guest_identity": {
-      "title": "Federated guest identity",
-      "description": "Accepts signed identity tokens from other OpenHost zones so their owners can sign in as guests."
-    },
-    "exposes_cross_app_service": {
-      "title": "Exposes a cross-app service",
-      "description": "Registers itself via /_services/ so other apps on the same zone can consume it."
-    }
-  },
-  "generated_at": "2026-04-23T01:34:13Z"
+  "generated_at": "2026-04-23T01:53:47Z"
 }

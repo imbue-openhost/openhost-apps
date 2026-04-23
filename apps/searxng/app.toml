@@ -8,22 +8,4 @@ docs_url = "https://github.com/imbue-openhost/openhost-searxng#readme"
 tags = ["search", "privacy", "metasearch"]
 categories = ["search", "privacy"]
 
-[integration]
-level = 5
-summary = "Stateless public search; no native auth to shim."
-has = [
-    "respects_data_dirs",
-    "no_internal_tls",
-    "persists_secrets",
-]
-missing = []
-not_applicable = [
-    "zone_owner_auto_login",
-    "non_owner_redirect_to_zone",
-    "media_ports_in_range",
-    "oauth_broker",
-    "cross_app_secrets",
-    "sqlite_provisioned",
-    "federated_guest_identity",
-    "exposes_cross_app_service",
-]
+openhost_integration_score = 5
