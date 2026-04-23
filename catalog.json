@@ -188,7 +188,28 @@
       "website_url": "https://uptime.kuma.pet",
       "docs_url": "https://github.com/imbue-openhost/openhost-uptime-kuma#readme",
       "openhost_integration_score": 2
+    },
+    {
+      "name": "webtop",
+      "title": "Webtop",
+      "description": "Full XFCE Linux desktop in the browser. Everything under ~ (browser profiles, proot-apps installs, downloads, shell history) persists across app restarts; apt-installed system packages do not.",
+      "repo_url": "https://github.com/imbue-openhost/openhost-webtop",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "desktop",
+        "xfce",
+        "linux",
+        "browser"
+      ],
+      "categories": [
+        "productivity",
+        "tools"
+      ],
+      "website_url": "https://github.com/linuxserver/docker-webtop",
+      "docs_url": "https://github.com/imbue-openhost/openhost-webtop#readme",
+      "openhost_integration_score": 2
     }
   ],
-  "generated_at": "2026-04-23T02:36:17Z"
+  "generated_at": "2026-04-23T02:47:25Z"
 }
