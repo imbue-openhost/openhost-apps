@@ -43,7 +43,7 @@
       ],
       "website_url": "https://github.com/imbue-openhost/openhost-hidden-service",
       "docs_url": "https://github.com/imbue-openhost/openhost-hidden-service#readme",
-      "openhost_integration_score": 5
+      "openhost_integration_score": 3
     },
     {
       "name": "mirotalk-p2p",
@@ -64,7 +64,7 @@
       ],
       "website_url": "https://github.com/miroslavpejic85/mirotalk",
       "docs_url": "https://github.com/imbue-openhost/openhost-mirotalk-p2p#readme",
-      "openhost_integration_score": 5
+      "openhost_integration_score": 4
     },
     {
       "name": "navidrome",
@@ -85,6 +85,27 @@
       "website_url": "https://www.navidrome.org",
       "docs_url": "https://github.com/imbue-openhost/openhost-navidrome#readme",
       "openhost_integration_score": 2
+    },
+    {
+      "name": "onionshare",
+      "title": "OnionShare",
+      "description": "Anonymously share files, host a website, or run a chat room over Tor hidden services.",
+      "repo_url": "https://github.com/imbue-openhost/openhost-onionshare",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "tor",
+        "privacy",
+        "onion",
+        "file-sharing"
+      ],
+      "categories": [
+        "privacy",
+        "tools"
+      ],
+      "website_url": "https://onionshare.org",
+      "docs_url": "https://github.com/imbue-openhost/openhost-onionshare#readme",
+      "openhost_integration_score": 3
     },
     {
       "name": "openweb-ui",
@@ -125,7 +146,7 @@
       ],
       "website_url": "https://docs.searxng.org",
       "docs_url": "https://github.com/imbue-openhost/openhost-searxng#readme",
-      "openhost_integration_score": 5
+      "openhost_integration_score": 4
     },
     {
       "name": "synapse",
@@ -169,5 +190,5 @@
       "openhost_integration_score": 2
     }
   ],
-  "generated_at": "2026-04-23T01:53:47Z"
+  "generated_at": "2026-04-23T02:36:17Z"
 }
