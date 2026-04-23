@@ -1,9 +1,30 @@
 [app]
 name = "openweb-ui"
 title = "Open WebUI"
-description = "Feature-rich web interface for LLMs. Supports Ollama and OpenAI-compatible APIs."
+description = "Self-hosted ChatGPT-style interface for local and remote LLMs (Ollama, OpenAI, Anthropic, etc)."
 repo_url = "https://github.com/imbue-openhost/openhost-openweb-ui"
 website_url = "https://openwebui.com"
 docs_url = "https://github.com/imbue-openhost/openhost-openweb-ui#readme"
-tags = ["ai", "llm", "chat", "ollama"]
-categories = ["ai", "tools"]
+tags = ["llm", "ai", "chat", "ollama"]
+categories = ["ai", "productivity"]
+
+[integration]
+level = 2
+summary = "Owner creates a local Open WebUI account on first use; no zone-auth auto-login yet."
+has = [
+    "respects_data_dirs",
+    "no_internal_tls",
+    "persists_secrets",
+]
+missing = [
+    "zone_owner_auto_login",
+    "non_owner_redirect_to_zone",
+    "oauth_broker",
+]
+not_applicable = [
+    "media_ports_in_range",
+    "cross_app_secrets",
+    "sqlite_provisioned",
+    "federated_guest_identity",
+    "exposes_cross_app_service",
+]

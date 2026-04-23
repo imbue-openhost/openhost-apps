@@ -1,9 +1,29 @@
 [app]
 name = "mirotalk-p2p"
 title = "MiroTalk P2P"
-description = "Peer-to-peer video conferencing. Browsers connect directly to each other; the server only handles signaling, never media. OpenHost zone owner is auto-logged in as host."
+description = "Peer-to-peer video conferencing. Browsers connect directly; the server only handles signaling, never media. OpenHost zone owner is auto-logged in as host."
 repo_url = "https://github.com/imbue-openhost/openhost-mirotalk-p2p"
 website_url = "https://github.com/miroslavpejic85/mirotalk"
 docs_url = "https://github.com/imbue-openhost/openhost-mirotalk-p2p#readme"
 tags = ["video", "conferencing", "webrtc", "p2p", "meetings"]
 categories = ["communication"]
+
+[integration]
+level = 5
+summary = "Zone-owner auto-login via signed zone_auth cookie; guests reach the zone login when they hit a gated page."
+has = [
+    "respects_data_dirs",
+    "no_internal_tls",
+    "persists_secrets",
+    "zone_owner_auto_login",
+    "non_owner_redirect_to_zone",
+]
+missing = []
+not_applicable = [
+    "media_ports_in_range",
+    "oauth_broker",
+    "cross_app_secrets",
+    "sqlite_provisioned",
+    "federated_guest_identity",
+    "exposes_cross_app_service",
+]

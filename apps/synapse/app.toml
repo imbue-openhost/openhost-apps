@@ -7,3 +7,24 @@ website_url = "https://matrix.org"
 docs_url = "https://github.com/imbue-openhost/openhost-synapse#readme"
 tags = ["messaging", "matrix", "encryption", "federation"]
 categories = ["communication", "privacy"]
+
+[integration]
+level = 2
+summary = "Owner registers a local Matrix account on first use; federated identity is Matrix-native rather than OpenHost-native."
+has = [
+    "respects_data_dirs",
+    "no_internal_tls",
+    "persists_secrets",
+]
+missing = [
+    "zone_owner_auto_login",
+    "non_owner_redirect_to_zone",
+]
+not_applicable = [
+    "media_ports_in_range",
+    "oauth_broker",
+    "cross_app_secrets",
+    "sqlite_provisioned",
+    "federated_guest_identity",
+    "exposes_cross_app_service",
+]
