@@ -8,4 +8,4 @@ docs_url = "https://github.com/imbue-openhost/openhost-searxng#readme"
 tags = ["search", "privacy", "metasearch"]
 categories = ["search", "privacy"]
 
-openhost_integration_score = 5
+openhost_integration_score = 4
