@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """Generate catalog.json from app TOML files.
 
-Reads catalog.toml for metadata, integrations.toml for the
-integration vocabulary, and apps/*/app.toml for each app entry.
-Emits catalog.json in the openhost.catalog.v1 feed format.
+Reads catalog.toml for metadata and apps/*/app.toml for each app
+entry. Emits catalog.json in the openhost.catalog.v1 feed format.
 
 Usage:
     generate.py           # Write catalog.json
@@ -39,90 +38,22 @@ def load_toml(path: str) -> dict:
         return tomllib.load(f)
 
 
-def load_integrations(root: str) -> dict[str, dict]:
-    """Load the integration vocabulary from integrations.toml.
+def validate_score(app_toml_path: str, value) -> int:
+    """Validate an openhost_integration_score value.
 
-    Returns a dict keyed by integration id (e.g. 'zone_owner_auto_login')
-    with the full toml entry for each. generate.py uses this to:
-      * validate that every key referenced in an app.toml exists,
-      * emit human-readable title + description into catalog.json.
+    Apps may omit the field; an omitted score is emitted as 0 in
+    catalog.json, which downstream UIs render as "unrated". When
+    the field is present, it must be an int in 1-5.
     """
-    path = os.path.join(root, "integrations.toml")
-    if not os.path.isfile(path):
-        return {}
-    raw = load_toml(path)
-    # Filter out non-table top-level entries defensively.
-    return {k: v for k, v in raw.items() if isinstance(v, dict)}
-
-
-def validate_integration(app_toml_path: str, app: dict, vocab: dict[str, dict]) -> dict:
-    """Validate + normalise an app's [integration] table.
-
-    Exits non-zero with a clear message if anything is malformed.
-    Returns the normalised integration dict, ready to embed in
-    catalog.json. Apps without an [integration] table get a default
-    level-1 entry so the UI always has something to render.
-    """
-    integ = app.get("integration")
-    if integ is None:
-        # Default for unmigrated apps: level 1, every integration missing.
-        return {
-            "level": 1,
-            "summary": "",
-            "has": [],
-            "missing": list(vocab.keys()),
-            "not_applicable": [],
-        }
-
-    def fail(msg: str) -> None:
-        print(f"error: {app_toml_path}: {msg}", file=sys.stderr)
-        sys.exit(1)
-
-    level = integ.get("level")
-    if not isinstance(level, int) or level < 1 or level > 5:
-        fail("[integration].level must be an integer 1-5")
-
-    has = list(integ.get("has", []) or [])
-    missing = list(integ.get("missing", []) or [])
-    not_applicable = list(integ.get("not_applicable", []) or [])
-    summary = str(integ.get("summary", "") or "")
-
-    seen: dict[str, str] = {}
-    for bucket_name, bucket in (
-        ("has", has),
-        ("missing", missing),
-        ("not_applicable", not_applicable),
-    ):
-        for key in bucket:
-            if not isinstance(key, str):
-                fail(f"[integration].{bucket_name} entries must be strings; got {key!r}")
-            if key not in vocab:
-                fail(
-                    f"[integration].{bucket_name} references unknown key {key!r}. "
-                    "Add it to integrations.toml or remove it."
-                )
-            if key in seen:
-                fail(
-                    f"integration key {key!r} appears in both "
-                    f"{seen[key]} and {bucket_name}; each key may appear at "
-                    "most once across has/missing/not_applicable."
-                )
-            seen[key] = bucket_name
-
-    # Level 5 means "nothing to improve", so missing must be empty.
-    if level == 5 and missing:
-        fail(
-            "[integration].level = 5 but missing is non-empty. Either resolve "
-            f"the gaps ({', '.join(missing)}) or lower the level."
+    if value is None:
+        return 0
+    if not isinstance(value, int) or value < 1 or value > 5:
+        print(
+            f"error: {app_toml_path}: openhost_integration_score must be an integer 1-5, got {value!r}",
+            file=sys.stderr,
         )
-
-    return {
-        "level": level,
-        "summary": summary,
-        "has": has,
-        "missing": missing,
-        "not_applicable": not_applicable,
-    }
+        sys.exit(1)
+    return value
 
 
 def build_feed(root: str) -> dict:
@@ -132,8 +63,6 @@ def build_feed(root: str) -> dict:
 
     source_id = catalog.get("source_id", "official")
     source_name = catalog.get("name", "OpenHost Official")
-
-    vocab = load_integrations(root)
 
     apps_dir = os.path.join(root, "apps")
     apps: list[dict] = []
@@ -167,7 +96,7 @@ def build_feed(root: str) -> dict:
             )
             sys.exit(1)
 
-        integration = validate_integration(app_toml, data, vocab)
+        score = validate_score(app_toml, app.get("openhost_integration_score"))
 
         feed_app = {
             "name": name,
@@ -180,7 +109,7 @@ def build_feed(root: str) -> dict:
             "categories": app.get("categories", []),
             "website_url": app.get("website_url", ""),
             "docs_url": app.get("docs_url", ""),
-            "integration": integration,
+            "openhost_integration_score": score,
         }
 
         apps.append(feed_app)
@@ -201,24 +130,12 @@ def build_feed(root: str) -> dict:
             sys.exit(1)
         seen_names[name] = i
 
-    feed = {
+    return {
         "schema": "openhost.catalog.v1",
         "source_id": source_id,
         "source_name": source_name,
         "apps": apps,
     }
-    if vocab:
-        # Emit the vocabulary alongside the apps so the catalog UI
-        # can render titles + descriptions without having to pull a
-        # second file from the source.
-        feed["integrations"] = {
-            key: {
-                "title": entry.get("title", key),
-                "description": entry.get("description", ""),
-            }
-            for key, entry in vocab.items()
-        }
-    return feed
 
 
 def stable_copy(feed: dict) -> dict:
