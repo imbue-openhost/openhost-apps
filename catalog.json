@@ -46,6 +46,27 @@
       "openhost_integration_score": 3
     },
     {
+      "name": "jitsi",
+      "title": "Jitsi Meet",
+      "description": "Scalable video conferencing with an SFU (Jitsi Videobridge) \u2014 anyone with the URL can join a meeting.",
+      "repo_url": "https://github.com/imbue-openhost/openhost-jitsi",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "video",
+        "conferencing",
+        "webrtc",
+        "sfu",
+        "meetings"
+      ],
+      "categories": [
+        "communication"
+      ],
+      "website_url": "https://jitsi.org",
+      "docs_url": "https://github.com/imbue-openhost/openhost-jitsi#readme",
+      "openhost_integration_score": 2
+    },
+    {
       "name": "miniflux",
       "title": "Miniflux",
       "description": "Minimalist RSS/Atom reader with bundled PostgreSQL and OpenHost single sign-on.",
@@ -232,5 +253,5 @@
       "openhost_integration_score": 2
     }
   ],
-  "generated_at": "2026-04-24T08:10:25Z"
+  "generated_at": "2026-04-24T19:24:17Z"
 }

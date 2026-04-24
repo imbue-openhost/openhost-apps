@@ -1,0 +1,11 @@
+[app]
+name = "jitsi"
+title = "Jitsi Meet"
+description = "Scalable video conferencing with an SFU (Jitsi Videobridge) — anyone with the URL can join a meeting."
+repo_url = "https://github.com/imbue-openhost/openhost-jitsi"
+website_url = "https://jitsi.org"
+docs_url = "https://github.com/imbue-openhost/openhost-jitsi#readme"
+tags = ["video", "conferencing", "webrtc", "sfu", "meetings"]
+categories = ["communication"]
+
+openhost_integration_score = 2
