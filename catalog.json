@@ -46,6 +46,27 @@
       "openhost_integration_score": 3
     },
     {
+      "name": "miniflux",
+      "title": "Miniflux",
+      "description": "Minimalist RSS/Atom reader with bundled PostgreSQL and OpenHost single sign-on.",
+      "repo_url": "https://github.com/imbue-openhost/openhost-miniflux",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "rss",
+        "atom",
+        "feed-reader",
+        "news"
+      ],
+      "categories": [
+        "productivity",
+        "tools"
+      ],
+      "website_url": "https://miniflux.app",
+      "docs_url": "https://github.com/imbue-openhost/openhost-miniflux#readme",
+      "openhost_integration_score": 4
+    },
+    {
       "name": "mirotalk-p2p",
       "title": "MiroTalk P2P",
       "description": "Peer-to-peer video conferencing. Browsers connect directly; the server only handles signaling, never media. OpenHost zone owner is auto-logged in as host.",
@@ -211,5 +232,5 @@
       "openhost_integration_score": 2
     }
   ],
-  "generated_at": "2026-04-23T02:47:25Z"
+  "generated_at": "2026-04-24T08:10:25Z"
 }
