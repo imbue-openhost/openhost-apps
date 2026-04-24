@@ -22,7 +22,7 @@
       ],
       "website_url": "https://forgejo.org",
       "docs_url": "https://github.com/imbue-openhost/openhost-forgejo#readme",
-      "openhost_integration_score": 4
+      "openhost_integration_score": 3
     },
     {
       "name": "hidden-service",
@@ -253,5 +253,5 @@
       "openhost_integration_score": 2
     }
   ],
-  "generated_at": "2026-04-24T22:53:28Z"
+  "generated_at": "2026-04-24T22:54:22Z"
 }

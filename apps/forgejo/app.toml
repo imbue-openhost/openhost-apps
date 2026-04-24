@@ -8,4 +8,4 @@ docs_url = "https://github.com/imbue-openhost/openhost-forgejo#readme"
 tags = ["git", "code", "ci-cd", "forge"]
 categories = ["development", "git"]
 
-openhost_integration_score = 4
+openhost_integration_score = 3
