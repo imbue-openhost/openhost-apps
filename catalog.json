@@ -25,6 +25,27 @@
       "openhost_integration_score": 3
     },
     {
+      "name": "gemini",
+      "title": "Gemini",
+      "description": "Agate-based Gemini protocol server. Browse the capsule with any Gemini client over a self-signed TLS connection on port 1965.",
+      "repo_url": "https://github.com/imbue-openhost/openhost-gemini",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "gemini",
+        "smolnet",
+        "tls",
+        "capsule"
+      ],
+      "categories": [
+        "communication",
+        "publishing"
+      ],
+      "website_url": "https://geminiprotocol.net",
+      "docs_url": "https://github.com/imbue-openhost/openhost-gemini#readme",
+      "openhost_integration_score": 2
+    },
+    {
       "name": "hidden-service",
       "title": "Tor Hidden Service",
       "description": "Tor hidden service with a simple page editor CMS.",
@@ -253,5 +274,5 @@
       "openhost_integration_score": 2
     }
   ],
-  "generated_at": "2026-04-24T22:54:22Z"
+  "generated_at": "2026-04-24T23:27:22Z"
 }
