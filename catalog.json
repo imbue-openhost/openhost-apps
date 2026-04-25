@@ -67,6 +67,28 @@
       "openhost_integration_score": 3
     },
     {
+      "name": "immich",
+      "title": "Immich",
+      "description": "Self-hosted photo and video backup. Runs Immich plus Postgres, Valkey, the machine-learning service, and an in-container OIDC bridge so the OpenHost compute-space owner is signed in automatically.",
+      "repo_url": "https://github.com/imbue-openhost/openhost-immich",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "photos",
+        "videos",
+        "backup",
+        "gallery",
+        "ml"
+      ],
+      "categories": [
+        "media",
+        "backup"
+      ],
+      "website_url": "https://immich.app",
+      "docs_url": "https://github.com/imbue-openhost/openhost-immich#readme",
+      "openhost_integration_score": 3
+    },
+    {
       "name": "jitsi",
       "title": "Jitsi Meet",
       "description": "Scalable video conferencing with an SFU (Jitsi Videobridge) \u2014 anyone with the URL can join a meeting.",
@@ -274,5 +296,5 @@
       "openhost_integration_score": 2
     }
   ],
-  "generated_at": "2026-04-24T23:27:22Z"
+  "generated_at": "2026-04-25T05:36:03Z"
 }
