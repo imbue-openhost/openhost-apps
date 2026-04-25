@@ -9,3 +9,5 @@ tags = ["gemini", "smolnet", "tls", "capsule"]
 categories = ["communication", "publishing"]
 
 openhost_integration_score = 2
+ai_generated_packaging = true
+ai_generated_application = false

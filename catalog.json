@@ -22,7 +22,9 @@
       ],
       "website_url": "https://forgejo.org",
       "docs_url": "https://github.com/imbue-openhost/openhost-forgejo#readme",
-      "openhost_integration_score": 3
+      "openhost_integration_score": 3,
+      "ai_generated_packaging": true,
+      "ai_generated_application": false
     },
     {
       "name": "gemini",
@@ -43,7 +45,9 @@
       ],
       "website_url": "https://geminiprotocol.net",
       "docs_url": "https://github.com/imbue-openhost/openhost-gemini#readme",
-      "openhost_integration_score": 2
+      "openhost_integration_score": 2,
+      "ai_generated_packaging": true,
+      "ai_generated_application": false
     },
     {
       "name": "hidden-service",
@@ -64,7 +68,9 @@
       ],
       "website_url": "https://github.com/imbue-openhost/openhost-hidden-service",
       "docs_url": "https://github.com/imbue-openhost/openhost-hidden-service#readme",
-      "openhost_integration_score": 3
+      "openhost_integration_score": 3,
+      "ai_generated_packaging": true,
+      "ai_generated_application": false
     },
     {
       "name": "jitsi",
@@ -85,7 +91,9 @@
       ],
       "website_url": "https://jitsi.org",
       "docs_url": "https://github.com/imbue-openhost/openhost-jitsi#readme",
-      "openhost_integration_score": 3
+      "openhost_integration_score": 3,
+      "ai_generated_packaging": true,
+      "ai_generated_application": false
     },
     {
       "name": "miniflux",
@@ -106,7 +114,9 @@
       ],
       "website_url": "https://miniflux.app",
       "docs_url": "https://github.com/imbue-openhost/openhost-miniflux#readme",
-      "openhost_integration_score": 4
+      "openhost_integration_score": 4,
+      "ai_generated_packaging": true,
+      "ai_generated_application": false
     },
     {
       "name": "mirotalk-p2p",
@@ -127,7 +137,9 @@
       ],
       "website_url": "https://github.com/miroslavpejic85/mirotalk",
       "docs_url": "https://github.com/imbue-openhost/openhost-mirotalk-p2p#readme",
-      "openhost_integration_score": 4
+      "openhost_integration_score": 4,
+      "ai_generated_packaging": true,
+      "ai_generated_application": false
     },
     {
       "name": "navidrome",
@@ -147,7 +159,9 @@
       ],
       "website_url": "https://www.navidrome.org",
       "docs_url": "https://github.com/imbue-openhost/openhost-navidrome#readme",
-      "openhost_integration_score": 2
+      "openhost_integration_score": 2,
+      "ai_generated_packaging": true,
+      "ai_generated_application": false
     },
     {
       "name": "onionshare",
@@ -168,7 +182,9 @@
       ],
       "website_url": "https://onionshare.org",
       "docs_url": "https://github.com/imbue-openhost/openhost-onionshare#readme",
-      "openhost_integration_score": 3
+      "openhost_integration_score": 3,
+      "ai_generated_packaging": true,
+      "ai_generated_application": false
     },
     {
       "name": "openweb-ui",
@@ -189,7 +205,9 @@
       ],
       "website_url": "https://openwebui.com",
       "docs_url": "https://github.com/imbue-openhost/openhost-openweb-ui#readme",
-      "openhost_integration_score": 2
+      "openhost_integration_score": 2,
+      "ai_generated_packaging": true,
+      "ai_generated_application": false
     },
     {
       "name": "searxng",
@@ -209,7 +227,9 @@
       ],
       "website_url": "https://docs.searxng.org",
       "docs_url": "https://github.com/imbue-openhost/openhost-searxng#readme",
-      "openhost_integration_score": 4
+      "openhost_integration_score": 4,
+      "ai_generated_packaging": true,
+      "ai_generated_application": false
     },
     {
       "name": "synapse",
@@ -230,7 +250,9 @@
       ],
       "website_url": "https://matrix.org",
       "docs_url": "https://github.com/imbue-openhost/openhost-synapse#readme",
-      "openhost_integration_score": 2
+      "openhost_integration_score": 2,
+      "ai_generated_packaging": true,
+      "ai_generated_application": false
     },
     {
       "name": "uptime-kuma",
@@ -250,7 +272,9 @@
       ],
       "website_url": "https://uptime.kuma.pet",
       "docs_url": "https://github.com/imbue-openhost/openhost-uptime-kuma#readme",
-      "openhost_integration_score": 2
+      "openhost_integration_score": 2,
+      "ai_generated_packaging": true,
+      "ai_generated_application": false
     },
     {
       "name": "webtop",
@@ -271,8 +295,10 @@
       ],
       "website_url": "https://github.com/linuxserver/docker-webtop",
       "docs_url": "https://github.com/imbue-openhost/openhost-webtop#readme",
-      "openhost_integration_score": 2
+      "openhost_integration_score": 2,
+      "ai_generated_packaging": true,
+      "ai_generated_application": false
     }
   ],
-  "generated_at": "2026-04-24T23:27:22Z"
+  "generated_at": "2026-04-25T20:53:43Z"
 }

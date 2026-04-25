@@ -9,3 +9,5 @@ tags = ["tor", "privacy", "onion", "cms"]
 categories = ["privacy", "tools"]
 
 openhost_integration_score = 3
+ai_generated_packaging = true
+ai_generated_application = false

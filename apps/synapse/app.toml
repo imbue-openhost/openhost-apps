@@ -9,3 +9,5 @@ tags = ["messaging", "matrix", "encryption", "federation"]
 categories = ["communication", "privacy"]
 
 openhost_integration_score = 2
+ai_generated_packaging = true
+ai_generated_application = false

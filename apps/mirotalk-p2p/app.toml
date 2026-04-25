@@ -9,3 +9,5 @@ tags = ["video", "conferencing", "webrtc", "p2p", "meetings"]
 categories = ["communication"]
 
 openhost_integration_score = 4
+ai_generated_packaging = true
+ai_generated_application = false

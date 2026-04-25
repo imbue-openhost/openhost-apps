@@ -9,3 +9,5 @@ tags = ["search", "privacy", "metasearch"]
 categories = ["search", "privacy"]
 
 openhost_integration_score = 4
+ai_generated_packaging = true
+ai_generated_application = false

@@ -9,3 +9,5 @@ tags = ["rss", "atom", "feed-reader", "news"]
 categories = ["productivity", "tools"]
 
 openhost_integration_score = 4
+ai_generated_packaging = true
+ai_generated_application = false
