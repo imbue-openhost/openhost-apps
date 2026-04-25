@@ -86,7 +86,7 @@
       ],
       "website_url": "https://immich.app",
       "docs_url": "https://github.com/imbue-openhost/openhost-immich#readme",
-      "openhost_integration_score": 3
+      "openhost_integration_score": 2
     },
     {
       "name": "jitsi",
@@ -296,5 +296,5 @@
       "openhost_integration_score": 2
     }
   ],
-  "generated_at": "2026-04-25T05:36:03Z"
+  "generated_at": "2026-04-25T05:38:56Z"
 }
