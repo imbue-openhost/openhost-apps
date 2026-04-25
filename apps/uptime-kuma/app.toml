@@ -9,3 +9,4 @@ tags = ["monitoring", "uptime", "status"]
 categories = ["monitoring", "tools"]
 
 openhost_integration_score = 2
+ai_generated = true

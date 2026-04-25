@@ -9,3 +9,4 @@ tags = ["video", "conferencing", "webrtc", "sfu", "meetings"]
 categories = ["communication"]
 
 openhost_integration_score = 3
+ai_generated = true

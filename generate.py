@@ -56,6 +56,28 @@ def validate_score(app_toml_path: str, value) -> int:
     return value
 
 
+def validate_ai_generated(app_toml_path: str, value) -> bool:
+    """Validate an `ai_generated` flag.
+
+    Self-reported boolean indicating that the *packaging* of the
+    app (Dockerfile, manifests, glue scripts in the repo this entry
+    points at) was primarily produced with AI assistance. The flag
+    does NOT describe the upstream application's contents -- only
+    the packaging in the linked repo.
+
+    Apps may omit the field; treated as false.
+    """
+    if value is None:
+        return False
+    if not isinstance(value, bool):
+        print(
+            f"error: {app_toml_path}: ai_generated must be a boolean, got {value!r}",
+            file=sys.stderr,
+        )
+        sys.exit(1)
+    return value
+
+
 def build_feed(root: str) -> dict:
     """Build the feed dict (excluding generated_at) from the source TOML files."""
     catalog_path = os.path.join(root, "catalog.toml")
@@ -97,6 +119,7 @@ def build_feed(root: str) -> dict:
             sys.exit(1)
 
         score = validate_score(app_toml, app.get("openhost_integration_score"))
+        ai_generated = validate_ai_generated(app_toml, app.get("ai_generated"))
 
         feed_app = {
             "name": name,
@@ -110,6 +133,7 @@ def build_feed(root: str) -> dict:
             "website_url": app.get("website_url", ""),
             "docs_url": app.get("docs_url", ""),
             "openhost_integration_score": score,
+            "ai_generated": ai_generated,
         }
 
         apps.append(feed_app)
