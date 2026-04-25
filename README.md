@@ -30,15 +30,23 @@ The feed follows the `openhost.catalog.v1` schema. Each app entry has:
 | `website_url`                | no  | Upstream project homepage |
 | `docs_url`                   | no  | Documentation link |
 | `openhost_integration_score` | no  | Integer 1-5 reflecting integration polish; omit if unrated. |
-| `ai_generated`               | no  | Boolean, default `false`. Self-reported flag indicating that the **packaging** of the app (Dockerfile, manifests, glue scripts in the linked repo) was primarily authored with AI assistance. Does **not** describe the upstream application's contents. See "AI-generated packaging" below. |
+| `ai_generated_packaging`     | no  | Boolean, default `false`. Self-reported: the **packaging code** in the linked repo (Dockerfile, manifests, glue scripts) was primarily authored with AI assistance. Says nothing about the upstream application. See "AI-generated provenance" below. |
+| `ai_generated_application`   | no  | Boolean, default `false`. Self-reported: the **upstream application's own source code** was primarily authored with AI assistance. Says nothing about the packaging. See "AI-generated provenance" below. |
 
-### AI-generated packaging
+### AI-generated provenance
 
-When set to `true`, `ai_generated` tells catalog consumers (and ultimately the user installing the app) that the *packaging* code in `repo_url` was primarily produced with AI assistance, with limited or no human review of the resulting Dockerfile / manifest / scripts. This is a separate axis from `openhost_integration_score`, which is about quality and polish.
+The catalog tracks AI-generated provenance on two independent axes, because the two things are routinely true of different parts of the same app:
 
-The flag is self-reported by the maintainer of the entry. Use it candidly: the goal is honest disclosure to the catalog user, not a precise audit. Set it to `true` if you would not be willing to claim "I read and understood every line of this packaging." Set it to `false` if the packaging is essentially a human-authored translation of upstream guidance, regardless of whether AI was used as an editor.
+- **`ai_generated_packaging`** — the Dockerfile, manifests, and glue code that live in `repo_url` (the entry that ends up in the catalog). This is what *you*, the catalog entry maintainer, are typically responsible for.
+- **`ai_generated_application`** — the upstream application's own source code (the thing the packaging packages).
 
-The flag describes only the packaging in the linked repo, not the upstream app. Immich packaged with AI assistance is `ai_generated = true`; the Immich source code itself is unrelated.
+A human-authored Dockerfile around an AI-written application is `ai_generated_packaging = false, ai_generated_application = true`. AI-generated packaging around a human-written upstream is `ai_generated_packaging = true, ai_generated_application = false`. Either or both can be true.
+
+Both flags are independent of `openhost_integration_score`, which is about polish, not provenance.
+
+Both flags are self-reported. Use them candidly: the goal is honest disclosure, not a precise audit. Set a flag to `true` if you would not be willing to claim "I read and understood every line of this code"; set it to `false` if the code is essentially a human-authored artifact, regardless of whether AI was used as an editor. When in doubt, lean toward `true` — under-disclosure is the worse failure mode.
+
+The legacy single `ai_generated` field is no longer accepted; `generate.py` will fail if it is present in any `app.toml`.
 
 The `name` field is the app's identifier in the catalog: it is used in catalog URLs, pre-filled as the default deployed app name when installing, and must be unique within a source.
 

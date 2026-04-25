@@ -9,4 +9,5 @@ tags = ["tor", "privacy", "onion", "file-sharing"]
 categories = ["privacy", "tools"]
 
 openhost_integration_score = 3
-ai_generated = true
+ai_generated_packaging = true
+ai_generated_application = false

@@ -56,22 +56,17 @@ def validate_score(app_toml_path: str, value) -> int:
     return value
 
 
-def validate_ai_generated(app_toml_path: str, value) -> bool:
-    """Validate an `ai_generated` flag.
+def validate_ai_generated_flag(app_toml_path: str, field_name: str, value) -> bool:
+    """Validate one of the AI-generated provenance flags.
 
-    Self-reported boolean indicating that the *packaging* of the
-    app (Dockerfile, manifests, glue scripts in the repo this entry
-    points at) was primarily produced with AI assistance. The flag
-    does NOT describe the upstream application's contents -- only
-    the packaging in the linked repo.
-
-    Apps may omit the field; treated as false.
+    Apps may omit the field; treated as false. When present it must
+    be a literal boolean (not 0/1 or a string).
     """
     if value is None:
         return False
     if not isinstance(value, bool):
         print(
-            f"error: {app_toml_path}: ai_generated must be a boolean, got {value!r}",
+            f"error: {app_toml_path}: {field_name} must be a boolean, got {value!r}",
             file=sys.stderr,
         )
         sys.exit(1)
@@ -119,7 +114,30 @@ def build_feed(root: str) -> dict:
             sys.exit(1)
 
         score = validate_score(app_toml, app.get("openhost_integration_score"))
-        ai_generated = validate_ai_generated(app_toml, app.get("ai_generated"))
+        # Two independent self-reported provenance flags. The packaging
+        # flag describes the Dockerfile / manifests / glue code in the
+        # linked repo; the application flag describes the upstream
+        # application's own source code. They are intentionally
+        # separate because an AI may have written one but not the
+        # other (e.g. AI-packaged a human-written app).
+        ai_generated_packaging = validate_ai_generated_flag(
+            app_toml, "ai_generated_packaging", app.get("ai_generated_packaging")
+        )
+        ai_generated_application = validate_ai_generated_flag(
+            app_toml, "ai_generated_application", app.get("ai_generated_application")
+        )
+
+        # Reject the legacy single `ai_generated` field outright so
+        # nobody silently keeps the old semantics. Authors must opt
+        # into the new split explicitly.
+        if "ai_generated" in app:
+            print(
+                f"error: {app_toml}: legacy `ai_generated` field is no longer "
+                "supported; use `ai_generated_packaging` and "
+                "`ai_generated_application` instead",
+                file=sys.stderr,
+            )
+            sys.exit(1)
 
         feed_app = {
             "name": name,
@@ -133,7 +151,8 @@ def build_feed(root: str) -> dict:
             "website_url": app.get("website_url", ""),
             "docs_url": app.get("docs_url", ""),
             "openhost_integration_score": score,
-            "ai_generated": ai_generated,
+            "ai_generated_packaging": ai_generated_packaging,
+            "ai_generated_application": ai_generated_application,
         }
 
         apps.append(feed_app)
