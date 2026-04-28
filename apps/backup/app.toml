@@ -1,0 +1,11 @@
+[app]
+name = "backup"
+title = "Backup"
+description = "Scheduled, deduplicated, encrypted backups of every app's data via restic. Supports local disks plus S3, B2, Azure, GCS, Swift, SFTP, REST and rclone targets."
+repo_url = "https://github.com/imbue-openhost/openhost-backup"
+website_url = "https://restic.net"
+docs_url = "https://github.com/imbue-openhost/openhost-backup#readme"
+tags = ["backup", "restic", "s3", "encryption", "snapshots"]
+categories = ["tools", "storage"]
+
+openhost_integration_score = 4
