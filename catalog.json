@@ -23,7 +23,7 @@
       ],
       "website_url": "https://restic.net",
       "docs_url": "https://github.com/imbue-openhost/openhost-backup#readme",
-      "openhost_integration_score": 4
+      "openhost_integration_score": 3
     },
     {
       "name": "forgejo",
@@ -296,5 +296,5 @@
       "openhost_integration_score": 2
     }
   ],
-  "generated_at": "2026-04-28T22:04:54Z"
+  "generated_at": "2026-04-28T22:06:58Z"
 }
