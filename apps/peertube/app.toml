@@ -1,0 +1,11 @@
+[app]
+name = "peertube"
+title = "PeerTube"
+description = "Federated video platform with anonymous watch + ActivityPub federation. Bundles Postgres, Redis, ffmpeg, and zone-owner SSO."
+repo_url = "https://github.com/imbue-openhost/openhost-peertube"
+website_url = "https://joinpeertube.org"
+docs_url = "https://github.com/imbue-openhost/openhost-peertube#readme"
+tags = ["video", "fediverse", "activitypub", "streaming", "youtube"]
+categories = ["media", "communication"]
+
+openhost_integration_score = 3

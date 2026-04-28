@@ -192,6 +192,28 @@
       "openhost_integration_score": 2
     },
     {
+      "name": "peertube",
+      "title": "PeerTube",
+      "description": "Federated video platform with anonymous watch + ActivityPub federation. Bundles Postgres, Redis, ffmpeg, and zone-owner SSO.",
+      "repo_url": "https://github.com/imbue-openhost/openhost-peertube",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "video",
+        "fediverse",
+        "activitypub",
+        "streaming",
+        "youtube"
+      ],
+      "categories": [
+        "media",
+        "communication"
+      ],
+      "website_url": "https://joinpeertube.org",
+      "docs_url": "https://github.com/imbue-openhost/openhost-peertube#readme",
+      "openhost_integration_score": 3
+    },
+    {
       "name": "searxng",
       "title": "SearXNG",
       "description": "Privacy-respecting metasearch engine that aggregates results from 70+ search services.",
@@ -274,5 +296,5 @@
       "openhost_integration_score": 2
     }
   ],
-  "generated_at": "2026-04-24T23:27:22Z"
+  "generated_at": "2026-04-28T18:32:22Z"
 }
