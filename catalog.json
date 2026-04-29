@@ -4,6 +4,28 @@
   "source_name": "OpenHost Official",
   "apps": [
     {
+      "name": "collabora",
+      "title": "Collabora",
+      "description": "Online office suite (Writer, Calc, Impress) with a built-in file manager \u2014 upload, edit, and save documents from your browser. Powered by Collabora Online.",
+      "repo_url": "https://github.com/imbue-openhost/openhost-collabora",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "office",
+        "documents",
+        "collaboration",
+        "libreoffice",
+        "wopi"
+      ],
+      "categories": [
+        "productivity",
+        "tools"
+      ],
+      "website_url": "https://www.collaboraonline.com",
+      "docs_url": "https://github.com/imbue-openhost/openhost-collabora#readme",
+      "openhost_integration_score": 3
+    },
+    {
       "name": "forgejo",
       "title": "Forgejo",
       "description": "Self-hosted Git forge with issues, pull requests, CI/CD, and package registry. OpenHost zone owner is auto-logged in as admin; invited users get Forgejo-local password accounts.",
@@ -274,5 +296,5 @@
       "openhost_integration_score": 2
     }
   ],
-  "generated_at": "2026-04-24T23:27:22Z"
+  "generated_at": "2026-04-29T02:59:07Z"
 }
