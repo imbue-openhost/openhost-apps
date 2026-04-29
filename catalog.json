@@ -6,7 +6,7 @@
     {
       "name": "collabora",
       "title": "Collabora",
-      "description": "Collabora Online office suite (Writer, Calc, Impress) with a built-in file manager. Upload, edit, and save documents in your browser.",
+      "description": "Online office suite (Writer, Calc, Impress) with a built-in file manager \u2014 upload, edit, and save documents from your browser. Powered by Collabora Online.",
       "repo_url": "https://github.com/imbue-openhost/openhost-collabora",
       "repo_ref": "",
       "icon_url": "",
@@ -296,5 +296,5 @@
       "openhost_integration_score": 2
     }
   ],
-  "generated_at": "2026-04-29T02:57:06Z"
+  "generated_at": "2026-04-29T02:59:07Z"
 }

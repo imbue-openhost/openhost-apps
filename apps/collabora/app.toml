@@ -1,7 +1,7 @@
 [app]
 name = "collabora"
 title = "Collabora"
-description = "Collabora Online office suite (Writer, Calc, Impress) with a built-in file manager. Upload, edit, and save documents in your browser."
+description = "Online office suite (Writer, Calc, Impress) with a built-in file manager — upload, edit, and save documents from your browser. Powered by Collabora Online."
 repo_url = "https://github.com/imbue-openhost/openhost-collabora"
 website_url = "https://www.collaboraonline.com"
 docs_url = "https://github.com/imbue-openhost/openhost-collabora#readme"
