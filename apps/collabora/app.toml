@@ -1,0 +1,11 @@
+[app]
+name = "collabora"
+title = "Collabora"
+description = "Collabora Online office suite (Writer, Calc, Impress) with a built-in file manager. Upload, edit, and save documents in your browser."
+repo_url = "https://github.com/imbue-openhost/openhost-collabora"
+website_url = "https://www.collaboraonline.com"
+docs_url = "https://github.com/imbue-openhost/openhost-collabora#readme"
+tags = ["office", "documents", "collaboration", "libreoffice", "wopi"]
+categories = ["productivity", "tools"]
+
+openhost_integration_score = 3
