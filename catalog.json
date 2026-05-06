@@ -212,6 +212,28 @@
       "openhost_integration_score": 4
     },
     {
+      "name": "sftp",
+      "title": "SFTP",
+      "description": "SFTP server with an SSO-gated web UI for managing authorized SSH public keys.  Use it as a destination for rsync/sftp/rclone backup workflows.",
+      "repo_url": "https://github.com/imbue-openhost/openhost-sftp",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "sftp",
+        "ssh",
+        "rsync",
+        "backup",
+        "files"
+      ],
+      "categories": [
+        "files",
+        "backup"
+      ],
+      "website_url": "https://www.openssh.com/",
+      "docs_url": "https://github.com/imbue-openhost/openhost-sftp#readme",
+      "openhost_integration_score": 2
+    },
+    {
       "name": "synapse",
       "title": "Matrix Synapse",
       "description": "Reference homeserver for the Matrix decentralized communication protocol. End-to-end encrypted messaging.",
@@ -274,5 +296,5 @@
       "openhost_integration_score": 2
     }
   ],
-  "generated_at": "2026-04-24T23:27:22Z"
+  "generated_at": "2026-05-06T23:23:05Z"
 }
