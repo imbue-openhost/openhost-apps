@@ -1,0 +1,11 @@
+[app]
+name = "sftp"
+title = "SFTP"
+description = "SFTP server with an SSO-gated web UI for managing authorized SSH public keys.  Use it as a destination for rsync/sftp/rclone backup workflows."
+repo_url = "https://github.com/imbue-openhost/openhost-sftp"
+website_url = "https://www.openssh.com/"
+docs_url = "https://github.com/imbue-openhost/openhost-sftp#readme"
+tags = ["sftp", "ssh", "rsync", "backup", "files"]
+categories = ["files", "backup"]
+
+openhost_integration_score = 2
