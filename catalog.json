@@ -109,6 +109,28 @@
       "openhost_integration_score": 4
     },
     {
+      "name": "minio",
+      "title": "MinIO",
+      "description": "S3-compatible object storage with auto-login from OpenHost SSO and an access-key-gated S3 API endpoint for any S3 client (rclone, aws-cli, mc).",
+      "repo_url": "https://github.com/imbue-openhost/openhost-minio",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "storage",
+        "s3",
+        "object-storage",
+        "backup",
+        "blob"
+      ],
+      "categories": [
+        "files",
+        "backup"
+      ],
+      "website_url": "https://min.io",
+      "docs_url": "https://github.com/imbue-openhost/openhost-minio#readme",
+      "openhost_integration_score": 3
+    },
+    {
       "name": "mirotalk-p2p",
       "title": "MiroTalk P2P",
       "description": "Peer-to-peer video conferencing. Browsers connect directly; the server only handles signaling, never media. OpenHost zone owner is auto-logged in as host.",
@@ -274,5 +296,5 @@
       "openhost_integration_score": 2
     }
   ],
-  "generated_at": "2026-04-24T23:27:22Z"
+  "generated_at": "2026-05-06T20:37:10Z"
 }
