@@ -8,4 +8,4 @@ docs_url = "https://github.com/imbue-openhost/openhost-syncthing#readme"
 tags = ["sync", "backup", "p2p", "files", "replication"]
 categories = ["files", "backup"]
 
-openhost_integration_score = 4
+openhost_integration_score = 2

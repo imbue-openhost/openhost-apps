@@ -252,7 +252,7 @@
       ],
       "website_url": "https://syncthing.net",
       "docs_url": "https://github.com/imbue-openhost/openhost-syncthing#readme",
-      "openhost_integration_score": 4
+      "openhost_integration_score": 2
     },
     {
       "name": "uptime-kuma",
@@ -296,5 +296,5 @@
       "openhost_integration_score": 2
     }
   ],
-  "generated_at": "2026-05-06T17:49:10Z"
+  "generated_at": "2026-05-06T18:12:08Z"
 }
