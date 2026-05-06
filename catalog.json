@@ -233,6 +233,28 @@
       "openhost_integration_score": 2
     },
     {
+      "name": "syncthing",
+      "title": "Syncthing",
+      "description": "Continuous peer-to-peer file synchronization between paired devices, with OpenHost SSO on the web UI and built-in folder versioning for backups.",
+      "repo_url": "https://github.com/imbue-openhost/openhost-syncthing",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "sync",
+        "backup",
+        "p2p",
+        "files",
+        "replication"
+      ],
+      "categories": [
+        "files",
+        "backup"
+      ],
+      "website_url": "https://syncthing.net",
+      "docs_url": "https://github.com/imbue-openhost/openhost-syncthing#readme",
+      "openhost_integration_score": 2
+    },
+    {
       "name": "uptime-kuma",
       "title": "Uptime Kuma",
       "description": "Self-hosted uptime monitoring with HTTP, TCP, DNS, and ping checks plus status pages.",
@@ -274,5 +296,5 @@
       "openhost_integration_score": 2
     }
   ],
-  "generated_at": "2026-04-24T23:27:22Z"
+  "generated_at": "2026-05-06T18:12:08Z"
 }

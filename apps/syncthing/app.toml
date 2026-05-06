@@ -1,0 +1,11 @@
+[app]
+name = "syncthing"
+title = "Syncthing"
+description = "Continuous peer-to-peer file synchronization between paired devices, with OpenHost SSO on the web UI and built-in folder versioning for backups."
+repo_url = "https://github.com/imbue-openhost/openhost-syncthing"
+website_url = "https://syncthing.net"
+docs_url = "https://github.com/imbue-openhost/openhost-syncthing#readme"
+tags = ["sync", "backup", "p2p", "files", "replication"]
+categories = ["files", "backup"]
+
+openhost_integration_score = 2
