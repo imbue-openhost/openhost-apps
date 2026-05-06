@@ -1,0 +1,11 @@
+[app]
+name = "minio"
+title = "MinIO"
+description = "S3-compatible object storage with auto-login from OpenHost SSO and an access-key-gated S3 API endpoint for any S3 client (rclone, aws-cli, mc)."
+repo_url = "https://github.com/imbue-openhost/openhost-minio"
+website_url = "https://min.io"
+docs_url = "https://github.com/imbue-openhost/openhost-minio#readme"
+tags = ["storage", "s3", "object-storage", "backup", "blob"]
+categories = ["files", "backup"]
+
+openhost_integration_score = 3
