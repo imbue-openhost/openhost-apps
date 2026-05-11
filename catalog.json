@@ -272,7 +272,28 @@
       "website_url": "https://github.com/linuxserver/docker-webtop",
       "docs_url": "https://github.com/imbue-openhost/openhost-webtop#readme",
       "openhost_integration_score": 2
+    },
+    {
+      "name": "wg-easy",
+      "title": "wg-easy",
+      "description": "WireGuard VPN server with a web UI. Connect any device (Linux, macOS, iOS, Android, Windows) back to your zone over the public internet.",
+      "repo_url": "https://github.com/imbue-openhost/openhost-wg-easy",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "vpn",
+        "wireguard",
+        "networking",
+        "privacy"
+      ],
+      "categories": [
+        "networking",
+        "privacy"
+      ],
+      "website_url": "https://github.com/wg-easy/wg-easy",
+      "docs_url": "https://github.com/imbue-openhost/openhost-wg-easy#readme",
+      "openhost_integration_score": 3
     }
   ],
-  "generated_at": "2026-04-24T23:27:22Z"
+  "generated_at": "2026-05-11T23:08:36Z"
 }
