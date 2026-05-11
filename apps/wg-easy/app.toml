@@ -1,0 +1,11 @@
+[app]
+name = "wg-easy"
+title = "wg-easy"
+description = "WireGuard VPN server with a web UI. Connect any device (Linux, macOS, iOS, Android, Windows) back to your zone over the public internet."
+repo_url = "https://github.com/imbue-openhost/openhost-wg-easy"
+website_url = "https://github.com/wg-easy/wg-easy"
+docs_url = "https://github.com/imbue-openhost/openhost-wg-easy#readme"
+tags = ["vpn", "wireguard", "networking", "privacy"]
+categories = ["networking", "privacy"]
+
+openhost_integration_score = 3
