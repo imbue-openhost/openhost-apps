@@ -171,6 +171,24 @@
       "openhost_integration_score": 3
     },
     {
+      "name": "openclaw",
+      "title": "OpenClaw",
+      "description": "OpenClaw AI assistant.",
+      "repo_url": "https://github.com/imbue-openhost/openhost-openclaw",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "ai",
+        "assistant"
+      ],
+      "categories": [
+        "ai"
+      ],
+      "website_url": "https://openclaw.ai/",
+      "docs_url": "https://github.com/imbue-openhost/openhost-openclaw#readme",
+      "openhost_integration_score": 3
+    },
+    {
       "name": "openweb-ui",
       "title": "Open WebUI",
       "description": "Self-hosted ChatGPT-style interface for local and remote LLMs (Ollama, OpenAI, Anthropic, etc).",
@@ -316,5 +334,5 @@
       "openhost_integration_score": 3
     }
   ],
-  "generated_at": "2026-05-12T17:38:14Z"
+  "generated_at": "2026-05-12T18:50:27Z"
 }
