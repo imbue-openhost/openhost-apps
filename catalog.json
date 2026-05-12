@@ -192,6 +192,27 @@
       "openhost_integration_score": 2
     },
     {
+      "name": "redlib",
+      "title": "Redlib",
+      "description": "Private front-end for Reddit. Browse posts and comments without JavaScript, ads, tracking, or a Reddit account; all requests are proxied through the server.",
+      "repo_url": "https://github.com/imbue-openhost/openhost-redlib",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "reddit",
+        "privacy",
+        "frontend",
+        "proxy"
+      ],
+      "categories": [
+        "privacy",
+        "social"
+      ],
+      "website_url": "https://github.com/redlib-org/redlib",
+      "docs_url": "https://github.com/imbue-openhost/openhost-redlib#readme",
+      "openhost_integration_score": 2
+    },
+    {
       "name": "searxng",
       "title": "SearXNG",
       "description": "Privacy-respecting metasearch engine that aggregates results from 70+ search services.",
@@ -295,5 +316,5 @@
       "openhost_integration_score": 3
     }
   ],
-  "generated_at": "2026-05-11T23:08:36Z"
+  "generated_at": "2026-05-12T17:38:14Z"
 }
