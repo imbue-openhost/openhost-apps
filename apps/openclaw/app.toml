@@ -1,0 +1,11 @@
+[app]
+name = "openclaw"
+title = "OpenClaw"
+description = "OpenClaw AI assistant."
+repo_url = "https://github.com/imbue-openhost/openhost-openclaw"
+website_url = "https://openclaw.ai/"
+docs_url = "https://github.com/imbue-openhost/openhost-openclaw#readme"
+tags = ["ai", "assistant"]
+categories = ["ai"]
+
+openhost_integration_score = 3
