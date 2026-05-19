@@ -228,7 +228,7 @@
       ],
       "website_url": "https://pi-hole.net",
       "docs_url": "https://github.com/imbue-openhost/openhost-pihole#readme",
-      "openhost_integration_score": 3
+      "openhost_integration_score": 2
     },
     {
       "name": "redlib",
@@ -355,5 +355,5 @@
       "openhost_integration_score": 3
     }
   ],
-  "generated_at": "2026-05-19T13:23:06Z"
+  "generated_at": "2026-05-19T13:25:02Z"
 }

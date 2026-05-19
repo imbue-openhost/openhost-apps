@@ -8,4 +8,4 @@ docs_url = "https://github.com/imbue-openhost/openhost-pihole#readme"
 tags = ["dns", "ad-blocker", "privacy", "network"]
 categories = ["networking", "privacy"]
 
-openhost_integration_score = 3
+openhost_integration_score = 2
