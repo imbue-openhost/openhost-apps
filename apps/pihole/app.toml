@@ -1,0 +1,11 @@
+[app]
+name = "pihole"
+title = "Pi-hole"
+description = "Network-wide DNS ad blocker. Blocks ads and trackers at the DNS level for all devices on your network. OpenHost zone owner is auto-logged in to the admin dashboard."
+repo_url = "https://github.com/imbue-openhost/openhost-pihole"
+website_url = "https://pi-hole.net"
+docs_url = "https://github.com/imbue-openhost/openhost-pihole#readme"
+tags = ["dns", "ad-blocker", "privacy", "network"]
+categories = ["networking", "privacy"]
+
+openhost_integration_score = 3

@@ -210,6 +210,27 @@
       "openhost_integration_score": 2
     },
     {
+      "name": "pihole",
+      "title": "Pi-hole",
+      "description": "Network-wide DNS ad blocker. Blocks ads and trackers at the DNS level for all devices on your network. OpenHost zone owner is auto-logged in to the admin dashboard.",
+      "repo_url": "https://github.com/imbue-openhost/openhost-pihole",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "dns",
+        "ad-blocker",
+        "privacy",
+        "network"
+      ],
+      "categories": [
+        "networking",
+        "privacy"
+      ],
+      "website_url": "https://pi-hole.net",
+      "docs_url": "https://github.com/imbue-openhost/openhost-pihole#readme",
+      "openhost_integration_score": 3
+    },
+    {
       "name": "redlib",
       "title": "Redlib",
       "description": "Private front-end for Reddit. Browse posts and comments without JavaScript, ads, tracking, or a Reddit account; all requests are proxied through the server.",
@@ -334,5 +355,5 @@
       "openhost_integration_score": 3
     }
   ],
-  "generated_at": "2026-05-18T19:07:45Z"
+  "generated_at": "2026-05-19T13:23:06Z"
 }
