@@ -46,6 +46,27 @@
       "openhost_integration_score": 2
     },
     {
+      "name": "graphhopper",
+      "title": "GraphHopper",
+      "description": "Self-hosted routing engine with car, bike, and foot navigation. Includes a map UI with turn-by-turn directions and geocoding.",
+      "repo_url": "https://github.com/imbue-openhost/openhost-graphhopper",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "maps",
+        "routing",
+        "navigation",
+        "osm",
+        "directions"
+      ],
+      "categories": [
+        "utilities"
+      ],
+      "website_url": "https://www.graphhopper.com",
+      "docs_url": "https://github.com/imbue-openhost/openhost-graphhopper#readme",
+      "openhost_integration_score": 2
+    },
+    {
       "name": "hidden-service",
       "title": "Tor Hidden Service",
       "description": "Tor hidden service with a simple page editor CMS.",
@@ -355,5 +376,5 @@
       "openhost_integration_score": 3
     }
   ],
-  "generated_at": "2026-05-19T13:25:02Z"
+  "generated_at": "2026-05-20T16:50:25Z"
 }
