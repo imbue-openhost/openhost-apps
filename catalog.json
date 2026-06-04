@@ -4,6 +4,28 @@
   "source_name": "OpenHost Official",
   "apps": [
     {
+      "name": "code-completion",
+      "title": "Code Completion",
+      "description": "Code completion server with model management UI and OpenAI-compatible API.",
+      "repo_url": "https://github.com/imbue-openhost/openhost-code-completion",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "ai",
+        "code",
+        "llm",
+        "completion",
+        "openai"
+      ],
+      "categories": [
+        "ai",
+        "developer-tools"
+      ],
+      "website_url": "https://github.com/imbue-openhost/openhost-code-completion",
+      "docs_url": "https://github.com/imbue-openhost/openhost-code-completion#readme",
+      "openhost_integration_score": 2
+    },
+    {
       "name": "forgejo",
       "title": "Forgejo",
       "description": "Self-hosted Git forge with issues, pull requests, CI/CD, and package registry. OpenHost zone owner is auto-logged in as admin; invited users get Forgejo-local password accounts.",
@@ -376,5 +398,5 @@
       "openhost_integration_score": 3
     }
   ],
-  "generated_at": "2026-05-20T16:50:25Z"
+  "generated_at": "2026-06-04T18:07:53Z"
 }
