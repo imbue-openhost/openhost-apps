@@ -32,6 +32,16 @@ The feed follows the `openhost.catalog.v1` schema. Each app entry has:
 
 The `name` field is the app's identifier in the catalog: it is used in catalog URLs, pre-filled as the default deployed app name when installing, and must be unique within a source.
 
+### Writing a good `description`
+
+The description is what a user reads when deciding whether to install. Keep it about the app, not the packaging.
+
+- Lead with what the app is, then what it does for the user.
+- Keep it succinct: one to three short sentences.
+- Stay accurate to the upstream project.
+- Do not include OpenHost packaging or implementation detail: no SSO / auto-login / "zone" / owner-login mechanics, no port numbers, no "bundled Postgres/Redis", no data-persistence caveats, no "proxied through the server", no TLS or container internals. Those belong in the app's README and are already reflected by its integration score.
+- Avoid empty marketing adjectives ("fast, modern", "scalable") unless they are a genuine, defining property of the app.
+
 ## Uniqueness
 
 - **Within a source**: every app must have a unique `name` and a unique `repo_url`. Duplicates cause `generate.py` to fail.

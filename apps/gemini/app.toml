@@ -1,7 +1,7 @@
 [app]
 name = "gemini"
 title = "Gemini"
-description = "Agate-based Gemini protocol server. Browse the capsule with any Gemini client over a self-signed TLS connection on port 1965."
+description = "Server for the Gemini protocol, a lightweight, privacy-focused alternative to the web. Publish a capsule and browse it with any Gemini client."
 repo_url = "https://github.com/imbue-openhost/openhost-gemini"
 website_url = "https://geminiprotocol.net"
 docs_url = "https://github.com/imbue-openhost/openhost-gemini#readme"

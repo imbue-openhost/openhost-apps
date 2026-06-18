@@ -1,7 +1,7 @@
 [app]
 name = "hidden-service"
 title = "Tor Hidden Service"
-description = "Tor hidden service with a simple page editor CMS."
+description = "Publish a simple website as a Tor hidden service, with a built-in page editor for managing content."
 repo_url = "https://github.com/imbue-openhost/openhost-hidden-service"
 website_url = "https://github.com/imbue-openhost/openhost-hidden-service"
 docs_url = "https://github.com/imbue-openhost/openhost-hidden-service#readme"

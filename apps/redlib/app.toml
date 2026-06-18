@@ -1,7 +1,7 @@
 [app]
 name = "redlib"
 title = "Redlib"
-description = "Private front-end for Reddit. Browse posts and comments without JavaScript, ads, tracking, or a Reddit account; all requests are proxied through the server."
+description = "Private, lightweight front-end for Reddit. Browse posts and comments without ads, tracking, JavaScript, or an account."
 repo_url = "https://github.com/imbue-openhost/openhost-redlib"
 website_url = "https://github.com/redlib-org/redlib"
 docs_url = "https://github.com/imbue-openhost/openhost-redlib#readme"

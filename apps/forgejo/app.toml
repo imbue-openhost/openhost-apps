@@ -1,7 +1,7 @@
 [app]
 name = "forgejo"
 title = "Forgejo"
-description = "Self-hosted Git forge with issues, pull requests, CI/CD, and package registry. OpenHost zone owner is auto-logged in as admin; invited users get Forgejo-local password accounts."
+description = "Self-hosted Git forge for hosting repositories, with issues, pull requests, CI/CD, and a built-in package registry."
 repo_url = "https://github.com/imbue-openhost/openhost-forgejo"
 website_url = "https://forgejo.org"
 docs_url = "https://github.com/imbue-openhost/openhost-forgejo#readme"

@@ -6,7 +6,7 @@
     {
       "name": "code-completion",
       "title": "Code Completion",
-      "description": "Code completion server with model management UI and OpenAI-compatible API.",
+      "description": "AI code completion server with a model management UI and an OpenAI-compatible API, so editors and tools can plug straight in.",
       "repo_url": "https://github.com/imbue-openhost/openhost-code-completion",
       "repo_ref": "",
       "icon_url": "",
@@ -28,7 +28,7 @@
     {
       "name": "forgejo",
       "title": "Forgejo",
-      "description": "Self-hosted Git forge with issues, pull requests, CI/CD, and package registry. OpenHost zone owner is auto-logged in as admin; invited users get Forgejo-local password accounts.",
+      "description": "Self-hosted Git forge for hosting repositories, with issues, pull requests, CI/CD, and a built-in package registry.",
       "repo_url": "https://github.com/imbue-openhost/openhost-forgejo",
       "repo_ref": "",
       "icon_url": "",
@@ -49,7 +49,7 @@
     {
       "name": "gemini",
       "title": "Gemini",
-      "description": "Agate-based Gemini protocol server. Browse the capsule with any Gemini client over a self-signed TLS connection on port 1965.",
+      "description": "Server for the Gemini protocol, a lightweight, privacy-focused alternative to the web. Publish a capsule and browse it with any Gemini client.",
       "repo_url": "https://github.com/imbue-openhost/openhost-gemini",
       "repo_ref": "",
       "icon_url": "",
@@ -70,7 +70,7 @@
     {
       "name": "graphhopper",
       "title": "GraphHopper",
-      "description": "Self-hosted routing engine with car, bike, and foot navigation. Includes a map UI with turn-by-turn directions and geocoding.",
+      "description": "Self-hosted routing engine with a map UI, turn-by-turn directions, and address search for car, bike, and foot navigation.",
       "repo_url": "https://github.com/imbue-openhost/openhost-graphhopper",
       "repo_ref": "",
       "icon_url": "",
@@ -91,7 +91,7 @@
     {
       "name": "hidden-service",
       "title": "Tor Hidden Service",
-      "description": "Tor hidden service with a simple page editor CMS.",
+      "description": "Publish a simple website as a Tor hidden service, with a built-in page editor for managing content.",
       "repo_url": "https://github.com/imbue-openhost/openhost-hidden-service",
       "repo_ref": "",
       "icon_url": "",
@@ -112,7 +112,7 @@
     {
       "name": "jitsi",
       "title": "Jitsi Meet",
-      "description": "Scalable video conferencing with an SFU (Jitsi Videobridge) \u2014 anyone with the URL can join a meeting.",
+      "description": "Video conferencing for the browser. Share a link and anyone can join the meeting, no account or install required.",
       "repo_url": "https://github.com/imbue-openhost/openhost-jitsi",
       "repo_ref": "",
       "icon_url": "",
@@ -133,7 +133,7 @@
     {
       "name": "miniflux",
       "title": "Miniflux",
-      "description": "Minimalist RSS/Atom reader with bundled PostgreSQL and OpenHost single sign-on.",
+      "description": "Minimalist, fast RSS and Atom feed reader for following news, blogs, and podcasts in one place.",
       "repo_url": "https://github.com/imbue-openhost/openhost-miniflux",
       "repo_ref": "",
       "icon_url": "",
@@ -154,7 +154,7 @@
     {
       "name": "mirotalk-p2p",
       "title": "MiroTalk P2P",
-      "description": "Peer-to-peer video conferencing. Browsers connect directly; the server only handles signaling, never media. OpenHost zone owner is auto-logged in as host.",
+      "description": "Peer-to-peer video conferencing in the browser. Share a link to start a call, with no account or install required.",
       "repo_url": "https://github.com/imbue-openhost/openhost-mirotalk-p2p",
       "repo_ref": "",
       "icon_url": "",
@@ -175,7 +175,7 @@
     {
       "name": "navidrome",
       "title": "Navidrome",
-      "description": "Modern music server and streamer compatible with Subsonic/Airsonic clients.",
+      "description": "Modern music server and streamer for your own library, compatible with the many Subsonic and Airsonic mobile and desktop apps.",
       "repo_url": "https://github.com/imbue-openhost/openhost-navidrome",
       "repo_ref": "",
       "icon_url": "",
@@ -195,7 +195,7 @@
     {
       "name": "onionshare",
       "title": "OnionShare",
-      "description": "Anonymously share files, host a website, or run a chat room over Tor hidden services.",
+      "description": "Anonymously and securely share files, host a website, or run a chat room over the Tor network.",
       "repo_url": "https://github.com/imbue-openhost/openhost-onionshare",
       "repo_ref": "",
       "icon_url": "",
@@ -216,7 +216,7 @@
     {
       "name": "openclaw",
       "title": "OpenClaw",
-      "description": "OpenClaw AI assistant.",
+      "description": "Your own personal AI assistant that you chat with through the messaging apps you already use, like WhatsApp, Telegram, and Slack.",
       "repo_url": "https://github.com/imbue-openhost/openhost-openclaw",
       "repo_ref": "",
       "icon_url": "",
@@ -234,7 +234,7 @@
     {
       "name": "openweb-ui",
       "title": "Open WebUI",
-      "description": "Self-hosted ChatGPT-style interface for local and remote LLMs (Ollama, OpenAI, Anthropic, etc).",
+      "description": "Self-hosted, ChatGPT-style interface for chatting with local and remote AI models via Ollama and OpenAI-compatible APIs.",
       "repo_url": "https://github.com/imbue-openhost/openhost-openweb-ui",
       "repo_ref": "",
       "icon_url": "",
@@ -255,7 +255,7 @@
     {
       "name": "pihole",
       "title": "Pi-hole",
-      "description": "Network-wide DNS ad blocker. Blocks ads and trackers at the DNS level for all devices on your network. OpenHost zone owner is auto-logged in to the admin dashboard.",
+      "description": "Network-wide ad and tracker blocker that filters ads at the DNS level for every device on your network.",
       "repo_url": "https://github.com/imbue-openhost/openhost-pihole",
       "repo_ref": "",
       "icon_url": "",
@@ -276,7 +276,7 @@
     {
       "name": "redlib",
       "title": "Redlib",
-      "description": "Private front-end for Reddit. Browse posts and comments without JavaScript, ads, tracking, or a Reddit account; all requests are proxied through the server.",
+      "description": "Private, lightweight front-end for Reddit. Browse posts and comments without ads, tracking, JavaScript, or an account.",
       "repo_url": "https://github.com/imbue-openhost/openhost-redlib",
       "repo_ref": "",
       "icon_url": "",
@@ -297,7 +297,7 @@
     {
       "name": "searxng",
       "title": "SearXNG",
-      "description": "Privacy-respecting metasearch engine that aggregates results from 70+ search services.",
+      "description": "Privacy-respecting metasearch engine that aggregates results from over 70 search services without tracking you.",
       "repo_url": "https://github.com/imbue-openhost/openhost-searxng",
       "repo_ref": "",
       "icon_url": "",
@@ -317,7 +317,7 @@
     {
       "name": "synapse",
       "title": "Matrix Synapse",
-      "description": "Reference homeserver for the Matrix decentralized communication protocol. End-to-end encrypted messaging.",
+      "description": "Homeserver for Matrix, an open network for secure, decentralized, end-to-end encrypted messaging and calls.",
       "repo_url": "https://github.com/imbue-openhost/openhost-synapse",
       "repo_ref": "",
       "icon_url": "",
@@ -358,7 +358,7 @@
     {
       "name": "webtop",
       "title": "Webtop",
-      "description": "Full XFCE Linux desktop in the browser. Everything under ~ (browser profiles, proot-apps installs, downloads, shell history) persists across app restarts; apt-installed system packages do not.",
+      "description": "A full Linux desktop in your browser, with a file manager, terminal, and graphical apps, accessible from anywhere.",
       "repo_url": "https://github.com/imbue-openhost/openhost-webtop",
       "repo_ref": "",
       "icon_url": "",
@@ -379,7 +379,7 @@
     {
       "name": "wg-easy",
       "title": "wg-easy",
-      "description": "WireGuard VPN server with a web UI. Connect any device (Linux, macOS, iOS, Android, Windows) back to your zone over the public internet.",
+      "description": "WireGuard VPN with a simple web UI for adding devices and securely connecting them from anywhere.",
       "repo_url": "https://github.com/imbue-openhost/openhost-wg-easy",
       "repo_ref": "",
       "icon_url": "",
@@ -398,5 +398,5 @@
       "openhost_integration_score": 3
     }
   ],
-  "generated_at": "2026-06-18T19:19:38Z"
+  "generated_at": "2026-06-18T19:35:02Z"
 }

@@ -1,7 +1,7 @@
 [app]
 name = "code-completion"
 title = "Code Completion"
-description = "Code completion server with model management UI and OpenAI-compatible API."
+description = "AI code completion server with a model management UI and an OpenAI-compatible API, so editors and tools can plug straight in."
 repo_url = "https://github.com/imbue-openhost/openhost-code-completion"
 website_url = "https://github.com/imbue-openhost/openhost-code-completion"
 docs_url = "https://github.com/imbue-openhost/openhost-code-completion#readme"
