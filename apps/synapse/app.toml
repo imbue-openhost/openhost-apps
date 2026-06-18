@@ -1,7 +1,7 @@
 [app]
 name = "synapse"
 title = "Matrix Synapse"
-description = "Reference homeserver for the Matrix decentralized communication protocol. End-to-end encrypted messaging."
+description = "Homeserver for Matrix, an open network for secure, decentralized, end-to-end encrypted messaging and calls."
 repo_url = "https://github.com/imbue-openhost/openhost-synapse"
 website_url = "https://matrix.org"
 docs_url = "https://github.com/imbue-openhost/openhost-synapse#readme"

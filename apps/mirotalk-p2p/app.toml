@@ -1,7 +1,7 @@
 [app]
 name = "mirotalk-p2p"
 title = "MiroTalk P2P"
-description = "Peer-to-peer video conferencing. Browsers connect directly; the server only handles signaling, never media. OpenHost zone owner is auto-logged in as host."
+description = "Peer-to-peer video conferencing in the browser. Share a link to start a call, with no account or install required."
 repo_url = "https://github.com/imbue-openhost/openhost-mirotalk-p2p"
 website_url = "https://github.com/miroslavpejic85/mirotalk"
 docs_url = "https://github.com/imbue-openhost/openhost-mirotalk-p2p#readme"

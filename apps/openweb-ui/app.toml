@@ -1,7 +1,7 @@
 [app]
 name = "openweb-ui"
 title = "Open WebUI"
-description = "Self-hosted ChatGPT-style interface for local and remote LLMs (Ollama, OpenAI, Anthropic, etc)."
+description = "Self-hosted, ChatGPT-style interface for chatting with local and remote AI models via Ollama and OpenAI-compatible APIs."
 repo_url = "https://github.com/imbue-openhost/openhost-openweb-ui"
 website_url = "https://openwebui.com"
 docs_url = "https://github.com/imbue-openhost/openhost-openweb-ui#readme"

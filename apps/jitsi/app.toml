@@ -1,7 +1,7 @@
 [app]
 name = "jitsi"
 title = "Jitsi Meet"
-description = "Scalable video conferencing with an SFU (Jitsi Videobridge) — anyone with the URL can join a meeting."
+description = "Video conferencing for the browser. Share a link and anyone can join the meeting, no account or install required."
 repo_url = "https://github.com/imbue-openhost/openhost-jitsi"
 website_url = "https://jitsi.org"
 docs_url = "https://github.com/imbue-openhost/openhost-jitsi#readme"

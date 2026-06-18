@@ -1,7 +1,7 @@
 [app]
 name = "openclaw"
 title = "OpenClaw"
-description = "OpenClaw AI assistant."
+description = "Your own personal AI assistant that you chat with through the messaging apps you already use, like WhatsApp, Telegram, and Slack."
 repo_url = "https://github.com/imbue-openhost/openhost-openclaw"
 website_url = "https://openclaw.ai/"
 docs_url = "https://github.com/imbue-openhost/openhost-openclaw#readme"
