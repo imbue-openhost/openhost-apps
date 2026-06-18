@@ -232,6 +232,24 @@
       "openhost_integration_score": 3
     },
     {
+      "name": "openhost-minecraft-server",
+      "title": "OpenHost Minecraft Servers",
+      "description": "A self-hosted minecraft server runner",
+      "repo_url": "https://github.com/imbue-openhost/openhost-minecraft-server",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "minecraft",
+        "games"
+      ],
+      "categories": [
+        "games"
+      ],
+      "website_url": "https://github.com/imbue-openhost/openhost-minecraft-server",
+      "docs_url": "https://github.com/imbue-openhost/openhost-minecraft-server#readme",
+      "openhost_integration_score": 4
+    },
+    {
       "name": "openweb-ui",
       "title": "Open WebUI",
       "description": "Self-hosted ChatGPT-style interface for local and remote LLMs (Ollama, OpenAI, Anthropic, etc).",
@@ -398,5 +416,5 @@
       "openhost_integration_score": 3
     }
   ],
-  "generated_at": "2026-06-18T19:19:38Z"
+  "generated_at": "2026-06-18T23:07:59Z"
 }
