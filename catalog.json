@@ -4,6 +4,24 @@
   "source_name": "OpenHost Official",
   "apps": [
     {
+      "name": "openhost-minecraft-server",
+      "title": "openhost-minecraft-server",
+      "description": "A self-hosted minecraft server runner",
+      "repo_url": "https://github.com/imbue-openhost/openhost-minecraft-server",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "minecraft",
+        "games"
+      ],
+      "categories": [
+        "games"
+      ],
+      "website_url": "https://github.com/imbue-openhost/openhost-minecraft-server",
+      "docs_url": "https://github.com/imbue-openhost/openhost-minecraft-server#readme",
+      "openhost_integration_score": 2
+    },
+    {
       "name": "code-completion",
       "title": "Code Completion",
       "description": "Code completion server with model management UI and OpenAI-compatible API.",
