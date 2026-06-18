@@ -190,7 +190,7 @@
       ],
       "website_url": "https://www.navidrome.org",
       "docs_url": "https://github.com/imbue-openhost/openhost-navidrome#readme",
-      "openhost_integration_score": 2
+      "openhost_integration_score": 4
     },
     {
       "name": "onionshare",
@@ -333,7 +333,7 @@
       ],
       "website_url": "https://matrix.org",
       "docs_url": "https://github.com/imbue-openhost/openhost-synapse#readme",
-      "openhost_integration_score": 2
+      "openhost_integration_score": 3
     },
     {
       "name": "uptime-kuma",
@@ -353,7 +353,7 @@
       ],
       "website_url": "https://uptime.kuma.pet",
       "docs_url": "https://github.com/imbue-openhost/openhost-uptime-kuma#readme",
-      "openhost_integration_score": 2
+      "openhost_integration_score": 3
     },
     {
       "name": "webtop",
@@ -398,5 +398,5 @@
       "openhost_integration_score": 3
     }
   ],
-  "generated_at": "2026-06-04T18:07:53Z"
+  "generated_at": "2026-06-18T19:19:38Z"
 }
