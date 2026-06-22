@@ -6,6 +6,6 @@ repo_url = "https://github.com/imbue-openhost/openhost-gemini"
 website_url = "https://geminiprotocol.net"
 docs_url = "https://github.com/imbue-openhost/openhost-gemini#readme"
 tags = ["gemini", "smolnet", "tls", "capsule"]
-categories = ["communication", "publishing"]
+categories = ["networking", "publishing"]
 
 openhost_integration_score = 2

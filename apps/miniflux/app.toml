@@ -6,6 +6,6 @@ repo_url = "https://github.com/imbue-openhost/openhost-miniflux"
 website_url = "https://miniflux.app"
 docs_url = "https://github.com/imbue-openhost/openhost-miniflux#readme"
 tags = ["rss", "atom", "feed-reader", "news"]
-categories = ["productivity", "tools"]
+categories = ["productivity", "utility"]
 
 openhost_integration_score = 4

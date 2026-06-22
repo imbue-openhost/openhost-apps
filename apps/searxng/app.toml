@@ -6,6 +6,6 @@ repo_url = "https://github.com/imbue-openhost/openhost-searxng"
 website_url = "https://docs.searxng.org"
 docs_url = "https://github.com/imbue-openhost/openhost-searxng#readme"
 tags = ["search", "privacy", "metasearch"]
-categories = ["search", "privacy"]
+categories = ["search", "privacy", "utility"]
 
 openhost_integration_score = 4

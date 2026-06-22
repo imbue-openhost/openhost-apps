@@ -6,6 +6,6 @@ repo_url = "https://github.com/imbue-openhost/openhost-jitsi"
 website_url = "https://jitsi.org"
 docs_url = "https://github.com/imbue-openhost/openhost-jitsi#readme"
 tags = ["video", "conferencing", "webrtc", "sfu", "meetings"]
-categories = ["communication"]
+categories = ["utility", "privacy"]
 
 openhost_integration_score = 3

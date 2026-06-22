@@ -6,6 +6,6 @@ repo_url = "https://github.com/imbue-openhost/openhost-openclaw"
 website_url = "https://openclaw.ai/"
 docs_url = "https://github.com/imbue-openhost/openhost-openclaw#readme"
 tags = ["ai", "assistant"]
-categories = ["ai"]
+categories = ["ai", "development", "productivity"]
 
 openhost_integration_score = 3

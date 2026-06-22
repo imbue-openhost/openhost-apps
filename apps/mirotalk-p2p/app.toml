@@ -6,6 +6,6 @@ repo_url = "https://github.com/imbue-openhost/openhost-mirotalk-p2p"
 website_url = "https://github.com/miroslavpejic85/mirotalk"
 docs_url = "https://github.com/imbue-openhost/openhost-mirotalk-p2p#readme"
 tags = ["video", "conferencing", "webrtc", "p2p", "meetings"]
-categories = ["communication"]
+categories = ["networking", "privacy"]
 
 openhost_integration_score = 4

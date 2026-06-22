@@ -6,6 +6,6 @@ repo_url = "https://github.com/imbue-openhost/openhost-webtop"
 website_url = "https://github.com/linuxserver/docker-webtop"
 docs_url = "https://github.com/imbue-openhost/openhost-webtop#readme"
 tags = ["desktop", "xfce", "linux", "browser"]
-categories = ["productivity", "tools"]
+categories = ["productivity", "development"]
 
 openhost_integration_score = 2

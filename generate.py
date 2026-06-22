@@ -14,23 +14,24 @@ import json
 import os
 import re
 import sys
+import tomllib
 from datetime import datetime, timezone
 
 # App names must be lowercase alphanumeric with optional interior hyphens.
 # This matches OpenHost's app_name validation.
 _NAME_PATTERN = re.compile(r"^[a-z0-9]([a-z0-9-]*[a-z0-9])?$")
 
-# Python 3.11+ has tomllib; fall back to tomli for older versions
-try:
-    import tomllib
-except ModuleNotFoundError:
-    try:
-        import tomli as tomllib
-    except ModuleNotFoundError:
-        print(
-            "error: need Python 3.11+ (tomllib) or 'pip install tomli'", file=sys.stderr
-        )
-        sys.exit(1)
+VALID_CATEGORIES = {
+    "ai",
+    "development",
+    "entertainment",
+    "networking",
+    "privacy",
+    "productivity",
+    "publishing",
+    "search",
+    "utility",
+}
 
 
 def load_toml(path: str) -> dict:
@@ -66,6 +67,7 @@ def build_feed(root: str) -> dict:
 
     apps_dir = os.path.join(root, "apps")
     apps: list[dict] = []
+    category_errors: list[str] = []
 
     for entry in sorted(os.listdir(apps_dir)):
         app_toml = os.path.join(apps_dir, entry, "app.toml")
@@ -98,6 +100,11 @@ def build_feed(root: str) -> dict:
 
         score = validate_score(app_toml, app.get("openhost_integration_score"))
 
+        categories = app.get("categories", [])
+        invalid = [cat for cat in categories if cat not in VALID_CATEGORIES]
+        if invalid:
+            category_errors.append(f"  {name}: {', '.join(repr(c) for c in invalid)}")
+
         feed_app = {
             "name": name,
             "title": app.get("title", name),
@@ -106,13 +113,24 @@ def build_feed(root: str) -> dict:
             "repo_ref": app.get("repo_ref", ""),
             "icon_url": app.get("icon_url", ""),
             "tags": app.get("tags", []),
-            "categories": app.get("categories", []),
+            "categories": categories,
             "website_url": app.get("website_url", ""),
             "docs_url": app.get("docs_url", ""),
             "openhost_integration_score": score,
         }
 
         apps.append(feed_app)
+
+    if category_errors:
+        valid_list = ", ".join(sorted(VALID_CATEGORIES))
+        print(
+            f"error: the following apps have invalid categories "
+            f"(allowed: {valid_list}):",
+            file=sys.stderr,
+        )
+        for line in category_errors:
+            print(line, file=sys.stderr)
+        sys.exit(1)
 
     # Each app's `name` is the identifier the catalog uses for URLs, DB keys,
     # and the default deployed app name. Within a single source, names must be

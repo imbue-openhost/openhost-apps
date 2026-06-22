@@ -6,6 +6,6 @@ repo_url = "https://github.com/imbue-openhost/openhost-pihole"
 website_url = "https://pi-hole.net"
 docs_url = "https://github.com/imbue-openhost/openhost-pihole#readme"
 tags = ["dns", "ad-blocker", "privacy", "network"]
-categories = ["networking", "privacy"]
+categories = ["networking", "privacy", "productivity"]
 
 openhost_integration_score = 2

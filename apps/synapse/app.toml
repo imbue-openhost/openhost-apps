@@ -6,6 +6,6 @@ repo_url = "https://github.com/imbue-openhost/openhost-synapse"
 website_url = "https://matrix.org"
 docs_url = "https://github.com/imbue-openhost/openhost-synapse#readme"
 tags = ["messaging", "matrix", "encryption", "federation"]
-categories = ["communication", "privacy"]
+categories = ["networking", "privacy"]
 
 openhost_integration_score = 3

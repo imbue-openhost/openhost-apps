@@ -6,6 +6,6 @@ repo_url = "https://github.com/imbue-openhost/openhost-graphhopper"
 website_url = "https://www.graphhopper.com"
 docs_url = "https://github.com/imbue-openhost/openhost-graphhopper#readme"
 tags = ["maps", "routing", "navigation", "osm", "directions"]
-categories = ["utilities"]
+categories = ["privacy", "utility", "search"]
 
 openhost_integration_score = 2

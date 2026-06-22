@@ -6,6 +6,6 @@ repo_url = "https://github.com/imbue-openhost/openhost-navidrome"
 website_url = "https://www.navidrome.org"
 docs_url = "https://github.com/imbue-openhost/openhost-navidrome#readme"
 tags = ["music", "streaming", "media"]
-categories = ["media", "music"]
+categories = ["entertainment", "privacy"]
 
 openhost_integration_score = 4

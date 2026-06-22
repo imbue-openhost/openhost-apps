@@ -19,7 +19,8 @@
       ],
       "categories": [
         "ai",
-        "developer-tools"
+        "development",
+        "productivity"
       ],
       "website_url": "https://github.com/imbue-openhost/openhost-code-completion",
       "docs_url": "https://github.com/imbue-openhost/openhost-code-completion#readme",
@@ -39,8 +40,7 @@
         "forge"
       ],
       "categories": [
-        "development",
-        "git"
+        "development"
       ],
       "website_url": "https://forgejo.org",
       "docs_url": "https://github.com/imbue-openhost/openhost-forgejo#readme",
@@ -60,7 +60,7 @@
         "capsule"
       ],
       "categories": [
-        "communication",
+        "networking",
         "publishing"
       ],
       "website_url": "https://geminiprotocol.net",
@@ -82,7 +82,9 @@
         "directions"
       ],
       "categories": [
-        "utilities"
+        "privacy",
+        "utility",
+        "search"
       ],
       "website_url": "https://www.graphhopper.com",
       "docs_url": "https://github.com/imbue-openhost/openhost-graphhopper#readme",
@@ -103,7 +105,8 @@
       ],
       "categories": [
         "privacy",
-        "tools"
+        "utility",
+        "networking"
       ],
       "website_url": "https://github.com/imbue-openhost/openhost-hidden-service",
       "docs_url": "https://github.com/imbue-openhost/openhost-hidden-service#readme",
@@ -124,11 +127,30 @@
         "meetings"
       ],
       "categories": [
-        "communication"
+        "utility",
+        "privacy"
       ],
       "website_url": "https://jitsi.org",
       "docs_url": "https://github.com/imbue-openhost/openhost-jitsi#readme",
       "openhost_integration_score": 3
+    },
+    {
+      "name": "minecraft",
+      "title": "Minecraft",
+      "description": "A self-hosted minecraft server runner",
+      "repo_url": "https://github.com/imbue-openhost/openhost-minecraft-server",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "minecraft",
+        "games"
+      ],
+      "categories": [
+        "entertainment"
+      ],
+      "website_url": "https://github.com/imbue-openhost/openhost-minecraft-server",
+      "docs_url": "https://github.com/imbue-openhost/openhost-minecraft-server#readme",
+      "openhost_integration_score": 4
     },
     {
       "name": "miniflux",
@@ -145,7 +167,7 @@
       ],
       "categories": [
         "productivity",
-        "tools"
+        "utility"
       ],
       "website_url": "https://miniflux.app",
       "docs_url": "https://github.com/imbue-openhost/openhost-miniflux#readme",
@@ -166,7 +188,8 @@
         "meetings"
       ],
       "categories": [
-        "communication"
+        "networking",
+        "privacy"
       ],
       "website_url": "https://github.com/miroslavpejic85/mirotalk",
       "docs_url": "https://github.com/imbue-openhost/openhost-mirotalk-p2p#readme",
@@ -185,8 +208,8 @@
         "media"
       ],
       "categories": [
-        "media",
-        "music"
+        "entertainment",
+        "privacy"
       ],
       "website_url": "https://www.navidrome.org",
       "docs_url": "https://github.com/imbue-openhost/openhost-navidrome#readme",
@@ -207,7 +230,8 @@
       ],
       "categories": [
         "privacy",
-        "tools"
+        "utility",
+        "networking"
       ],
       "website_url": "https://onionshare.org",
       "docs_url": "https://github.com/imbue-openhost/openhost-onionshare#readme",
@@ -225,29 +249,13 @@
         "assistant"
       ],
       "categories": [
-        "ai"
+        "ai",
+        "development",
+        "productivity"
       ],
       "website_url": "https://openclaw.ai/",
       "docs_url": "https://github.com/imbue-openhost/openhost-openclaw#readme",
       "openhost_integration_score": 3
-    },
-    {
-      "name": "openhost-minecraft-server",
-      "title": "OpenHost Minecraft Servers",
-      "description": "A self-hosted minecraft server runner",
-      "repo_url": "https://github.com/imbue-openhost/openhost-minecraft-server",
-      "repo_ref": "",
-      "icon_url": "",
-      "tags": [
-        "minecraft",
-        "games"
-      ],
-      "categories": [
-        "games"
-      ],
-      "website_url": "https://github.com/imbue-openhost/openhost-minecraft-server",
-      "docs_url": "https://github.com/imbue-openhost/openhost-minecraft-server#readme",
-      "openhost_integration_score": 4
     },
     {
       "name": "openweb-ui",
@@ -285,7 +293,8 @@
       ],
       "categories": [
         "networking",
-        "privacy"
+        "privacy",
+        "productivity"
       ],
       "website_url": "https://pi-hole.net",
       "docs_url": "https://github.com/imbue-openhost/openhost-pihole#readme",
@@ -306,7 +315,7 @@
       ],
       "categories": [
         "privacy",
-        "social"
+        "entertainment"
       ],
       "website_url": "https://github.com/redlib-org/redlib",
       "docs_url": "https://github.com/imbue-openhost/openhost-redlib#readme",
@@ -326,7 +335,8 @@
       ],
       "categories": [
         "search",
-        "privacy"
+        "privacy",
+        "utility"
       ],
       "website_url": "https://docs.searxng.org",
       "docs_url": "https://github.com/imbue-openhost/openhost-searxng#readme",
@@ -346,7 +356,7 @@
         "federation"
       ],
       "categories": [
-        "communication",
+        "networking",
         "privacy"
       ],
       "website_url": "https://matrix.org",
@@ -366,8 +376,8 @@
         "status"
       ],
       "categories": [
-        "monitoring",
-        "tools"
+        "utility",
+        "networking"
       ],
       "website_url": "https://uptime.kuma.pet",
       "docs_url": "https://github.com/imbue-openhost/openhost-uptime-kuma#readme",
@@ -388,7 +398,7 @@
       ],
       "categories": [
         "productivity",
-        "tools"
+        "development"
       ],
       "website_url": "https://github.com/linuxserver/docker-webtop",
       "docs_url": "https://github.com/imbue-openhost/openhost-webtop#readme",
@@ -416,5 +426,5 @@
       "openhost_integration_score": 3
     }
   ],
-  "generated_at": "2026-06-18T23:07:59Z"
+  "generated_at": "2026-06-22T22:40:31Z"
 }
