@@ -6,6 +6,6 @@ repo_url = "https://github.com/imbue-openhost/openhost-code-completion"
 website_url = "https://github.com/imbue-openhost/openhost-code-completion"
 docs_url = "https://github.com/imbue-openhost/openhost-code-completion#readme"
 tags = ["ai", "code", "llm", "completion", "openai"]
-categories = ["ai", "developer-tools"]
+categories = ["ai", "development", "productivity"]
 
 openhost_integration_score = 2

@@ -6,6 +6,6 @@ repo_url = "https://github.com/imbue-openhost/openhost-redlib"
 website_url = "https://github.com/redlib-org/redlib"
 docs_url = "https://github.com/imbue-openhost/openhost-redlib#readme"
 tags = ["reddit", "privacy", "frontend", "proxy"]
-categories = ["privacy", "social"]
+categories = ["privacy", "entertainment"]
 
 openhost_integration_score = 2

@@ -6,6 +6,6 @@ repo_url = "https://github.com/imbue-openhost/openhost-onionshare"
 website_url = "https://onionshare.org"
 docs_url = "https://github.com/imbue-openhost/openhost-onionshare#readme"
 tags = ["tor", "privacy", "onion", "file-sharing"]
-categories = ["privacy", "tools"]
+categories = ["privacy", "utility", "networking"]
 
 openhost_integration_score = 3

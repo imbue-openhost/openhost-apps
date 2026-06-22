@@ -6,6 +6,6 @@ repo_url = "https://github.com/imbue-openhost/openhost-uptime-kuma"
 website_url = "https://uptime.kuma.pet"
 docs_url = "https://github.com/imbue-openhost/openhost-uptime-kuma#readme"
 tags = ["monitoring", "uptime", "status"]
-categories = ["monitoring", "tools"]
+categories = ["utility", "networking"]
 
 openhost_integration_score = 3

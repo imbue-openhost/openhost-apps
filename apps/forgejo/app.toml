@@ -6,6 +6,6 @@ repo_url = "https://github.com/imbue-openhost/openhost-forgejo"
 website_url = "https://forgejo.org"
 docs_url = "https://github.com/imbue-openhost/openhost-forgejo#readme"
 tags = ["git", "code", "ci-cd", "forge"]
-categories = ["development", "git"]
+categories = ["development"]
 
 openhost_integration_score = 3
