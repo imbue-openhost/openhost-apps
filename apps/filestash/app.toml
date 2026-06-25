@@ -1,0 +1,11 @@
+[app]
+name = "filestash"
+title = "Filestash"
+description = "A powerful web-based file management system, compatible with SFTP, S3, and Google Drive"
+repo_url = "https://github.com/imbue-openhost/openhost-filestash"
+website_url = "https://github.com/imbue-openhost/openhost-filestash"
+docs_url = "https://github.com/imbue-openhost/openhost-filestash#readme"
+tags = ["passwords", "privacy", "bitwarden"]
+categories = ["privacy", "utility"]
+
+openhost_integration_score = 3

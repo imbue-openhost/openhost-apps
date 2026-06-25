@@ -27,6 +27,26 @@
       "openhost_integration_score": 2
     },
     {
+      "name": "filestash",
+      "title": "Filestash",
+      "description": "A powerful web-based file management system, compatible with SFTP, S3, and Google Drive",
+      "repo_url": "https://github.com/imbue-openhost/openhost-filestash",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "passwords",
+        "privacy",
+        "bitwarden"
+      ],
+      "categories": [
+        "privacy",
+        "utility"
+      ],
+      "website_url": "https://github.com/imbue-openhost/openhost-filestash",
+      "docs_url": "https://github.com/imbue-openhost/openhost-filestash#readme",
+      "openhost_integration_score": 3
+    },
+    {
       "name": "forgejo",
       "title": "Forgejo",
       "description": "Self-hosted Git forge with issues, pull requests, CI/CD, and package registry. OpenHost zone owner is auto-logged in as admin; invited users get Forgejo-local password accounts.",
@@ -384,6 +404,26 @@
       "openhost_integration_score": 3
     },
     {
+      "name": "vaultwarden",
+      "title": "VaultWarden",
+      "description": "A community developed password manager server, compatible with BitWarden's client",
+      "repo_url": "https://github.com/imbue-openhost/openhost-vaultwarden",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "passwords",
+        "privacy",
+        "bitwarden"
+      ],
+      "categories": [
+        "privacy",
+        "utility"
+      ],
+      "website_url": "https://github.com/imbue-openhost/openhost-vaultwarden",
+      "docs_url": "https://github.com/imbue-openhost/openhost-vaultwarden#readme",
+      "openhost_integration_score": 3
+    },
+    {
       "name": "webtop",
       "title": "Webtop",
       "description": "Full XFCE Linux desktop in the browser. Everything under ~ (browser profiles, proot-apps installs, downloads, shell history) persists across app restarts; apt-installed system packages do not.",
@@ -426,5 +466,5 @@
       "openhost_integration_score": 3
     }
   ],
-  "generated_at": "2026-06-22T22:40:31Z"
+  "generated_at": "2026-06-25T23:04:35Z"
 }
