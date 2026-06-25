@@ -5,7 +5,7 @@ description = "A powerful web-based file management system, compatible with SFTP
 repo_url = "https://github.com/imbue-openhost/openhost-filestash"
 website_url = "https://github.com/imbue-openhost/openhost-filestash"
 docs_url = "https://github.com/imbue-openhost/openhost-filestash#readme"
-tags = ["passwords", "privacy", "bitwarden"]
-categories = ["privacy", "utility"]
+tags = ["files", "privacy"]
+categories = ["privacy", "utility", "productivity"]
 
 openhost_integration_score = 3
