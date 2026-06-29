@@ -9,4 +9,3 @@ tags = ["tor", "privacy", "onion", "file-sharing"]
 categories = ["privacy", "utility", "networking"]
 
 openhost_integration_score = 3
-openhost_integration_score_explanation = "Owner manages shares; recipients use the generated Tor onion link anonymously, so no web SSO applies to guests."

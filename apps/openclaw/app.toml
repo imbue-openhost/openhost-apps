@@ -9,4 +9,3 @@ tags = ["ai", "assistant"]
 categories = ["ai", "development", "productivity"]
 
 openhost_integration_score = 3
-openhost_integration_score_explanation = "Owner reaches the assistant with OpenHost auth in front, but invited users need app-local setup."

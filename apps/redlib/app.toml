@@ -9,4 +9,3 @@ tags = ["reddit", "privacy", "frontend", "proxy"]
 categories = ["privacy", "entertainment"]
 
 openhost_integration_score = 2
-openhost_integration_score_explanation = "Stateless Reddit front-end with no accounts; it runs cleanly but has no OpenHost SSO to integrate."

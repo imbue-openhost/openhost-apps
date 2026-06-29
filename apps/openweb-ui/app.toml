@@ -9,4 +9,3 @@ tags = ["llm", "ai", "chat", "ollama"]
 categories = ["ai", "productivity"]
 
 openhost_integration_score = 2
-openhost_integration_score_explanation = "Runs and persists chats correctly, but you sign in through Open WebUI's own login form; no OpenHost auto-login."

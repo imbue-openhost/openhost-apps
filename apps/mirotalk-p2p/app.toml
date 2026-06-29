@@ -9,4 +9,3 @@ tags = ["video", "conferencing", "webrtc", "p2p", "meetings"]
 categories = ["networking", "privacy"]
 
 openhost_integration_score = 4
-openhost_integration_score_explanation = "Zone owner is auto-logged in as host; guests join via the room URL. Signaling-only, no media stored."

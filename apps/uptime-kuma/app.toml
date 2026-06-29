@@ -9,4 +9,3 @@ tags = ["monitoring", "uptime", "status"]
 categories = ["utility", "networking"]
 
 openhost_integration_score = 3
-openhost_integration_score_explanation = "Owner is auto-logged in to the dashboard, but invited viewers fall back to Uptime Kuma's own login."
