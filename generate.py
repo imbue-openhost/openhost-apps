@@ -50,7 +50,10 @@ def validate_score(app_toml_path: str, value) -> int:
     """
     if value is None:
         return 0
-    if not isinstance(value, int) or value < 1 or value > 5:
+    # bool is a subclass of int in Python, so guard against it explicitly:
+    # `openhost_integration_score = true` would otherwise pass as 1 and emit
+    # a JSON boolean that the downstream Go consumer cannot decode as an int.
+    if isinstance(value, bool) or not isinstance(value, int) or value < 1 or value > 5:
         print(
             f"error: {app_toml_path}: openhost_integration_score must be an integer 1-5, got {value!r}",
             file=sys.stderr,
