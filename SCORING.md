@@ -93,33 +93,11 @@ form, the app is capped at **2**.
    public search engine has no guest-login concept and no secrets to leak — it
    can legitimately score **5**).
 
-## Writing the explanation
-
-Alongside the number, every scored app should set
-`openhost_integration_score_explanation`: a single short sentence, in plain
-language, that tells the reader **why** the app earned its score. This is the
-human-readable counterpart to the number and is shown in the catalog UI next to
-the rating.
-
-Guidelines:
-
-- One sentence, ideally under ~160 characters.
-- Describe the actual integration behavior, not the upstream app's features.
-- Lead with the SSO experience, since that's what most installers care about.
-- For unrated apps (no score), omit the explanation too.
-
-Good examples:
-
-- `"Zone owner is auto-logged in; guests are bounced to the zone login. Nothing to set up."` *(5)*
-- `"Owner is auto-logged in as admin, but invited users still create app-local password accounts."` *(3)*
-- `"Runs and persists data correctly, but you sign in through the app's own login form."` *(2)*
-- `"Stateless public search; no accounts to manage and nothing to leak."` *(5)*
-
 ## Where the score lives
 
-- **Source of truth:** `apps/<name>/app.toml`, fields
-  `openhost_integration_score` and `openhost_integration_score_explanation`.
-- **Generated feed:** `catalog.json` (built by `generate.py`); both fields are
-  always present, with `0` / `""` representing "unrated".
-- **Consumer:** the catalog stores and renders both fields. See the
+- **Source of truth:** `apps/<name>/app.toml`, field
+  `openhost_integration_score`.
+- **Generated feed:** `catalog.json` (built by `generate.py`); the field is
+  always present, with `0` representing "unrated".
+- **Consumer:** the catalog stores and renders the score. See the
   [openhost-catalog README](https://github.com/imbue-openhost/openhost-catalog#integration-score).

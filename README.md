@@ -30,22 +30,19 @@ The feed follows the `openhost.catalog.v1` schema. Each app entry has:
 | `website_url`  | no       | Upstream project homepage |
 | `docs_url`     | no       | Documentation link |
 | `openhost_integration_score` | no | Integer 1-5 rating how natively the app integrates with OpenHost (SSO, data conventions, guest handling). Omit for unrated apps. See [SCORING.md](SCORING.md). |
-| `openhost_integration_score_explanation` | no | One short sentence explaining *why* the app earned its score, shown in the catalog UI. Omit when unrated. See [SCORING.md](SCORING.md). |
 
 The `name` field is the app's identifier in the catalog: it is used in catalog URLs, pre-filled as the default deployed app name when installing, and must be unique within a source.
 
 ## Integration score
 
-Each app may carry an `openhost_integration_score` (1-5) plus a one-sentence
-`openhost_integration_score_explanation`. The score rates how natively the app
-behaves on OpenHost — primarily SSO quality, data/secret conventions, and guest
-handling — **not** how good the upstream project is.
+Each app may carry an `openhost_integration_score` (1-5). The score rates how
+natively the app behaves on OpenHost — primarily SSO quality, data/secret
+conventions, and guest handling — **not** how good the upstream project is.
 
 The full rubric and the checklist for scoring an app live in **[SCORING.md](SCORING.md)**.
 
-`generate.py` validates both fields: the score must be an integer 1-5 when
-present (omitted → `0` = unrated), and the explanation must be a short string
-and may only be set when a score is set.
+`generate.py` validates the score: it must be an integer 1-5 when present
+(omitted → `0` = unrated).
 
 ## Uniqueness
 

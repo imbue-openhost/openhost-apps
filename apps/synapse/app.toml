@@ -9,4 +9,3 @@ tags = ["messaging", "matrix", "encryption", "federation"]
 categories = ["networking", "privacy"]
 
 openhost_integration_score = 3
-openhost_integration_score_explanation = "Zone owner gets an account, but Matrix clients still sign in with Synapse-local credentials."

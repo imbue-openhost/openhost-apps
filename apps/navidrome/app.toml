@@ -9,4 +9,3 @@ tags = ["music", "streaming", "media"]
 categories = ["entertainment", "privacy"]
 
 openhost_integration_score = 4
-openhost_integration_score_explanation = "Owner is auto-logged in to the music server; libraries persist correctly under the app data dir."

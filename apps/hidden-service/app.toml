@@ -9,4 +9,3 @@ tags = ["tor", "privacy", "onion", "cms"]
 categories = ["privacy", "utility", "networking"]
 
 openhost_integration_score = 3
-openhost_integration_score_explanation = "Owner-only editor reached over Tor; the public capsule is anonymous by design, so there is no web SSO to wire up."

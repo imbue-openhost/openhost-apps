@@ -9,4 +9,3 @@ tags = ["maps", "routing", "navigation", "osm", "directions"]
 categories = ["privacy", "utility", "search"]
 
 openhost_integration_score = 2
-openhost_integration_score_explanation = "Routing engine and map UI work out of the box, but there is no OpenHost SSO layer in front of it."
