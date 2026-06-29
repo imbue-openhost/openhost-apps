@@ -45,6 +45,8 @@ def validate_score(app_toml_path: str, value) -> int:
     Apps may omit the field; an omitted score is emitted as 0 in
     catalog.json, which downstream UIs render as "unrated". When
     the field is present, it must be an int in 1-5.
+
+    See SCORING.md for the rubric used to assign this value.
     """
     if value is None:
         return 0
@@ -55,6 +57,52 @@ def validate_score(app_toml_path: str, value) -> int:
         )
         sys.exit(1)
     return value
+
+
+# Maximum length of a score explanation, in characters. The explanation is a
+# single short sentence shown in the catalog UI next to the rating; this guards
+# against multi-paragraph blurbs that would break the layout.
+_MAX_EXPLANATION_LEN = 280
+
+
+def validate_explanation(app_toml_path: str, value, score: int) -> str:
+    """Validate an openhost_integration_score_explanation value.
+
+    The explanation is the human-readable counterpart to the score: one short
+    sentence describing why the app earned its rating (see SCORING.md). It is
+    optional. An omitted explanation is emitted as "" in catalog.json.
+
+    Rules:
+      - Must be a string when present.
+      - Must be <= _MAX_EXPLANATION_LEN characters.
+      - Must be empty when the app is unrated (score == 0); an explanation
+        without a score is a mistake worth catching at generate time.
+    """
+    if value is None:
+        return ""
+    if not isinstance(value, str):
+        print(
+            f"error: {app_toml_path}: openhost_integration_score_explanation "
+            f"must be a string, got {value!r}",
+            file=sys.stderr,
+        )
+        sys.exit(1)
+    text = value.strip()
+    if score == 0 and text:
+        print(
+            f"error: {app_toml_path}: openhost_integration_score_explanation is set "
+            "but openhost_integration_score is missing; an explanation requires a score",
+            file=sys.stderr,
+        )
+        sys.exit(1)
+    if len(text) > _MAX_EXPLANATION_LEN:
+        print(
+            f"error: {app_toml_path}: openhost_integration_score_explanation must be "
+            f"<= {_MAX_EXPLANATION_LEN} characters, got {len(text)}",
+            file=sys.stderr,
+        )
+        sys.exit(1)
+    return text
 
 
 def build_feed(root: str) -> dict:
@@ -99,6 +147,9 @@ def build_feed(root: str) -> dict:
             sys.exit(1)
 
         score = validate_score(app_toml, app.get("openhost_integration_score"))
+        explanation = validate_explanation(
+            app_toml, app.get("openhost_integration_score_explanation"), score
+        )
 
         categories = app.get("categories", [])
         invalid = [cat for cat in categories if cat not in VALID_CATEGORIES]
@@ -117,6 +168,7 @@ def build_feed(root: str) -> dict:
             "website_url": app.get("website_url", ""),
             "docs_url": app.get("docs_url", ""),
             "openhost_integration_score": score,
+            "openhost_integration_score_explanation": explanation,
         }
 
         apps.append(feed_app)
