@@ -4,6 +4,27 @@
   "source_name": "OpenHost Official",
   "apps": [
     {
+      "name": "apple-health-connector",
+      "title": "Apple Health Connector",
+      "description": "Ports over, collects, and analyzes data from Apple Health",
+      "repo_url": "https://github.com/imbue-openhost/openhost-apple-health",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "apple",
+        "apple-health",
+        "fitness",
+        "data"
+      ],
+      "categories": [
+        "utility",
+        "data-liberation"
+      ],
+      "website_url": "https://github.com/imbue-openhost/openhost-apple-health",
+      "docs_url": "https://github.com/imbue-openhost/openhost-apple-health#readme",
+      "openhost_integration_score": 3
+    },
+    {
       "name": "code-completion",
       "title": "Code Completion",
       "description": "Code completion server with model management UI and OpenAI-compatible API.",
@@ -297,6 +318,26 @@
       "website_url": "https://openwebui.com",
       "docs_url": "https://github.com/imbue-openhost/openhost-openweb-ui#readme",
       "openhost_integration_score": 2
+    },
+    {
+      "name": "oura-connector",
+      "title": "Oura Connector",
+      "description": "Ports over, collects, and analyzes data from Oura fitness rings",
+      "repo_url": "https://github.com/imbue-openhost/openhost-oura-ring",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "oura",
+        "fitness",
+        "data"
+      ],
+      "categories": [
+        "utility",
+        "data-liberation"
+      ],
+      "website_url": "https://github.com/imbue-openhost/openhost-oura-ring",
+      "docs_url": "https://github.com/imbue-openhost/openhost-oura-ring#readme",
+      "openhost_integration_score": 3
     },
     {
       "name": "pihole",
