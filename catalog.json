@@ -25,6 +25,29 @@
       "openhost_integration_score": 3
     },
     {
+      "name": "claude-workbench",
+      "title": "Claude Workbench",
+      "description": "Claude workbench ready tro deploy",
+      "repo_url": "https://github.com/imbue-openhost/claude-code-container",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "ai",
+        "code",
+        "coding",
+        "claude",
+        "claude-code"
+      ],
+      "categories": [
+        "ai",
+        "development",
+        "productivity"
+      ],
+      "website_url": "https://github.com/imbue-openhost/claude-code-container",
+      "docs_url": "https://github.com/imbue-openhost/claude-code-container",
+      "openhost_integration_score": 3
+    },
+    {
       "name": "code-completion",
       "title": "Code Completion",
       "description": "Code completion server with model management UI and OpenAI-compatible API.",
@@ -507,5 +530,5 @@
       "openhost_integration_score": 3
     }
   ],
-  "generated_at": "2026-06-29T19:04:42Z"
+  "generated_at": "2026-06-30T20:58:28Z"
 }
