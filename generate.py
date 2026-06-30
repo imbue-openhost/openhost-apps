@@ -31,6 +31,7 @@ VALID_CATEGORIES = {
     "publishing",
     "search",
     "utility",
+    "data-liberation",
 }
 
 

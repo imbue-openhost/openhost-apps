@@ -1,0 +1,11 @@
+[app]
+name = "apple-health-connector"
+title = "Apple Health Connector"
+description = "Ports over, collects, and analyzes data from Apple Health"
+repo_url = "https://github.com/imbue-openhost/openhost-apple-health"
+website_url = "https://github.com/imbue-openhost/openhost-apple-health"
+docs_url = "https://github.com/imbue-openhost/openhost-apple-health#readme"
+tags = ["apple", "apple-health", "fitness", "data"]
+categories = ["utility", "data-liberation"]
+
+openhost_integration_score = 3
