@@ -63,7 +63,7 @@
         "utility",
         "productivity"
       ],
-      "website_url": "https://github.com/imbue-openhost/openhost-filestash",
+      "website_url": "https://www.filestash.app/",
       "docs_url": "https://github.com/imbue-openhost/openhost-filestash#readme",
       "openhost_integration_score": 3
     },
@@ -460,7 +460,7 @@
         "privacy",
         "utility"
       ],
-      "website_url": "https://github.com/imbue-openhost/openhost-vaultwarden",
+      "website_url": "https://github.com/dani-garcia/vaultwarden",
       "docs_url": "https://github.com/imbue-openhost/openhost-vaultwarden#readme",
       "openhost_integration_score": 3
     },
@@ -507,5 +507,5 @@
       "openhost_integration_score": 3
     }
   ],
-  "generated_at": "2026-06-29T19:04:42Z"
+  "generated_at": "2026-06-30T17:52:38Z"
 }
