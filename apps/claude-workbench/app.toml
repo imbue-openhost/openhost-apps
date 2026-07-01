@@ -1,0 +1,11 @@
+[app]
+name = "claude-workbench"
+title = "Claude Workbench"
+description = "Claude workbench ready tro deploy"
+repo_url = "https://github.com/imbue-openhost/claude-code-container"
+website_url = "https://github.com/imbue-openhost/claude-code-container"
+docs_url = "https://github.com/imbue-openhost/claude-code-container"
+tags = ["ai", "code", "coding", "claude", "claude-code"]
+categories = ["ai", "development", "productivity"]
+
+openhost_integration_score = 3
