@@ -9,3 +9,4 @@ tags = ["files", "privacy"]
 categories = ["privacy", "utility", "productivity"]
 
 openhost_integration_score = 3
+openhost_integration_score_explanation = "Owner reaches the file manager, but authenticates through Filestash's own login rather than OpenHost SSO."

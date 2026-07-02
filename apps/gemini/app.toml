@@ -9,3 +9,4 @@ tags = ["gemini", "smolnet", "tls", "capsule"]
 categories = ["networking", "publishing"]
 
 openhost_integration_score = 2
+openhost_integration_score_explanation = "Serves a Gemini capsule over its own TLS on port 1965; the protocol has no OpenHost-style web SSO to adopt."

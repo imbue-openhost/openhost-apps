@@ -9,3 +9,4 @@ tags = ["dns", "ad-blocker", "privacy", "network"]
 categories = ["networking", "privacy", "productivity"]
 
 openhost_integration_score = 2
+openhost_integration_score_explanation = "Zone owner is auto-logged in to the admin dashboard, but it sits in front of Pi-hole's own session, leaving some rough edges."

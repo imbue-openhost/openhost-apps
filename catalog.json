@@ -4,50 +4,6 @@
   "source_name": "OpenHost Official",
   "apps": [
     {
-      "name": "apple-health-connector",
-      "title": "Apple Health Connector",
-      "description": "Ports over, collects, and analyzes data from Apple Health",
-      "repo_url": "https://github.com/imbue-openhost/openhost-apple-health",
-      "repo_ref": "",
-      "icon_url": "",
-      "tags": [
-        "apple",
-        "apple-health",
-        "fitness",
-        "data"
-      ],
-      "categories": [
-        "utility",
-        "data-liberation"
-      ],
-      "website_url": "https://github.com/imbue-openhost/openhost-apple-health",
-      "docs_url": "https://github.com/imbue-openhost/openhost-apple-health#readme",
-      "openhost_integration_score": 3
-    },
-    {
-      "name": "claude-workbench",
-      "title": "Claude Workbench",
-      "description": "Claude workbench ready tro deploy",
-      "repo_url": "https://github.com/imbue-openhost/claude-code-container",
-      "repo_ref": "",
-      "icon_url": "",
-      "tags": [
-        "ai",
-        "code",
-        "coding",
-        "claude",
-        "claude-code"
-      ],
-      "categories": [
-        "ai",
-        "development",
-        "productivity"
-      ],
-      "website_url": "https://github.com/imbue-openhost/claude-code-container",
-      "docs_url": "https://github.com/imbue-openhost/claude-code-container",
-      "openhost_integration_score": 3
-    },
-    {
       "name": "code-completion",
       "title": "Code Completion",
       "description": "Code completion server with model management UI and OpenAI-compatible API.",
@@ -68,7 +24,8 @@
       ],
       "website_url": "https://github.com/imbue-openhost/openhost-code-completion",
       "docs_url": "https://github.com/imbue-openhost/openhost-code-completion#readme",
-      "openhost_integration_score": 2
+      "openhost_integration_score": 2,
+      "openhost_integration_score_explanation": "Runs and persists models correctly, but you sign in through the app's own UI; no OpenHost auto-login."
     },
     {
       "name": "filestash",
@@ -86,9 +43,10 @@
         "utility",
         "productivity"
       ],
-      "website_url": "https://www.filestash.app/",
+      "website_url": "https://github.com/imbue-openhost/openhost-filestash",
       "docs_url": "https://github.com/imbue-openhost/openhost-filestash#readme",
-      "openhost_integration_score": 3
+      "openhost_integration_score": 3,
+      "openhost_integration_score_explanation": "Owner reaches the file manager, but authenticates through Filestash's own login rather than OpenHost SSO."
     },
     {
       "name": "forgejo",
@@ -108,7 +66,8 @@
       ],
       "website_url": "https://forgejo.org",
       "docs_url": "https://github.com/imbue-openhost/openhost-forgejo#readme",
-      "openhost_integration_score": 3
+      "openhost_integration_score": 3,
+      "openhost_integration_score_explanation": "Zone owner is auto-logged in as admin; invited users still create Forgejo-local password accounts."
     },
     {
       "name": "gemini",
@@ -129,7 +88,8 @@
       ],
       "website_url": "https://geminiprotocol.net",
       "docs_url": "https://github.com/imbue-openhost/openhost-gemini#readme",
-      "openhost_integration_score": 2
+      "openhost_integration_score": 2,
+      "openhost_integration_score_explanation": "Serves a Gemini capsule over its own TLS on port 1965; the protocol has no OpenHost-style web SSO to adopt."
     },
     {
       "name": "graphhopper",
@@ -152,7 +112,8 @@
       ],
       "website_url": "https://www.graphhopper.com",
       "docs_url": "https://github.com/imbue-openhost/openhost-graphhopper#readme",
-      "openhost_integration_score": 2
+      "openhost_integration_score": 2,
+      "openhost_integration_score_explanation": "Routing engine and map UI work out of the box, but there is no OpenHost SSO layer in front of it."
     },
     {
       "name": "hidden-service",
@@ -174,7 +135,8 @@
       ],
       "website_url": "https://github.com/imbue-openhost/openhost-hidden-service",
       "docs_url": "https://github.com/imbue-openhost/openhost-hidden-service#readme",
-      "openhost_integration_score": 3
+      "openhost_integration_score": 3,
+      "openhost_integration_score_explanation": "Owner-only editor reached over Tor; the public capsule is anonymous by design, so there is no web SSO to wire up."
     },
     {
       "name": "jitsi",
@@ -196,7 +158,8 @@
       ],
       "website_url": "https://jitsi.org",
       "docs_url": "https://github.com/imbue-openhost/openhost-jitsi#readme",
-      "openhost_integration_score": 3
+      "openhost_integration_score": 3,
+      "openhost_integration_score_explanation": "Anyone with the meeting URL can join by design; no per-user OpenHost login, which fits the conferencing model."
     },
     {
       "name": "minecraft",
@@ -214,7 +177,8 @@
       ],
       "website_url": "https://github.com/imbue-openhost/openhost-minecraft-server",
       "docs_url": "https://github.com/imbue-openhost/openhost-minecraft-server#readme",
-      "openhost_integration_score": 4
+      "openhost_integration_score": 4,
+      "openhost_integration_score_explanation": "Server provisions and persists worlds natively; players authenticate via Minecraft accounts, as expected for a game server."
     },
     {
       "name": "miniflux",
@@ -235,7 +199,8 @@
       ],
       "website_url": "https://miniflux.app",
       "docs_url": "https://github.com/imbue-openhost/openhost-miniflux#readme",
-      "openhost_integration_score": 4
+      "openhost_integration_score": 4,
+      "openhost_integration_score_explanation": "Zone owner is auto-logged in via OpenHost SSO; bundled Postgres persists feeds cleanly."
     },
     {
       "name": "mirotalk-p2p",
@@ -257,7 +222,8 @@
       ],
       "website_url": "https://github.com/miroslavpejic85/mirotalk",
       "docs_url": "https://github.com/imbue-openhost/openhost-mirotalk-p2p#readme",
-      "openhost_integration_score": 4
+      "openhost_integration_score": 4,
+      "openhost_integration_score_explanation": "Zone owner is auto-logged in as host; guests join via the room URL. Signaling-only, no media stored."
     },
     {
       "name": "navidrome",
@@ -277,7 +243,8 @@
       ],
       "website_url": "https://www.navidrome.org",
       "docs_url": "https://github.com/imbue-openhost/openhost-navidrome#readme",
-      "openhost_integration_score": 4
+      "openhost_integration_score": 4,
+      "openhost_integration_score_explanation": "Owner is auto-logged in to the music server; libraries persist correctly under the app data dir."
     },
     {
       "name": "onionshare",
@@ -299,7 +266,8 @@
       ],
       "website_url": "https://onionshare.org",
       "docs_url": "https://github.com/imbue-openhost/openhost-onionshare#readme",
-      "openhost_integration_score": 3
+      "openhost_integration_score": 3,
+      "openhost_integration_score_explanation": "Owner manages shares; recipients use the generated Tor onion link anonymously, so no web SSO applies to guests."
     },
     {
       "name": "openclaw",
@@ -319,7 +287,8 @@
       ],
       "website_url": "https://openclaw.ai/",
       "docs_url": "https://github.com/imbue-openhost/openhost-openclaw#readme",
-      "openhost_integration_score": 3
+      "openhost_integration_score": 3,
+      "openhost_integration_score_explanation": "Owner reaches the assistant with OpenHost auth in front, but invited users need app-local setup."
     },
     {
       "name": "openweb-ui",
@@ -340,27 +309,8 @@
       ],
       "website_url": "https://openwebui.com",
       "docs_url": "https://github.com/imbue-openhost/openhost-openweb-ui#readme",
-      "openhost_integration_score": 2
-    },
-    {
-      "name": "oura-connector",
-      "title": "Oura Connector",
-      "description": "Ports over, collects, and analyzes data from Oura fitness rings",
-      "repo_url": "https://github.com/imbue-openhost/openhost-oura-ring",
-      "repo_ref": "",
-      "icon_url": "",
-      "tags": [
-        "oura",
-        "fitness",
-        "data"
-      ],
-      "categories": [
-        "utility",
-        "data-liberation"
-      ],
-      "website_url": "https://github.com/imbue-openhost/openhost-oura-ring",
-      "docs_url": "https://github.com/imbue-openhost/openhost-oura-ring#readme",
-      "openhost_integration_score": 3
+      "openhost_integration_score": 2,
+      "openhost_integration_score_explanation": "Runs and persists chats correctly, but you sign in through Open WebUI's own login form; no OpenHost auto-login."
     },
     {
       "name": "pihole",
@@ -382,7 +332,8 @@
       ],
       "website_url": "https://pi-hole.net",
       "docs_url": "https://github.com/imbue-openhost/openhost-pihole#readme",
-      "openhost_integration_score": 2
+      "openhost_integration_score": 2,
+      "openhost_integration_score_explanation": "Zone owner is auto-logged in to the admin dashboard, but it sits in front of Pi-hole's own session, leaving some rough edges."
     },
     {
       "name": "redlib",
@@ -403,7 +354,8 @@
       ],
       "website_url": "https://github.com/redlib-org/redlib",
       "docs_url": "https://github.com/imbue-openhost/openhost-redlib#readme",
-      "openhost_integration_score": 2
+      "openhost_integration_score": 2,
+      "openhost_integration_score_explanation": "Stateless Reddit front-end with no accounts; it runs cleanly but has no OpenHost SSO to integrate."
     },
     {
       "name": "searxng",
@@ -424,7 +376,8 @@
       ],
       "website_url": "https://docs.searxng.org",
       "docs_url": "https://github.com/imbue-openhost/openhost-searxng#readme",
-      "openhost_integration_score": 4
+      "openhost_integration_score": 4,
+      "openhost_integration_score_explanation": "Stateless public metasearch; no accounts to manage and nothing to leak, so it integrates cleanly."
     },
     {
       "name": "synapse",
@@ -445,7 +398,8 @@
       ],
       "website_url": "https://matrix.org",
       "docs_url": "https://github.com/imbue-openhost/openhost-synapse#readme",
-      "openhost_integration_score": 3
+      "openhost_integration_score": 3,
+      "openhost_integration_score_explanation": "Zone owner gets an account, but Matrix clients still sign in with Synapse-local credentials."
     },
     {
       "name": "uptime-kuma",
@@ -465,7 +419,8 @@
       ],
       "website_url": "https://uptime.kuma.pet",
       "docs_url": "https://github.com/imbue-openhost/openhost-uptime-kuma#readme",
-      "openhost_integration_score": 3
+      "openhost_integration_score": 3,
+      "openhost_integration_score_explanation": "Owner is auto-logged in to the dashboard, but invited viewers fall back to Uptime Kuma's own login."
     },
     {
       "name": "vaultwarden",
@@ -483,9 +438,10 @@
         "privacy",
         "utility"
       ],
-      "website_url": "https://github.com/dani-garcia/vaultwarden",
+      "website_url": "https://github.com/imbue-openhost/openhost-vaultwarden",
       "docs_url": "https://github.com/imbue-openhost/openhost-vaultwarden#readme",
-      "openhost_integration_score": 3
+      "openhost_integration_score": 3,
+      "openhost_integration_score_explanation": "Owner reaches the vault via OpenHost, but unlocking still requires the Bitwarden master password, as it must."
     },
     {
       "name": "webtop",
@@ -506,7 +462,8 @@
       ],
       "website_url": "https://github.com/linuxserver/docker-webtop",
       "docs_url": "https://github.com/imbue-openhost/openhost-webtop#readme",
-      "openhost_integration_score": 2
+      "openhost_integration_score": 2,
+      "openhost_integration_score_explanation": "Desktop session persists under the home dir, but you reach it through the app's own gate rather than OpenHost auto-login."
     },
     {
       "name": "wg-easy",
@@ -527,8 +484,9 @@
       ],
       "website_url": "https://github.com/wg-easy/wg-easy",
       "docs_url": "https://github.com/imbue-openhost/openhost-wg-easy#readme",
-      "openhost_integration_score": 3
+      "openhost_integration_score": 3,
+      "openhost_integration_score_explanation": "Zone owner is auto-logged in to the web UI; VPN peers authenticate with WireGuard keys, as expected."
     }
   ],
-  "generated_at": "2026-06-30T20:58:28Z"
+  "generated_at": "2026-06-29T11:45:06Z"
 }
