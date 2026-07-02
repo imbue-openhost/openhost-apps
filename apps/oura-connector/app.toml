@@ -9,3 +9,4 @@ tags = ["oura", "fitness", "data"]
 categories = ["utility", "data-liberation"]
 
 openhost_integration_score = 3
+openhost_integration_score_explanation = "Zone owner is auto-logged in and connects their Oura account via OAuth on an owner-only setup page; single-owner only, with no guest path."
