@@ -8,5 +8,5 @@ docs_url = "https://github.com/imbue-openhost/openhost-openweb-ui#readme"
 tags = ["llm", "ai", "chat", "ollama"]
 categories = ["ai", "productivity"]
 
-openhost_integration_score = 2
-openhost_integration_score_explanation = "Runs and persists chats correctly, but you sign in through Open WebUI's own login form; no OpenHost auto-login."
+openhost_integration_score = 4
+openhost_integration_score_explanation = "Zone owner lands as admin (Open WebUI's own auth disabled, router-gated) and guests are bounced to the zone login; owner access is perimeter-based rather than a native SSO session."

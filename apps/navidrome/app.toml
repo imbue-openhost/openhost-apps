@@ -8,5 +8,5 @@ docs_url = "https://github.com/imbue-openhost/openhost-navidrome#readme"
 tags = ["music", "streaming", "media"]
 categories = ["entertainment", "privacy"]
 
-openhost_integration_score = 4
-openhost_integration_score_explanation = "Owner is auto-logged in to the music server; libraries persist correctly under the app data dir."
+openhost_integration_score = 3
+openhost_integration_score_explanation = "Owner is auto-logged in as admin, but invited users and Subsonic client apps still need app-local Navidrome accounts."

@@ -1,7 +1,7 @@
 [app]
 name = "miniflux"
 title = "Miniflux"
-description = "Minimalist RSS/Atom reader with bundled PostgreSQL and OpenHost single sign-on."
+description = "Minimalist, opinionated RSS/Atom feed reader focused on readability and privacy, with keyboard-driven navigation and automatic tracker removal."
 repo_url = "https://github.com/imbue-openhost/openhost-miniflux"
 website_url = "https://miniflux.app"
 docs_url = "https://github.com/imbue-openhost/openhost-miniflux#readme"

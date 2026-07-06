@@ -8,5 +8,5 @@ docs_url = "https://github.com/imbue-openhost/openhost-redlib#readme"
 tags = ["reddit", "privacy", "frontend", "proxy"]
 categories = ["privacy", "entertainment"]
 
-openhost_integration_score = 2
-openhost_integration_score_explanation = "Stateless Reddit front-end with no accounts; it runs cleanly but has no OpenHost SSO to integrate."
+openhost_integration_score = 5
+openhost_integration_score_explanation = "Stateless public Reddit front-end with no accounts and nothing to leak; there is nothing to integrate, and it works cleanly for everyone out of the box."

@@ -1,12 +1,12 @@
 [app]
 name = "pihole"
 title = "Pi-hole"
-description = "Network-wide DNS ad blocker. Blocks ads and trackers at the DNS level for all devices on your network. OpenHost zone owner is auto-logged in to the admin dashboard."
+description = "Network-wide ad blocker that blocks ads and trackers at the DNS level for every device on your network, with a web dashboard for statistics, query logs, and allow/deny list management."
 repo_url = "https://github.com/imbue-openhost/openhost-pihole"
 website_url = "https://pi-hole.net"
 docs_url = "https://github.com/imbue-openhost/openhost-pihole#readme"
 tags = ["dns", "ad-blocker", "privacy", "network"]
 categories = ["networking", "privacy", "productivity"]
 
-openhost_integration_score = 2
-openhost_integration_score_explanation = "Zone owner is auto-logged in to the admin dashboard, but it sits in front of Pi-hole's own session, leaving some rough edges."
+openhost_integration_score = 3
+openhost_integration_score_explanation = "Zone owner is auto-logged in to the admin dashboard, but the generated admin password is stored in plaintext on disk where other apps could read it."
