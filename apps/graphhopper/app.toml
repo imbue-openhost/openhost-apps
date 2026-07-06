@@ -8,5 +8,5 @@ docs_url = "https://github.com/imbue-openhost/openhost-graphhopper#readme"
 tags = ["maps", "routing", "navigation", "osm", "directions"]
 categories = ["privacy", "utility", "search"]
 
-openhost_integration_score = 5
-openhost_integration_score_explanation = "Stateless routing engine gated by OpenHost zone auth with an owner-only region admin; no accounts to manage and nothing to leak."
+openhost_integration_score = 4
+openhost_integration_score_explanation = "Stateless routing engine behind OpenHost zone auth with a small owner-only region admin; no accounts and nothing to leak, but no full owner session."
