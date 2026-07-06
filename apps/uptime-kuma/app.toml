@@ -8,5 +8,5 @@ docs_url = "https://github.com/imbue-openhost/openhost-uptime-kuma#readme"
 tags = ["monitoring", "uptime", "status"]
 categories = ["utility", "networking"]
 
-openhost_integration_score = 3
-openhost_integration_score_explanation = "Owner is auto-logged in to the dashboard, but invited viewers fall back to Uptime Kuma's own login."
+openhost_integration_score = 4
+openhost_integration_score_explanation = "Owner is auto-logged into the dashboard with zero clicks and guests are bounced to the zone login, but public status pages aren't exposed for anonymous viewing."
