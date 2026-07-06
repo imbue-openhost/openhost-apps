@@ -333,8 +333,8 @@
       ],
       "website_url": "https://openclaw.ai/",
       "docs_url": "https://github.com/imbue-openhost/openhost-openclaw#readme",
-      "openhost_integration_score": 3,
-      "openhost_integration_score_explanation": "Owner reaches the assistant with OpenHost auth in front, but invited users need app-local setup."
+      "openhost_integration_score": 4,
+      "openhost_integration_score_explanation": "Zone owner is auto-logged in with full operator access via the OpenHost owner header; a single-user assistant, so non-owners are simply rejected and no secrets are written to disk."
     },
     {
       "name": "openweb-ui",
@@ -555,5 +555,5 @@
       "openhost_integration_score_explanation": "Zone owner is auto-logged in to the web UI; VPN peers authenticate with WireGuard keys, as expected."
     }
   ],
-  "generated_at": "2026-07-06T14:36:35Z"
+  "generated_at": "2026-07-06T14:38:01Z"
 }
