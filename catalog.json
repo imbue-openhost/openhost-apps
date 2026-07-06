@@ -28,7 +28,7 @@
     {
       "name": "claude-workbench",
       "title": "Claude Workbench",
-      "description": "Tabbed in-browser terminals preloaded with Claude Code and a cloned openhost repo, for building and debugging openhost apps.",
+      "description": "Tabbed in-browser terminals (xterm.js) preloaded with Anthropic's Claude Code CLI and common developer tools, for coding and debugging with an AI agent.",
       "repo_url": "https://github.com/imbue-openhost/claude-code-container",
       "repo_ref": "",
       "icon_url": "",
@@ -97,7 +97,7 @@
     {
       "name": "forgejo",
       "title": "Forgejo",
-      "description": "Self-hosted Git forge with issues, pull requests, CI/CD, and package registry. OpenHost zone owner is auto-logged in as admin; invited users get Forgejo-local password accounts.",
+      "description": "Self-hosted, lightweight software forge with Git hosting, issues, pull requests, CI/CD, and a package registry \u2014 a Free Software alternative to GitHub.",
       "repo_url": "https://github.com/imbue-openhost/openhost-forgejo",
       "repo_ref": "",
       "icon_url": "",
@@ -118,7 +118,7 @@
     {
       "name": "gemini",
       "title": "Gemini",
-      "description": "Agate-based Gemini protocol server. Browse the capsule with any Gemini client over a self-signed TLS connection on port 1965.",
+      "description": "Agate-based Gemini protocol server for hosting a capsule of static text documents, browsable with any Gemini client over TLS on the protocol's standard port 1965.",
       "repo_url": "https://github.com/imbue-openhost/openhost-gemini",
       "repo_ref": "",
       "icon_url": "",
@@ -229,7 +229,7 @@
     {
       "name": "miniflux",
       "title": "Miniflux",
-      "description": "Minimalist RSS/Atom reader with bundled PostgreSQL and OpenHost single sign-on.",
+      "description": "Minimalist, opinionated RSS/Atom feed reader focused on readability and privacy, with keyboard-driven navigation and automatic tracker removal.",
       "repo_url": "https://github.com/imbue-openhost/openhost-miniflux",
       "repo_ref": "",
       "icon_url": "",
@@ -251,7 +251,7 @@
     {
       "name": "mirotalk-p2p",
       "title": "MiroTalk P2P",
-      "description": "Peer-to-peer video conferencing. Browsers connect directly; the server only handles signaling, never media. OpenHost zone owner is auto-logged in as host.",
+      "description": "Open-source WebRTC video conferencing where browsers connect peer-to-peer for real-time audio and video; the server only handles signaling, never media. Includes screen sharing, chat, a collaborative whiteboard, and file sharing.",
       "repo_url": "https://github.com/imbue-openhost/openhost-mirotalk-p2p",
       "repo_ref": "",
       "icon_url": "",
@@ -318,7 +318,7 @@
     {
       "name": "openclaw",
       "title": "OpenClaw",
-      "description": "OpenClaw AI assistant.",
+      "description": "Open-source personal AI assistant you run on your own devices, reachable from chat apps you already use (WhatsApp, Telegram, Slack, Discord, Signal, and more) and extendable with skills and tools.",
       "repo_url": "https://github.com/imbue-openhost/openhost-openclaw",
       "repo_ref": "",
       "icon_url": "",
@@ -382,7 +382,7 @@
     {
       "name": "pihole",
       "title": "Pi-hole",
-      "description": "Network-wide DNS ad blocker. Blocks ads and trackers at the DNS level for all devices on your network. OpenHost zone owner is auto-logged in to the admin dashboard.",
+      "description": "Network-wide ad blocker that blocks ads and trackers at the DNS level for every device on your network, with a web dashboard for statistics, query logs, and allow/deny list management.",
       "repo_url": "https://github.com/imbue-openhost/openhost-pihole",
       "repo_ref": "",
       "icon_url": "",
@@ -492,7 +492,7 @@
     {
       "name": "vaultwarden",
       "title": "VaultWarden",
-      "description": "A community developed password manager server, compatible with BitWarden's client",
+      "description": "An alternative, open-source password manager server written in Rust that implements the Bitwarden API and works with the official Bitwarden client apps.",
       "repo_url": "https://github.com/imbue-openhost/openhost-vaultwarden",
       "repo_ref": "",
       "icon_url": "",
@@ -513,7 +513,7 @@
     {
       "name": "webtop",
       "title": "Webtop",
-      "description": "Full XFCE Linux desktop in the browser. Everything under ~ (browser profiles, proot-apps installs, downloads, shell history) persists across app restarts; apt-installed system packages do not.",
+      "description": "A full Linux desktop environment (XFCE, KDE, MATE, or i3) that runs in a container and is accessible from any modern web browser.",
       "repo_url": "https://github.com/imbue-openhost/openhost-webtop",
       "repo_ref": "",
       "icon_url": "",
@@ -535,7 +535,7 @@
     {
       "name": "wg-easy",
       "title": "wg-easy",
-      "description": "WireGuard VPN server with a web UI. Connect any device (Linux, macOS, iOS, Android, Windows) back to your zone over the public internet.",
+      "description": "A WireGuard VPN server with a web UI for easily creating and managing client connections, including QR codes and downloadable device configs.",
       "repo_url": "https://github.com/imbue-openhost/openhost-wg-easy",
       "repo_ref": "",
       "icon_url": "",
@@ -555,5 +555,5 @@
       "openhost_integration_score_explanation": "Zone owner is auto-logged in to the web UI; VPN peers authenticate with WireGuard keys, as expected."
     }
   ],
-  "generated_at": "2026-07-06T14:44:04Z"
+  "generated_at": "2026-07-06T14:51:21Z"
 }
