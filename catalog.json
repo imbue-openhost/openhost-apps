@@ -181,8 +181,8 @@
       ],
       "website_url": "https://github.com/imbue-openhost/openhost-hidden-service",
       "docs_url": "https://github.com/imbue-openhost/openhost-hidden-service#readme",
-      "openhost_integration_score": 3,
-      "openhost_integration_score_explanation": "Owner-only editor reached over Tor; the public capsule is anonymous by design, so there is no web SSO to wire up."
+      "openhost_integration_score": 2,
+      "openhost_integration_score_explanation": "Runs and persists pages correctly, but the editor does no OpenHost SSO of its own; owner access relies on the router gating the admin web port. The public capsule is anonymous over Tor."
     },
     {
       "name": "jitsi",
@@ -555,5 +555,5 @@
       "openhost_integration_score_explanation": "Zone owner is auto-logged in to the web UI; VPN peers authenticate with WireGuard keys, as expected."
     }
   ],
-  "generated_at": "2026-07-06T13:56:50Z"
+  "generated_at": "2026-07-06T13:58:27Z"
 }
