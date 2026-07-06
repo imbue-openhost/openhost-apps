@@ -28,7 +28,7 @@
     {
       "name": "claude-workbench",
       "title": "Claude Workbench",
-      "description": "Claude workbench ready tro deploy",
+      "description": "Tabbed in-browser terminals preloaded with Claude Code and a cloned openhost repo, for building and debugging openhost apps.",
       "repo_url": "https://github.com/imbue-openhost/claude-code-container",
       "repo_ref": "",
       "icon_url": "",
@@ -70,8 +70,8 @@
       ],
       "website_url": "https://github.com/imbue-openhost/openhost-code-completion",
       "docs_url": "https://github.com/imbue-openhost/openhost-code-completion#readme",
-      "openhost_integration_score": 2,
-      "openhost_integration_score_explanation": "Runs and persists models correctly, but you sign in through the app's own UI; no OpenHost auto-login."
+      "openhost_integration_score": 5,
+      "openhost_integration_score_explanation": "Zone owner is auto-logged into the management UI via the router (no login form); the OpenAI-compatible API is public and gated by an app-issued token."
     },
     {
       "name": "filestash",
@@ -91,8 +91,8 @@
       ],
       "website_url": "https://www.filestash.app/",
       "docs_url": "https://github.com/imbue-openhost/openhost-filestash#readme",
-      "openhost_integration_score": 3,
-      "openhost_integration_score_explanation": "Owner reaches the file manager, but authenticates through Filestash's own login rather than OpenHost SSO."
+      "openhost_integration_score": 4,
+      "openhost_integration_score_explanation": "Owner is auto-logged into the file manager with zero clicks via passthrough auth; public share links aren't exposed, so they require owner login too."
     },
     {
       "name": "forgejo",
@@ -158,8 +158,8 @@
       ],
       "website_url": "https://www.graphhopper.com",
       "docs_url": "https://github.com/imbue-openhost/openhost-graphhopper#readme",
-      "openhost_integration_score": 2,
-      "openhost_integration_score_explanation": "Routing engine and map UI work out of the box, but there is no OpenHost SSO layer in front of it."
+      "openhost_integration_score": 5,
+      "openhost_integration_score_explanation": "Stateless routing engine gated by OpenHost zone auth with an owner-only region admin; no accounts to manage and nothing to leak."
     },
     {
       "name": "hidden-service",
@@ -355,8 +355,8 @@
       ],
       "website_url": "https://openwebui.com",
       "docs_url": "https://github.com/imbue-openhost/openhost-openweb-ui#readme",
-      "openhost_integration_score": 2,
-      "openhost_integration_score_explanation": "Runs and persists chats correctly, but you sign in through Open WebUI's own login form; no OpenHost auto-login."
+      "openhost_integration_score": 5,
+      "openhost_integration_score_explanation": "Zone owner lands auto-logged-in as admin (Open WebUI auth disabled, router-gated); guests are bounced to the zone login. Nothing to set up."
     },
     {
       "name": "oura-connector",
@@ -376,8 +376,8 @@
       ],
       "website_url": "https://github.com/imbue-openhost/openhost-oura-ring",
       "docs_url": "https://github.com/imbue-openhost/openhost-oura-ring#readme",
-      "openhost_integration_score": 3,
-      "openhost_integration_score_explanation": "Zone owner is auto-logged in and connects their Oura account via OAuth on an owner-only setup page; single-owner only, with no guest path."
+      "openhost_integration_score": 2,
+      "openhost_integration_score_explanation": "Runs and persists data correctly, but there is no OpenHost SSO; access relies on the router gating the app, and the OAuth setup page is not owner-checked in-app."
     },
     {
       "name": "pihole",
@@ -555,5 +555,5 @@
       "openhost_integration_score_explanation": "Zone owner is auto-logged in to the web UI; VPN peers authenticate with WireGuard keys, as expected."
     }
   ],
-  "generated_at": "2026-07-02T18:35:48Z"
+  "generated_at": "2026-07-06T13:53:32Z"
 }

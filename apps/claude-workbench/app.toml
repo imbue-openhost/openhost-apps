@@ -1,7 +1,7 @@
 [app]
 name = "claude-workbench"
 title = "Claude Workbench"
-description = "Claude workbench ready tro deploy"
+description = "Tabbed in-browser terminals preloaded with Claude Code and a cloned openhost repo, for building and debugging openhost apps."
 repo_url = "https://github.com/imbue-openhost/claude-code-container"
 website_url = "https://github.com/imbue-openhost/claude-code-container"
 docs_url = "https://github.com/imbue-openhost/claude-code-container"

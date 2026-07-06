@@ -8,5 +8,5 @@ docs_url = "https://github.com/imbue-openhost/openhost-code-completion#readme"
 tags = ["ai", "code", "llm", "completion", "openai"]
 categories = ["ai", "development", "productivity"]
 
-openhost_integration_score = 2
-openhost_integration_score_explanation = "Runs and persists models correctly, but you sign in through the app's own UI; no OpenHost auto-login."
+openhost_integration_score = 5
+openhost_integration_score_explanation = "Zone owner is auto-logged into the management UI via the router (no login form); the OpenAI-compatible API is public and gated by an app-issued token."
