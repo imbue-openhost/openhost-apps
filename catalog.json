@@ -507,8 +507,8 @@
       ],
       "website_url": "https://github.com/dani-garcia/vaultwarden",
       "docs_url": "https://github.com/imbue-openhost/openhost-vaultwarden#readme",
-      "openhost_integration_score": 3,
-      "openhost_integration_score_explanation": "Owner reaches the vault via OpenHost, but unlocking still requires the Bitwarden master password, as it must."
+      "openhost_integration_score": 2,
+      "openhost_integration_score_explanation": "Runs and persists data correctly, but there is no OpenHost SSO; the owner signs in through Vaultwarden's own email and master-password login form."
     },
     {
       "name": "webtop",
@@ -555,5 +555,5 @@
       "openhost_integration_score_explanation": "Zone owner is auto-logged in to the web UI; VPN peers authenticate with WireGuard keys, as expected."
     }
   ],
-  "generated_at": "2026-07-06T14:33:29Z"
+  "generated_at": "2026-07-06T14:34:57Z"
 }
