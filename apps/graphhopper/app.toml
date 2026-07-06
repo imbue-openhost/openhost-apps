@@ -1,7 +1,7 @@
 [app]
 name = "graphhopper"
 title = "GraphHopper"
-description = "Self-hosted routing engine with car, bike, and foot navigation. Includes a map UI with turn-by-turn directions and geocoding."
+description = "Self-hosted routing engine built on OpenStreetMap data, with car, bike, and foot navigation profiles and a web map UI offering turn-by-turn directions."
 repo_url = "https://github.com/imbue-openhost/openhost-graphhopper"
 website_url = "https://www.graphhopper.com"
 docs_url = "https://github.com/imbue-openhost/openhost-graphhopper#readme"
