@@ -9,3 +9,4 @@ tags = ["minecraft", "games"]
 categories = ["entertainment"]
 
 openhost_integration_score = 4
+openhost_integration_score_explanation = "Server provisions and persists worlds natively; players authenticate via Minecraft accounts, as expected for a game server."
