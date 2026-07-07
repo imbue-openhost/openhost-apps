@@ -26,6 +26,25 @@
       "openhost_integration_score_explanation": "Zone owner is auto-logged into the dashboard with zero clicks; the machine ingest endpoint is public and gated by a self-issued API key, as expected for device uploads."
     },
     {
+      "name": "backup",
+      "title": "Backup",
+      "description": "Back up all OpenHost data to any Restic provider",
+      "repo_url": "https://github.com/imbue-openhost/openhost-backup",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "backup",
+        "data"
+      ],
+      "categories": [
+        "utility"
+      ],
+      "website_url": "https://github.com/imbue-openhost/openhost-backup",
+      "docs_url": "https://github.com/imbue-openhost/openhost-backup#readme",
+      "openhost_integration_score": 4,
+      "openhost_integration_score_explanation": ""
+    },
+    {
       "name": "claude-workbench",
       "title": "Claude Workbench",
       "description": "Tabbed in-browser terminals (xterm.js) preloaded with Anthropic's Claude Code CLI and common developer tools, for coding and debugging with an AI agent.",
@@ -555,5 +574,5 @@
       "openhost_integration_score_explanation": "Zone owner is auto-logged in to the web UI; VPN peers authenticate with WireGuard keys, as expected."
     }
   ],
-  "generated_at": "2026-07-06T15:19:03Z"
+  "generated_at": "2026-07-07T18:27:25Z"
 }
