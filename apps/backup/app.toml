@@ -1,0 +1,11 @@
+[app]
+name = "backup"
+title = "Backup"
+description = "Back up all OpenHost data to any Restic provider"
+repo_url = "https://github.com/imbue-openhost/openhost-backup"
+website_url = "https://github.com/imbue-openhost/openhost-backup"
+docs_url = "https://github.com/imbue-openhost/openhost-backup#readme"
+tags = ["backup", "data"]
+categories = ["utility"]
+
+openhost_integration_score = 4

@@ -25,6 +25,24 @@
       "openhost_integration_score": 3
     },
     {
+      "name": "backup",
+      "title": "Backup",
+      "description": "Back up all OpenHost data to any Restic provider",
+      "repo_url": "https://github.com/imbue-openhost/openhost-backup",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "backup",
+        "data"
+      ],
+      "categories": [
+        "utility"
+      ],
+      "website_url": "https://github.com/imbue-openhost/openhost-backup",
+      "docs_url": "https://github.com/imbue-openhost/openhost-backup#readme",
+      "openhost_integration_score": 4
+    },
+    {
       "name": "code-completion",
       "title": "Code Completion",
       "description": "Code completion server with model management UI and OpenAI-compatible API.",
@@ -507,5 +525,5 @@
       "openhost_integration_score": 3
     }
   ],
-  "generated_at": "2026-06-29T19:04:42Z"
+  "generated_at": "2026-07-07T18:25:48Z"
 }
