@@ -1,7 +1,7 @@
 [app]
 name = "webtop"
 title = "Webtop"
-description = "Full XFCE Linux desktop in the browser. Everything under ~ (browser profiles, proot-apps installs, downloads, shell history) persists across app restarts; apt-installed system packages do not."
+description = "A full Linux desktop environment (XFCE, KDE, MATE, or i3) that runs in a container and is accessible from any modern web browser."
 repo_url = "https://github.com/imbue-openhost/openhost-webtop"
 website_url = "https://github.com/linuxserver/docker-webtop"
 docs_url = "https://github.com/imbue-openhost/openhost-webtop#readme"
@@ -9,3 +9,4 @@ tags = ["desktop", "xfce", "linux", "browser"]
 categories = ["productivity", "development"]
 
 openhost_integration_score = 2
+openhost_integration_score_explanation = "Desktop session persists under the home dir, but you reach it through the app's own gate rather than OpenHost auto-login."

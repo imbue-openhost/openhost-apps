@@ -8,4 +8,5 @@ docs_url = "https://github.com/imbue-openhost/openhost-apple-health#readme"
 tags = ["apple", "apple-health", "fitness", "data"]
 categories = ["utility", "data-liberation"]
 
-openhost_integration_score = 3
+openhost_integration_score = 4
+openhost_integration_score_explanation = "Zone owner is auto-logged into the dashboard with zero clicks; the machine ingest endpoint is public and gated by a self-issued API key, as expected for device uploads."
