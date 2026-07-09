@@ -484,8 +484,8 @@
       ],
       "website_url": "https://spliit.app",
       "docs_url": "https://github.com/imbue-openhost/openhost-spliit#readme",
-      "openhost_integration_score": 5,
-      "openhost_integration_score_explanation": "The owner reaches the app zero-click through zone auth (Spliit has no login form), guests open shared group links with no OpenHost account, and it bundles its own Postgres on the persistent volume."
+      "openhost_integration_score": 3,
+      "openhost_integration_score_explanation": "The owner reaches the app through zone auth and can share group links with guests who need no OpenHost account, but Spliit has no user accounts so there is no real owner SSO to speak of."
     },
     {
       "name": "synapse",
@@ -596,5 +596,5 @@
       "openhost_integration_score_explanation": "Zone owner is auto-logged in to the web UI; VPN peers authenticate with WireGuard keys, as expected."
     }
   ],
-  "generated_at": "2026-07-09T18:34:26Z"
+  "generated_at": "2026-07-09T18:36:40Z"
 }

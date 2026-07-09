@@ -8,5 +8,5 @@ docs_url = "https://github.com/imbue-openhost/openhost-spliit#readme"
 tags = ["expenses", "money", "bill-splitting", "groups"]
 categories = ["productivity", "utility"]
 
-openhost_integration_score = 5
-openhost_integration_score_explanation = "The owner reaches the app zero-click through zone auth (Spliit has no login form), guests open shared group links with no OpenHost account, and it bundles its own Postgres on the persistent volume."
+openhost_integration_score = 3
+openhost_integration_score_explanation = "The owner reaches the app through zone auth and can share group links with guests who need no OpenHost account, but Spliit has no user accounts so there is no real owner SSO to speak of."
