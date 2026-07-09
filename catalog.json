@@ -466,6 +466,28 @@
       "openhost_integration_score_explanation": "Stateless public metasearch with no accounts and nothing to leak; there is nothing to integrate, and it works cleanly for everyone out of the box."
     },
     {
+      "name": "spliit",
+      "title": "Spliit",
+      "description": "Minimalist, account-free app for splitting shared expenses with friends and family.",
+      "repo_url": "https://github.com/imbue-openhost/openhost-spliit",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "expenses",
+        "money",
+        "bill-splitting",
+        "groups"
+      ],
+      "categories": [
+        "productivity",
+        "utility"
+      ],
+      "website_url": "https://spliit.app",
+      "docs_url": "https://github.com/imbue-openhost/openhost-spliit#readme",
+      "openhost_integration_score": 3,
+      "openhost_integration_score_explanation": "The owner reaches the app through zone auth and can share group links with guests who need no OpenHost account, but Spliit has no user accounts so there is no real owner SSO to speak of."
+    },
+    {
       "name": "synapse",
       "title": "Matrix Synapse",
       "description": "Reference homeserver for the Matrix decentralized communication protocol. End-to-end encrypted messaging.",
@@ -574,5 +596,5 @@
       "openhost_integration_score_explanation": "Zone owner is auto-logged in to the web UI; VPN peers authenticate with WireGuard keys, as expected."
     }
   ],
-  "generated_at": "2026-07-07T18:27:25Z"
+  "generated_at": "2026-07-09T18:36:40Z"
 }
