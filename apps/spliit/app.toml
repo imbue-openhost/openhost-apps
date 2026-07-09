@@ -1,0 +1,12 @@
+[app]
+name = "spliit"
+title = "Spliit"
+description = "Minimalist, account-free app for splitting shared expenses with friends and family."
+repo_url = "https://github.com/imbue-openhost/openhost-spliit"
+website_url = "https://spliit.app"
+docs_url = "https://github.com/imbue-openhost/openhost-spliit#readme"
+tags = ["expenses", "money", "bill-splitting", "groups"]
+categories = ["productivity", "utility"]
+
+openhost_integration_score = 5
+openhost_integration_score_explanation = "The owner reaches the app zero-click through zone auth (Spliit has no login form), guests open shared group links with no OpenHost account, and it bundles its own Postgres on the persistent volume."
