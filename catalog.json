@@ -93,6 +93,29 @@
       "openhost_integration_score_explanation": "Zone owner reaches the management UI via router gating (no login form) and the OpenAI-compatible API is gated by an app-issued token; access is perimeter-based rather than a full owner session."
     },
     {
+      "name": "community-chat",
+      "title": "Community Chat",
+      "description": "Matrix Synapse homeserver with a bundled Cinny web client. End-to-end encrypted messaging, owner single sign-on, and a one-click join of the OpenHost community space.",
+      "repo_url": "https://github.com/imbue-openhost/openhost-community-chat",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "messaging",
+        "matrix",
+        "encryption",
+        "federation",
+        "chat"
+      ],
+      "categories": [
+        "networking",
+        "privacy"
+      ],
+      "website_url": "https://matrix.org",
+      "docs_url": "https://github.com/imbue-openhost/openhost-community-chat#readme",
+      "openhost_integration_score": 4,
+      "openhost_integration_score_explanation": "The owner is auto-logged-in via SSO into the bundled web client (no login form), data persists, and the app self-restarts to apply settings. Short of 5 because it is single-owner: others who join get Synapse-local accounts, not OpenHost SSO."
+    },
+    {
       "name": "filestash",
       "title": "Filestash",
       "description": "A powerful web-based file management system, compatible with SFTP, S3, and Google Drive",
@@ -488,28 +511,6 @@
       "openhost_integration_score_explanation": "The owner reaches the app through zone auth and can share group links with guests who need no OpenHost account, but Spliit has no user accounts so there is no real owner SSO to speak of."
     },
     {
-      "name": "synapse",
-      "title": "Matrix Synapse",
-      "description": "Reference homeserver for the Matrix decentralized communication protocol. End-to-end encrypted messaging.",
-      "repo_url": "https://github.com/imbue-openhost/openhost-synapse",
-      "repo_ref": "",
-      "icon_url": "",
-      "tags": [
-        "messaging",
-        "matrix",
-        "encryption",
-        "federation"
-      ],
-      "categories": [
-        "networking",
-        "privacy"
-      ],
-      "website_url": "https://matrix.org",
-      "docs_url": "https://github.com/imbue-openhost/openhost-synapse#readme",
-      "openhost_integration_score": 2,
-      "openhost_integration_score_explanation": "Runs and persists data correctly, but there is no OpenHost SSO; you self-register and sign in with Synapse-local credentials in your Matrix client."
-    },
-    {
       "name": "uptime-kuma",
       "title": "Uptime Kuma",
       "description": "Self-hosted uptime monitoring with HTTP, TCP, DNS, and ping checks plus status pages.",
@@ -596,5 +597,5 @@
       "openhost_integration_score_explanation": "Zone owner is auto-logged in to the web UI; VPN peers authenticate with WireGuard keys, as expected."
     }
   ],
-  "generated_at": "2026-07-09T18:36:40Z"
+  "generated_at": "2026-07-10T19:26:51Z"
 }
