@@ -250,6 +250,29 @@
       "openhost_integration_score_explanation": "Anyone with the meeting URL can join by design; no per-user OpenHost login, which fits the conferencing model."
     },
     {
+      "name": "lyftr",
+      "title": "Lyftr",
+      "description": "Self-hosted workout tracker: log lifts and sets, build programs, and track bodyweight and personal records over time.",
+      "repo_url": "https://github.com/imbue-openhost/openhost-lyftr",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "fitness",
+        "workout",
+        "weightlifting",
+        "bodyweight",
+        "health"
+      ],
+      "categories": [
+        "utility",
+        "productivity"
+      ],
+      "website_url": "https://github.com/Cawlumm/lyftr",
+      "docs_url": "https://github.com/imbue-openhost/openhost-lyftr#readme",
+      "openhost_integration_score": 4,
+      "openhost_integration_score_explanation": "Zone owner is auto-logged in with zero clicks; guests hit the app's login. Single-user tracker with no accounts to bootstrap and nothing left on disk."
+    },
+    {
       "name": "minecraft",
       "title": "Minecraft",
       "description": "A self-hosted minecraft server runner",
@@ -597,5 +620,5 @@
       "openhost_integration_score_explanation": "Zone owner is auto-logged in to the web UI; VPN peers authenticate with WireGuard keys, as expected."
     }
   ],
-  "generated_at": "2026-07-10T19:26:51Z"
+  "generated_at": "2026-07-17T19:55:32Z"
 }
