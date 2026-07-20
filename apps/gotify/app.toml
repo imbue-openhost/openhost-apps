@@ -1,0 +1,12 @@
+[app]
+name = "gotify"
+title = "Gotify"
+description = "Self-hosted push notification server with a simple REST API and web UI for sending and receiving real-time messages."
+repo_url = "https://github.com/imbue-openhost/openhost-gotify"
+website_url = "https://gotify.net"
+docs_url = "https://github.com/imbue-openhost/openhost-gotify#readme"
+tags = ["notifications", "push", "messaging", "webhook"]
+categories = ["utility", "networking"]
+
+openhost_integration_score = 2
+openhost_integration_score_explanation = "Runs and persists data correctly, but there is no OpenHost SSO — you sign in through Gotify's own admin login form."

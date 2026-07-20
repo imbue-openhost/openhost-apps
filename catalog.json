@@ -180,6 +180,28 @@
       "openhost_integration_score_explanation": "Owner is auto-logged into the gemtext editor and guests get the public landing page; the Gemini capsule itself is public by protocol on port 1965."
     },
     {
+      "name": "gotify",
+      "title": "Gotify",
+      "description": "Self-hosted push notification server with a simple REST API and web UI for sending and receiving real-time messages.",
+      "repo_url": "https://github.com/imbue-openhost/openhost-gotify",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "notifications",
+        "push",
+        "messaging",
+        "webhook"
+      ],
+      "categories": [
+        "utility",
+        "networking"
+      ],
+      "website_url": "https://gotify.net",
+      "docs_url": "https://github.com/imbue-openhost/openhost-gotify#readme",
+      "openhost_integration_score": 2,
+      "openhost_integration_score_explanation": "Runs and persists data correctly, but there is no OpenHost SSO \u2014 you sign in through Gotify's own admin login form."
+    },
+    {
       "name": "graphhopper",
       "title": "GraphHopper",
       "description": "Self-hosted routing engine built on OpenStreetMap data, with car, bike, and foot navigation profiles and a web map UI offering turn-by-turn directions.",
@@ -620,5 +642,5 @@
       "openhost_integration_score_explanation": "Zone owner is auto-logged in to the web UI; VPN peers authenticate with WireGuard keys, as expected."
     }
   ],
-  "generated_at": "2026-07-17T19:55:32Z"
+  "generated_at": "2026-07-20T21:40:42Z"
 }
