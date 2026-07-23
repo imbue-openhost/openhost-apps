@@ -1,0 +1,12 @@
+[app]
+name = "nextcloud"
+title = "Nextcloud"
+description = "Self-hosted files, calendar, and contacts platform with sync clients, sharing, and a large app ecosystem."
+repo_url = "https://github.com/imbue-openhost/openhost-nextcloud"
+website_url = "https://nextcloud.com"
+docs_url = "https://github.com/imbue-openhost/openhost-nextcloud#readme"
+tags = ["files", "storage", "calendar", "contacts", "sync", "sharing"]
+categories = ["productivity", "privacy", "utility", "data-liberation"]
+
+openhost_integration_score = 5
+openhost_integration_score_explanation = "Zone owner is auto-logged into an admin account with zero clicks via the trusted owner header bridged to user_saml; sync clients (WebDAV) and public share links pass through without owner login, and non-owner visitors are never signed in as the owner."
