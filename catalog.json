@@ -294,6 +294,28 @@
       "openhost_integration_score_explanation": "Zone owner is auto-logged in with zero clicks; guests hit the app's login. Single-user tracker with no accounts to bootstrap and nothing left on disk."
     },
     {
+      "name": "md-notes",
+      "title": "MD Notes",
+      "description": "Obsidian-like collaborative markdown notes editor",
+      "repo_url": "https://github.com/imbue-openhost/md-notes",
+      "repo_ref": "",
+      "icon_url": "",
+      "tags": [
+        "markdown",
+        "notes",
+        "sharing"
+      ],
+      "categories": [
+        "privacy",
+        "utility",
+        "productivity"
+      ],
+      "website_url": "https://github.com/imbue-openhost/md-notes",
+      "docs_url": "https://github.com/imbue-openhost/md-notes#readme",
+      "openhost_integration_score": 5,
+      "openhost_integration_score_explanation": "Internally keeps vaults and has sharing function for other instances"
+    },
+    {
       "name": "mealie",
       "title": "Mealie",
       "description": "Self-hosted recipe manager and meal planner with a per-recipe cooking timeline for iterating on recipes across multiple attempts.",
@@ -711,5 +733,5 @@
       "openhost_integration_score_explanation": "Zone owner is auto-logged in to the web UI; VPN peers authenticate with WireGuard keys, as expected."
     }
   ],
-  "generated_at": "2026-07-24T17:38:55Z"
+  "generated_at": "2026-07-24T19:09:31Z"
 }
